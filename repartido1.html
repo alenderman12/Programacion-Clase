@@ -130,18 +130,100 @@
 
 
 
-        var userName = prompt("Ingrese nombre: ");
+        // var userName = prompt("Ingrese nombre: ");
 
-        if (userName.toLowerCase() == "ramón" || userName.toLowerCase() == "ramon") {
-            document.writeln("Bienvenido de vuelta, Ramón.");
+        // if (userName.toLowerCase() == "ramón" || userName.toLowerCase() == "ramon") {
+        //     document.writeln("Bienvenido de vuelta, Ramón.");
+        // }
+        // else {
+        //     document.writeln("Hola, " + userName + ".");
+        // }
+
+
+
+
+        // var todayYear = 2025;
+        // var age = parseInt(prompt("Ingrese su edad: "));
+        // var hadBirthdayThisYear = prompt("¿Ha cumplido años este año? (s/n)") == "s";
+        // var birthYear;
+
+        // if(hadBirthdayThisYear) {
+        //     birthYear = todayYear - age - 1;
+        // }
+        // else {
+        //     birthYear = todayYear - age;
+        // }
+
+        // document.writeln("Tu año de nacimiento es: " + birthYear);
+
+
+
+
+        // var number = parseInt(prompt("Ingrese numero"));
+
+        // if (number % 3 == 0) {
+        //     document.writeln("El numero es divisible entre 3");
+        // }
+        // else {
+        //     document.writeln("El numero NO es divisible entre 3");
+        // }
+
+
+
+
+        // let binaryNumber = prompt("Valor binario");
+        // let decimalNumber = 0;
+
+        // for (let i = 0; i < binaryNumber.length; i++) {
+        //     const char = binaryNumber[i];
+        //     document.writeln(parseInt(char) + " " + Math.pow(2, (binaryNumber.length - i - 1)) + "<br>");
+
+        //     decimalNumber += parseInt(char) * Math.pow(2, (binaryNumber.length - i - 1));
+        // }
+
+        // document.writeln(decimalNumber);
+
+
+
+        // let decimalNumber = parseInt(prompt("Valor decimal"));
+        // let binaryNumberLength = Math.floor(Math.log2(decimalNumber));
+        // let binaryNumber = "";
+
+        // for (let i = binaryNumberLength; i >= 0; i--) {
+        //     let power = Math.pow(2, i);
+
+        //     if (decimalNumber >= power) {
+        //         binaryNumber += "1";
+        //         decimalNumber -= power;
+        //     }
+        //     else { 
+        //         binaryNumber += "0";
+        //     }
+
+        //     console.log(decimalNumber);
+        // }
+
+        // document.writeln(binaryNumber);
+
+
+
+
+        let text = prompt("Ingrese un texto");
+        let letter = prompt("Ingrese una letra");
+
+        for (let i = 0; i < text.length; i++) {
+            if(text.charAt(i - 1) == " ") {
+                console.log(text[i].toUpperCase());
+                text[i] = text[i].toUpperCase();
+            }
+            
         }
-        else {
-            document.writeln("Hola, " + userName + ".");
-        }
+
+        document.writeln(text + "<br>");
 
     </script>
 </head>
 <body>
     
 </body>
-</html>
+</html> 
