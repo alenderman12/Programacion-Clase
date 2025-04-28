@@ -305,6 +305,46 @@
                   document.writeln(respuesta);
             }
 
+            function Ejercicio25() {
+                  let colores = ["amarillo", "negro", "verde", "azul"];
+                  
+                  colores[0] = "blanco";
+
+                  document.writeln(colores);
+            }
+
+            function Ejercicio26() {
+                  let numeros = [1,2,43,5,6,67,34,34,];
+                  let total = 0;
+
+                  for (let i = 0; i < numeros.length; i++) {
+                        const numero = numeros[i];
+                        total += numero;
+                  }
+
+                  document.writeln(numeros);
+            }
+
+            function Ejercicio27() {
+                  let numeros = new Array(200);
+                  let suma = 0;
+
+                  for (let i = 0; i < numeros.length; i++) {
+                        let numero = Math.floor(Math.random() * 100)
+                        numeros[i] = numero;
+                        if (numeros[i] % 2 == 0) {
+                              suma += numero;
+                        }
+                  }
+
+                  document.writeln(suma);
+                  document.writeln(numeros);
+
+
+            }
+
+            
+
             function selector(ejercicio) {
                   ejercicio = parseInt(ejercicio);
 
@@ -380,6 +420,15 @@
                               break;
                         case 24:
                               Ejercicio24()
+                              break;
+                        case 25:
+                              Ejercicio25()
+                              break;
+                        case 26:
+                              Ejercicio26()
+                              break;
+                        case 27:
+                              Ejercicio27()
                               break;
 
                   
