@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotisería del CTC</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="dominio/rotiseria.js"></script>
+</head>
+<body onload="Inicio()">
+    <header>
+        <h1>La Roti del CTC</h1>
+        <p>Alta, Baja y Modificacion del Menú</p>
+    </header>
+    <div class="menu-contenedor">
+        <div class="menu-seccion">
+            <h2>ABM Entradas</h2>
+            <center>
+                <form id="frm-entradas">
+                    <section>
+                        <div class="campos">
+                            <label>Nombre 1</label>
+                            <input type="text" id="nombre-entrada-1" placeholder="Ingrese el nombre">
+
+                            <label>Precio 1</label>
+                            <input type="text" id="precio-entrada-1" placeholder="Ingrese el precio">
+
+                            <label>Imagen</label>
+                            <input type="text" id="imagen-entrada" placeholder="Ingrese el link">
+                            <label id="etiqueta-muestra">Vista previa: </label>
+                            <img src="" id="imagen-entrada-muestra" class="img-mini" alt="Imagen del usuario">
+                        </div>
+                        <div class="botones">
+                            <input type="button" value="Agregar" class="btn-agregar" onclick="AgregarEntrada()">
+                            <input type="button" value="Limpiar Cajas" class="btn-limpiar" onclick="LimpiarCajas()">
+                        </div>
+                    </section>
+                </form>
+                <div class="listado">
+                    <select id="lista" size="8">
+                        
+                    </select>
+                </div>
+            </center>
+        </div>
+    </div>
+</body>
+</html>
