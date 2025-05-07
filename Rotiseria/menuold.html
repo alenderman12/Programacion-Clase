@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menú del Restaurante</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fffaf2;
+      margin: 0;
+      padding: 20px;
+    }
+    header {
+      background-color: #d35400;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    h2 {
+      color: #c0392b;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+    }
+    .menu-section {
+      margin-bottom: 30px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      padding: 8px 0;
+      border-bottom: 1px dotted #ccc;
+    }
+    .price {
+      float: right;
+      color: #888;
+    }
+  </style>
+  <!-- <script>
+    const menuData = [
+      {
+        titulo: "Entradas",
+        imagen: "https://www.cookinginmygenes.com/wp-content/uploads/2024/01/burrata-toast-3793.jpg",
+        items: [
+          { nombre: "Ensalada César", precio: "$4.000" },
+          { nombre: "Empanadas de carne", precio: "$3.500" },
+          { nombre: "Sopa del día", precio: "$3.000" },
+        ]
+      },
+      {
+        titulo: "Platos principales",
+        imagen: "https://media.istockphoto.com/id/1214416414/es/foto/salm%C3%B3n-a-la-parrilla-patatas-fritas-y-verduras-sobre-fondo-de-madera.jpg?s=612x612&w=0&k=20&c=P0K3ZE_rzbD8RoZyGjYh-J_k2_oh7VZrR2Pwtn4F23g=",
+        items: [
+          { nombre: "Lomo saltado", precio: "$9.500" },
+          { nombre: "Risotto de camarones", precio: "$10.500" },
+          { nombre: "Pasta al pesto", precio: "$8.000" },
+        ]
+      },
+      {
+        titulo: "Postres",
+        imagen: "https://www.allrecipes.com/thmb/y-S61IJkYyCUjTMGYqkaoJGwBrY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR-228515-simple-creme-brulee-dessert-dmfs-4x3-821623e7a86548eeb89370ac23d5f251.jpg",
+        items: [
+          { nombre: "Helado artesanal", precio: "$3.000" },
+          { nombre: "Torta de chocolate", precio: "$3.500" },
+          { nombre: "Fruta de temporada", precio: "$2.500" },
+        ]
+      },
+      {
+        titulo: "Bebidas",
+        imagen: "https://www.tastingtable.com/img/gallery/20-underrated-drinks-you-should-be-ordering-at-a-bar/intro-1695390668.jpg",
+        items: [
+          { nombre: "Jugo natural", precio: "$2.000" },
+          { nombre: "Agua mineral", precio: "$1.500" },
+          { nombre: "Refresco", precio: "$2.000" },
+        ]
+      }
+    ];
+  
+    const menuContainer = document.getElementById('menu');
+  
+    menuData.forEach(section => {
+      const sectionDiv = document.createElement('div');
+      sectionDiv.classList.add('menu-section');
+  
+      sectionDiv.innerHTML = `
+        <img src="${section.imagen}" alt="${section.titulo}">
+        <h2>${section.titulo}</h2>
+        <ul>
+          ${section.items.map(item => `
+            <li>
+              <span>${item.nombre}</span>
+              <span class="price">${item.precio}</span>
+            </li>
+          `).join('')}
+        </ul>
+      `;
+  
+      menuContainer.appendChild(sectionDiv);
+    });
+  </script> -->
+  
+</head>
+<body>
+
+  <header>
+    <h1>Restaurante El Buen Sabor</h1>
+    <p>Menú del Día</p>
+  </header>
+
+  <div class="menu-section">
+    <h2>Entradas</h2>
+    <ul>
+      <li>Ensalada César <span class="price">$4.000</span></li>
+      <li>Empanadas de carne <span class="price">$3.500</span></li>
+      <li>Sopa del día <span class="price">$3.000</span></li>
+    </ul>
+  </div>
+
+  <div class="menu-section">
+    <h2>Platos principales</h2>
+    <ul>
+      <li>Lomo saltado <span class="price">$9.500</span></li>
+      <li>Risotto de camarones <span class="price">$10.500</span></li>
+      <li>Pasta al pesto <span class="price">$8.000</span></li>
+    </ul>
+  </div>
+
+  <div class="menu-section">
+    <h2>Postres</h2>
+    <ul>
+      <li>Helado artesanal <span class="price">$3.000</span></li>
+      <li>Torta de chocolate <span class="price">$3.500</span></li>
+      <li>Fruta de temporada <span class="price">$2.500</span></li>
+    </ul>
+  </div>
+
+  <div class="menu-section">
+    <h2>Bebidas</h2>
+    <ul>
+      <li>Jugo natural <span class="price">$2.000</span></li>
+      <li>Agua mineral <span class="price">$1.500</span></li>
+      <li>Refresco <span class="price">$2.000</span></li>
+    </ul>
+  </div>
+
+</body>
+</html>
