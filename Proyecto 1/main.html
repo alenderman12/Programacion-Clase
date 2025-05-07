@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 1</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<header>
+    <h1>Rotiseria</h1>
+    <select name="dia" id="dia">
+        <option value="LUN">Lunes</option>
+        <option value="MAR">Martes</option>
+        <option value="MIE">Miercoles</option>
+        <option value="JUE">Jueves</option>
+        <option value="VIE">Viernes</option>
+        <option value="SAB">Sabado</option>
+        <option value="DOM">Domingo</option>
+    </select>
+    <input type="button" value="Cargar" onclick="cargarPrecios(dia.value)">
+</header>
+<body>
+    <div class="menu-contenedor">
+        <div class="menu-seccion">
+            <img src="https://blog.dipratos.com.br/wp-content/themes/yootheme/cache/31/entradas-para-cardapio-restaurante-3187a1f5.jpeg" alt="Foto">
+            <h2>Entradas</h2>
+            <ul>
+                <li>
+                    <span>Empanadas</span>
+                    <span class="precio">$300</span>
+                </li>
+                <li>
+                    <span>Picada</span>
+                    <span class="precio">$500</span>
+                </li>
+                <li>
+                    <span>Papas bravas</span>
+                    <span class="precio">$350</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="menu-seccion">
+            <img src="https://cdn7.kiwilimon.com/clasificacion/3675/3675.jpg" alt="Foto">
+            <h2>Platos principales</h2>
+            <ul>
+                <li>
+                    <span>Chivito Canadiense</span>
+                    <span class="precio">$550</span>
+                </li>
+                <li>
+                    <span>Asado de tira</span>
+                    <span class="precio">$600</span>
+                </li>
+                <li>
+                    <span>Milanesa Napolitana</span>
+                    <span class="precio">$400</span>
+                </li>
+            </ul>
+        </div>        
+
+        <div class="menu-seccion">
+            <img src="https://i.ytimg.com/vi/2_FUW8y2J1M/maxresdefault.jpg" alt="Foto">
+            <h2>Postres</h2>
+            <ul>
+                <li>
+                    <span>Ramon Navarro</span>
+                    <span class="precio">$200</span>
+                </li>
+                <li>
+                    <span>Helado Casatta Crufi</span>
+                    <span class="precio">$100</span>
+                </li>
+                <li>
+                    <span>Flan de Dulce de Leche</span>
+                    <span class="precio">$150</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="menu-seccion">
+            <img src="https://cdn11.bigcommerce.com/s-cwn6dvrt2b/product_images/uploaded_images/la-nueva-tendencia-de-bebidas.jpg" alt="Foto">
+            <h2>Bebidas</h2>
+            <ul>
+                <li>
+                    <span>Agua</span>
+                    <span class="precio">$50</span>
+                </li>
+                <li>
+                    <span>Pepsi</span>
+                    <span class="precio">$110</span>
+                </li>
+                <li>
+                    <span>Sprite</span>
+                    <span class="precio">$70</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

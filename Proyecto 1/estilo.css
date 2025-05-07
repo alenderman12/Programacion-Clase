@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fffaf5;
+    color: #333;
+}
+
+header {
+    background-color: #e67d22;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.menu-contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+.menu-seccion {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-seccion img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.menu-seccion h2{
+    margin: 0;
+    background-color: #f39c12;
+    color: white;
+    padding: 0.5rem 1rem;
+}
+
+.menu-seccion ul{
+    list-style: none;
+    margin: 0;
+    padding: 1rem;
+}
+
+.menu-seccion li{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+}
