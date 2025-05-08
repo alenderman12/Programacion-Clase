@@ -79,11 +79,27 @@ input {
 form select {
     width: 100%;
 }
-.listado select {
-    width: 60%;
-    margin-bottom: 20px;
-}
 .img-mini {
     height: 100px !important;
     width: 100% !important;
+}
+.listado table {
+    width: 60%;
+    margin-bottom: 20px;
+}
+th {
+    text-align: center;
+    border: 1px solid black;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.listado img {
+    width: 150px !important;
+    height: 100PX !important;
+}
+.listado {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
 }
