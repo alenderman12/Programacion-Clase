@@ -26,10 +26,6 @@ function AgregarEntrada() {
         return;
     }    
 
-    document.getElementById("imagen-entrada-muestra").style.display = "block";
-    document.getElementById("etiqueta-muestra").style.display = "block";
-    document.getElementById("imagen-entrada-muestra").src = imagenLink;
-
     if(nombre1 == "") {
         alert("Ingrese nombre");
         return;
@@ -59,3 +55,14 @@ function ListarEntradas(nombre, precio, imagen) {
 
     document.getElementById("tabla").innerHTML += elemento;
 }
+
+function CargarImagen(imagenLink) {
+    if(imagenLink == "") {
+        alert("Ingrese imagen");
+        return;
+    }
+
+    document.getElementById("imagen-entrada-muestra").style.display = "block";
+    document.getElementById("etiqueta-muestra").style.display = "block";
+    document.getElementById("imagen-entrada-muestra").src = imagenLink;
+};

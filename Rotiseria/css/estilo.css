@@ -71,7 +71,7 @@ input {
 }
 .btn-limpiar {
     border-style: none;
-    color: white;
+    color: white !important;
     border-radius: 5px;
     background-color: #1981dd;
     padding: 5px;
