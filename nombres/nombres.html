@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nombrese</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="dominio/nombres.js"></script>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="campos">
+            <label>Nombre</label>
+            <input type="text" id="nombre">
+        </div>
+        <div class="botones">
+            <input type="button" value="Agregar" onclick="Agregar(nombre.value)">
+            <input type="button" value="Eliminar" onclick="Eliminar(nombre.value)">
+        </div>
+        <div class="listado">
+            <p id="lista"></p>
+        </div>
+    </div>
+</body>
+</html>
