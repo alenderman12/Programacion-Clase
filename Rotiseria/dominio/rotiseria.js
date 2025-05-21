@@ -61,7 +61,7 @@ function CargarImagen(imagenLink) {
         alert("Ingrese imagen");
         return;
     }
-
+    
     document.getElementById("imagen-entrada-muestra").style.display = "block";
     document.getElementById("etiqueta-muestra").style.display = "block";
     document.getElementById("imagen-entrada-muestra").src = imagenLink;
