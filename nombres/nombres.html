@@ -7,19 +7,22 @@
     <link rel="stylesheet" href="css/estilos.css">
     <script src="dominio/nombres.js"></script>
 </head>
-<body>
-    <div class="contenedor">
-        <div class="campos">
-            <label>Nombre</label>
-            <input type="text" id="nombre">
+<body onload="Listar()">
+    <center>
+        <div class="contenedor">
+            <div class="campos">
+                <label>Nombre</label>
+                <input type="text" id="nombre">
+            </div>
+            <div class="botones">
+                <input class="btn" id="btn-agregar" type="button" value="Agregar" onclick="Agregar(nombre.value)">
+                <input class="btn" id="btn-modificar" type="button" value="Modificar" onclick="Modificar(nombre.value)">
+                <input class="btn" id="btn-limpiar" type="button" value="Eliminar" onclick="Eliminar(nombre.value)">
+            </div>
+            <div class="listado ">
+                <select id="lista" size="8" onchange="Seleccionar()"></select>
+            </div>
         </div>
-        <div class="botones">
-            <input type="button" value="Agregar" onclick="Agregar(nombre.value)">
-            <input type="button" value="Eliminar" onclick="Eliminar(nombre.value)">
-        </div>
-        <div class="listado">
-            <p id="lista"></p>
-        </div>
-    </div>
+    </center>
 </body>
 </html>
