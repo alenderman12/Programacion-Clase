@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERSONAS</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script type="module" src="dominio/controladora.js"></script>
+</head>
+<body onload="Listar()">
+    <center>
+        <div class="contenedor">
+            <div class="campos">
+                <label>ID</label>
+                <input type="text" id="id">
+                <label>Nombre</label>
+                <input type="text" id="nombre">
+                <label>Apellido</label>
+                <input type="text" id="apellido">
+                <label>Telefono</label>
+                <input type="text" id="telefono">
+                <label>Direccion</label>
+                <input type="text" id="direccion">
+                <label>Edad</label>
+                <input type="text" id="edad">
+            </div>
+            <div class="botones">
+                <input class="btn" id="btn-agregar" type="button" value="Agregar" onclick="Agregar()">
+                <input class="btn" id="btn-modificar" type="button" value="Modificar" onclick="Modificar()">
+                <input class="btn" id="btn-eliminar" type="button" value="Eliminar" onclick="Eliminar()">
+                <input class="btn" id="btn-limpiar" type="button" value="LimpiarCajas" onclick="LimpiarCajas()">
+            </div>
+            <div class="listado ">
+                <select id="lista" size="8" onchange="Seleccionar()"></select>
+            </div>
+        </div>
+    </center>
+</body>
+</html>
