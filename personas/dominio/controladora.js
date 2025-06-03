@@ -10,19 +10,19 @@ if(!personas) {
 
 function Agregar() {
 
-    let id = parseInt(document.getElementById("id").value);
-    let nombre = document.getElementById("nombre").value;
-    let apellido = document.getElementById("apellido").value;
-    let direcccion = document.getElementById("direccion").value;
-    let telefono = document.getElementById("telefono").value;
-    let edad = parseInt(document.getElementById("edad").value);
+    let id = parseInt(document.getElementById('id').value);
+    let nombre = document.getElementById('nombre').value.trim();
+    let apellido = document.getElementById("apellido").value.trim();
+    let direccion = document.getElementById("direccion").value.trim();
+    let telefono = document.getElementById("telefono").value.trim();
+    let edad = parseInt(document.getElementById('edad').value);
 
-    if(!id || !nombre || !apellido || !direcccion || !telefono || !edad) {
+    if(!id || !nombre || !apellido || !direccion || !telefono || !edad) {
         alert("Complete todos los campos");
         return;
     }
     
-    const unaPersona = new Persona(id, nombre, apellido, direcccion, telefono, edad);
+    const unaPersona = new Persona(id, nombre, apellido, direccion, telefono, edad);
     if(BuscarPosicion(id) != -1) {
         alert("Esta persona ya existe");
         return;
