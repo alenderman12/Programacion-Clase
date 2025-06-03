@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERSONAS</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script type="module" src="dominio/controladora.js"></script>
+</head>
+<body onload="ListarMascota()">
+    <center>
+        <div class="contenedor">
+            <div class="campos">
+                <label>Nombre</label>
+                <input type="text" id="nombre">
+                <label>Especie</label>
+                <select id="especie">
+                    <option value="" disabled selected></option>
+                    <option value="Perro">Perro</option>
+                    <option value="Gato">Gato</option>
+                    <option value="Tortuga">Tortuga</option>
+                    <option value="Hamster">Hamster</option>
+                    <option value="Loro">Loro</option>
+                    <option value="Pez">Pez</option>
+                </select>
+                <label>Raza</label>
+                <input type="text" id="raza">
+                <label>Sexo</label>
+                <select id="sexo">
+                    <option value="" disabled selected></option>
+                    <option value="Macho">Macho</option>
+                    <option value="Hembra">Hembra</option>
+                </select>
+                <label>Edad (Años)</label>
+                <input type="text" id="edad">
+            </div>
+            <div class="botones">
+                <input class="btn" id="btn-agregar" type="button" value="Agregar" onclick="AgregarMascota()">
+                <input class="btn" id="btn-modificar" type="button" value="Modificar" onclick="ModificarMascota()">
+                <input class="btn" id="btn-eliminar" type="button" value="Eliminar" onclick="EliminarMascota()">
+                <input class="btn" id="btn-limpiar" type="button" value="LimpiarCajas" onclick="LimpiarCajasMascota()">
+            </div>
+            <div class="listado">
+                <select id="lista" size="8" onchange="SeleccionarMascota()"></select>
+            </div>
+        </div>
+    </center>
+</body>
+</html>

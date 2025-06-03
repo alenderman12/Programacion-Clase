@@ -13,18 +13,16 @@ function Agregar() {
     let id = parseInt(document.getElementById('id').value);
     let nombre = document.getElementById('nombre').value.trim();
     let apellido = document.getElementById("apellido").value.trim();
-    let cedula = document.getElementById('cedula').value.trim();
-    let genero = document.getElementById("genero").value.trim();
     let direccion = document.getElementById("direccion").value.trim();
     let telefono = document.getElementById("telefono").value.trim();
     let edad = parseInt(document.getElementById('edad').value);
 
-    if(!id || !nombre || !apellido || !direccion || !telefono || !edad || !genero || !cedula) {
+    if(!id || !nombre || !apellido || !direccion || !telefono || !edad) {
         alert("Complete todos los campos");
         return;
     }
     
-    const unaPersona = new Persona(id, nombre, apellido, direccion, telefono, edad, genero, cedula);
+    const unaPersona = new Persona(id, nombre, apellido, direccion, telefono, edad);
     if(BuscarPosicion(id) != -1) {
         alert("Esta persona ya existe");
         return;
