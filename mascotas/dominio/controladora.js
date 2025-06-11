@@ -1,25 +1,35 @@
 import { Memoria } from "./memoria.js";
 import { Persona } from "./persona.js";
 import { Mascota } from "./mascota.js";
-import { memo } from "react";
+import { Adopcion } from "./adopcion.js";
 
 let memoria = new Memoria();
 
 let personas = memoria.MemGet(0);
 let mascotas = memoria.MemGet(1);
+let adopciones = memoria.MemGet(2);
+
 let actualIdPersona = memoria.MemGet("idPersona");
 let actualIdMascota = memoria.MemGet("idMascota");
+let actualIdAdopcion = memoria.MemGet("idAdopcion");
+
 if(!personas) {
     personas = [];
 }
 if(!mascotas) {
     mascotas = [];
 }
+if(!adopciones) {
+    adopciones = [];
+}
 if(!actualIdPersona) {
     actualIdPersona = 1;
 }
 if(!actualIdMascota) {
     actualIdMascota = 1;
+}
+if(!actualIdAdopcion) {
+    actualIdAdopcion = 1;
 }
 
 //#region Metodos Persona
@@ -28,20 +38,20 @@ function Agregar() {
     let nombre = document.getElementById('nombre').value.trim();
     let apellido = document.getElementById("apellido").value.trim();
     let telefono = document.getElementById("telefono").value.trim();
-    let direcccion = document.getElementById("direccion").value.trim();
+    let direccion = document.getElementById("direccion").value.trim();
     let edad = parseInt(document.getElementById('edad').value);
 
-    if(!nombre || !apellido || !telefono || !direcccion || !edad) {
+    if(!nombre || !apellido || !telefono || !direccion || !edad) {
         alert("Complete todos los campos");
         return;
     }
     
-    const unaPersona = new Persona(actualIdPersona, nombre, apellido, telefono, direcccion, edad);
-    if(BuscarPosicionMascota(actualIdPersona) != -1) {
+    const unaPersona = new Persona(actualIdPersona, nombre, apellido, telefono, direccion, edad);
+    if(BuscarPosicion(actualIdPersona) != -1) {
         alert("Esta persona ya existe");
         return;
     }
-    mascotas.push(unaPersona);
+    personas.push(unaPersona);
     actualIdPersona++;
     memoria.MemSet("idPersona", actualIdPersona);
     memoria.MemSet(0, personas);
@@ -51,7 +61,7 @@ function Agregar() {
 
 function Eliminar() {
     let id = document.getElementById('lista').value;
-    let posicion = BuscarPosicionPersona(id);
+    let posicion = BuscarPosicion(id);
 
     if(posicion != -1) {
         personas.splice(posicion, 1);
@@ -61,7 +71,7 @@ function Eliminar() {
             persona.id = persona.id - 1;
         }
         memoria.MemSet("idPersona", --actualIdPersona);
-        ListarMascota();
+        Listar();
     }
 
     document.getElementById('lista').value = 1;
@@ -69,20 +79,20 @@ function Eliminar() {
 
 function Modificar() {
     let posicion = BuscarPosicion(document.getElementById('lista').value);
-    let id = parseInt(document.getElementById("id").value);
-    let nombre = document.getElementById("nombre").value;
-    let apellido = document.getElementById("apellido").value;
-    let direcccion = document.getElementById("direccion").value;
-    let telefono = document.getElementById("telefono").value;
-    let edad = parseInt(document.getElementById("edad").value);
+    let id = document.getElementById('lista').value;
+    let nombre = document.getElementById('nombre').value.trim();
+    let apellido = document.getElementById("apellido").value.trim();
+    let telefono = document.getElementById("telefono").value.trim();
+    let direccion = document.getElementById("direccion").value.trim();
+    let edad = parseInt(document.getElementById('edad').value);
 
-    if(!id || !nombre || !apellido || !direcccion || !telefono || !edad) {
+    if(!nombre || !apellido || !telefono || !direccion || !edad) {
         alert("Complete todos los campos");
         return;
     }
 
     LimpiarCajas();
-    personas.splice(posicion, 1, new Persona(id, nombre, apellido, direcccion, telefono, edad));
+    personas.splice(posicion, 1, new Persona(id, nombre, apellido, telefono, direccion, edad));
 
     Listar();
 }
@@ -93,7 +103,7 @@ function Listar() {
 
     for (let objetoPersona of personas) {
         let elemento = new Option(objetoPersona.id + " : " + objetoPersona.nombre + " : " + objetoPersona.apellido + " : " + 
-            objetoPersona.direcccion + " : " + objetoPersona.telefono + " : " + objetoPersona.edad, objetoPersona.id);
+            objetoPersona.telefono + " : " + objetoPersona.direccion + " : " + objetoPersona.edad + (objetoPersona.edad == 1 ? " año" : " años"), objetoPersona.id);
         lista.add(elemento);
     }
     memoria.MemSet(0, personas);
@@ -107,7 +117,7 @@ function Seleccionar() {
                 document.getElementById('nombre').value    = objetoPersona.nombre;
                 document.getElementById('apellido').value  = objetoPersona.apellido;
                 document.getElementById('telefono').value  = objetoPersona.telefono;
-                document.getElementById('direccion').value = objetoPersona.direcccion;
+                document.getElementById('direccion').value = objetoPersona.direccion;
                 document.getElementById('edad').value      = objetoPersona.edad;
             }
     }
@@ -148,7 +158,7 @@ function AgregarMascota() {
         return;
     }
     
-    const unaMascota = new Mascota(actualIdMascota, nombre, especie, raza, sexo, edad);
+    const unaMascota = new Mascota(actualIdMascota, nombre, especie, raza, sexo, edad, false);
     if(BuscarPosicionMascota(actualIdMascota) != -1) {
         alert("Esta mascota ya existe");
         return;
@@ -194,7 +204,7 @@ function ModificarMascota() {
     }
 
     LimpiarCajasMascota();
-    mascotas.splice(posicion, 1, new Mascota(id, nombre, especie, raza, sexo, edad));
+    mascotas.splice(posicion, 1, new Mascota(id, nombre, especie, raza, sexo, edad, BuscarPosicionMascota(id).adoptado));
 
     ListarMascota();
 }
@@ -205,7 +215,9 @@ function ListarMascota() {
 
     for (let objetoMascota of mascotas) {
         let elemento = new Option(objetoMascota.id + " : " + objetoMascota.nombre + " : " + objetoMascota.especie + " : " + 
-            objetoMascota.raza + " : " + objetoMascota.sexo + " : " + objetoMascota.edad + (objetoMascota.edad == 1 ? " año" : " años"), objetoMascota.id);
+            objetoMascota.raza + " : " + objetoMascota.sexo + " : " + objetoMascota.edad + (objetoMascota.edad == 1 ? " año" : " años") + " : "
+             + (objetoMascota.adoptado ? "Si" : "No"), objetoMascota.id);
+
         lista.add(elemento);
     }
     memoria.MemSet(1, mascotas);
@@ -244,6 +256,157 @@ function BuscarPosicionMascota(id) {
     return -1;
 }
 
+function AdoptarMascota(idMascota) {
+    for (const objMascota of mascotas) {
+        if(objMascota.id == idMascota) {
+            objMascota.adoptado = true;
+        }
+    }
+
+    memoria.MemSet(1, mascotas);
+}
+
+function DevolverMascota(idMascota) {
+    for (const objMascota of mascotas) {
+        if(objMascota.id == idMascota) {
+            objMascota.adoptado = false;
+        }
+    }
+
+    memoria.MemSet(1, mascotas);
+}
+
+//#endregion
+
+//#region Metodos Adopcion
+
+function InicioAdopcion() {
+    let selectPersonas = document.getElementById("persona");
+    let selectMascotas = document.getElementById("mascota");
+
+    for (let persona of personas) {
+        selectPersonas.innerHTML += `<option value="${persona.id}">${persona.nombre} ${persona.apellido}</option>`
+    }    
+    for (let mascota of mascotas) {
+        selectMascotas.innerHTML += `<option value="${mascota.id}">${mascota.especie} ${mascota.nombre}</option>`
+    }
+
+    ListarAdopcion();
+}
+
+function AgregarAdopcion() {
+    let fecha = document.getElementById('fecha').value.trim();
+    let persona = document.getElementById("persona").value.trim();
+    let mascota = document.getElementById("mascota").value.trim();
+
+    if(!fecha || !persona || !mascota) {
+        alert("Complete todos los campos");
+        return;
+    }
+
+    persona = BuscarPosicion(persona);
+    mascota = BuscarPosicionMascota(mascota);
+    if (persona == -1 || mascota == -1) {
+        alert("Esa persona/mascota no existe");
+    }   
+    
+    const unaAdopcion = new Adopcion(actualIdAdopcion, fecha, personas[persona], mascotas[mascota]);
+    if(BuscarPosicionAdopcion(actualIdAdopcion) != -1) {
+        alert("Esta adopcion ya existe");
+        return;
+    }
+    AdoptarMascota(mascota+1);
+    adopciones.push(unaAdopcion);
+    actualIdAdopcion++;
+    memoria.MemSet("idAdopcion", actualIdAdopcion);
+    memoria.MemSet(2, adopciones);
+    ListarAdopcion();
+    LimpiarCajasAdopcion();
+}
+
+function EliminarAdopcion() {
+    let id = document.getElementById('lista').value;
+    let posicion = BuscarPosicionAdopcion(id);
+
+    DevolverMascota(adopciones[posicion].mascota.id);
+
+    if(posicion != -1) {
+        adopciones.splice(posicion, 1);
+        for (let i = posicion; i < adopciones.length; i++) {
+            const adopcion = adopciones[i];
+
+            adopcion.id = adopcion.id - 1;
+        }
+        memoria.MemSet("idAdopcion", --actualIdAdopcion);
+        ListarAdopcion();
+    }
+
+    document.getElementById('lista').value = 1;
+}
+
+function ModificarAdopcion() {
+    let posicion = BuscarPosicionAdopcion(document.getElementById('lista').value);
+    let id = document.getElementById('lista').value;
+    let fecha = document.getElementById('fecha').value.trim();
+    let persona = document.getElementById("persona").value.trim();
+    let mascota = document.getElementById("mascota").value.trim();
+
+    if(!fecha || !persona || !mascota) {
+        alert("Complete todos los campos");
+        return;
+    }
+
+    if(mascota.id != adopciones[posicion].mascota.id) {
+        AdoptarMascota(mascota.id);
+        DevolverMascota(adopciones[posicion].mascota.id);
+    }
+
+    LimpiarCajasAdopcion();
+    adopciones.splice(posicion, 1, new Adopcion(id, fecha, personas[BuscarPosicion(persona)], mascotas[BuscarPosicionMascota(mascota)]));
+
+    ListarAdopcion();
+}
+
+function ListarAdopcion() {
+    let lista = document.getElementById('lista').options;
+    lista.length = 0;
+    
+    for (let objetoAdopcion of adopciones) {
+        let elemento = new Option(objetoAdopcion.id + " : " + objetoAdopcion.fecha + " : " + objetoAdopcion.persona.nombre + " " + objetoAdopcion.persona.apellido +" : " + objetoAdopcion.mascota.nombre, objetoAdopcion.id);
+        lista.add(elemento);
+    }
+    memoria.MemSet(2, adopciones);
+} 
+
+function SeleccionarAdopcion() {
+    let id = document.getElementById('lista').value;
+
+    for (let objetoAdopcion of adopciones) {
+            if(objetoAdopcion.id == id) {                
+                document.getElementById('fecha').value    = objetoAdopcion.fecha;
+                document.getElementById('persona').value  = objetoAdopcion.persona.id;
+                document.getElementById('mascota').value  = objetoAdopcion.mascota.id;
+            }
+    }
+
+}
+
+function LimpiarCajasAdopcion() {
+    document.getElementById('fecha').value = "";
+    document.getElementById('persona').value = "";
+    document.getElementById('mascota').value = "";
+}
+
+function BuscarPosicionAdopcion(id) {
+    for (let i = 0; i < adopciones.length; i++) {
+        const objetoAdopcion = adopciones[i];
+        if(objetoAdopcion.id == id) {
+            return i;
+        }
+    }
+    return -1;
+}
+
 //#endregion
 
 window.Agregar = Agregar;
@@ -259,3 +422,11 @@ window.EliminarMascota = EliminarMascota;
 window.ListarMascota = ListarMascota;
 window.SeleccionarMascota = SeleccionarMascota;
 window.LimpiarCajasMascota = LimpiarCajasMascota;
+
+window.InicioAdopcion = InicioAdopcion;
+window.AgregarAdopcion = AgregarAdopcion;
+window.ModificarAdopcion = ModificarAdopcion;
+window.EliminarAdopcion = EliminarAdopcion;
+window.ListarAdopcion = ListarAdopcion;
+window.SeleccionarAdopcion = SeleccionarAdopcion;
+window.LimpiarCajasAdopcion = LimpiarCajasAdopcion;

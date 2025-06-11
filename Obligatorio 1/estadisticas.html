@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotisería del CTC</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="dominio/rotiseria.js"></script>
+</head>
+<body>
+    <header>
+        <h1>La Roti del CTC</h1>
+        <p>Menú del día</p>
+        <select name="dia" id="dia">
+            <option value="LUN">Lunes</option>
+            <option value="MAR">Martes</option>
+            <option value="MIE">Miercoles</option>
+            <option value="JUE">Jueves</option>
+            <option value="VIE">Viernes</option>
+            <option value="SAB">Sabado</option>
+            <option value="DOM">Domingo</option>
+        </select>
+
+        <input type="button" value = "Cargar" name="confirm" id="confirmar" onclick="CargarValores(dia.value)">
+    </header>
+    <div class="menu-contenedor">
+        <div class="menu-seccion">
+            <img src="imagenes/entradas.jpg">
+            <h2>Entradas</h2>
+            <ul>
+                <li>
+                    <span>Empanadas</span>
+                    <span class="precio">$300</span>
+                </li>
+                <li>
+                    <span>Picada de la casa</span>
+                    <span class="precio">$500</span>
+                </li>
+                <li>
+                    <span>Papas bravas con cheddar</span>
+                    <span class="precio">$350</span>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-seccion">
+            <img src="https://cdn0.casamiento.com.uy/article-vendor-o/3716/3_2/960/jpg/casamiento11_16_3716.jpeg" alt="">
+            <h2>Plato principal</h2>
+            <ul>
+                <li>
+                    <span>Tallarines caseros con salsa bolognesa</span>
+                    <span class="precio">$600</span>
+                </li>
+                <li>
+                    <span>Pollo asado con papas y boniatos</span>
+                    <span class="precio">$700</span>
+                </li>
+                <li>
+                    <span>Carne mechada con puré de papas</span>
+                    <span class="precio">$800</span>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-seccion">
+            <img src="https://www.recetasnestle.com.uy/sites/default/files/styles/recipe_detail_desktop_new/public/srh_recipes/6936d26974fcb1651bf5ccb748be937d.jpg?itok=1TSSJKsl" alt="">
+            <h2>Postre</h2>
+            <ul>
+                <li>
+                    <span>Flan con dulce de leche</span>
+                    <span class="precio">$350</span>
+                </li>
+                <li>
+                    <span>Martín fierro</span>
+                    <span class="precio">$300</span>
+                </li>
+                <li>
+                    <span>Cheesecake</span>
+                    <span class="precio">$400</span>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-seccion">
+            <img src="https://storage.googleapis.com/gx-global-cms/mkt/579f27bb-d0cd-4457-a87e-f4266a5ec877.jpg" alt="">
+            <h2>Bebidas</h2>
+            <ul>
+                <li>
+                    <span>Refresco</span>
+                    <span class="precio">$300</span>
+                </li>
+                <li>
+                    <span>Jugo natural</span>
+                    <span class="precio">$350</span>
+                </li>
+                <li>
+                    <span>Agua sin gas</span>
+                    <span class="precio">$50</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
