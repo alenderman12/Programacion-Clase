@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABM Mascotas</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script type="module" src="dominio/controladora.js"></script>
+</head>
+<body onload="InicioMascota()">
+    <div class="contenedor">
+        <div class="titulo">
+            <h3>ABM Mascotas</h3>
+            <a href="./index.html">Inicio</a>
+        </div>
+        <div class="campos">
+            <label>ID: </label>
+            <input type="text" id="mascota-id" class="id" disabled>
+            <label>Nombre: </label>
+            <input type="text" id="mascota-nombre">
+            <label>Especie: </label>
+            <select id="mascota-especie">
+                <option value="">Seleccione una especie</option>
+                <option value="Perro">Perro</option>
+                <option value="Gato">Gato</option>
+                <option value="Tortuga">Tortuga</option>
+                <option value="Hamster">Hamster</option>
+                <option value="Conejo">Conejo</option>
+                <option value="Loro">Loro</option>
+            </select>
+            <label>Raza: </label>
+            <input type="text" id="mascota-raza">
+            <label>Sexo: </label>
+            <select id="mascota-sexo">
+                <option value="">Seleccione un sexo</option>
+                <option value="M">Macho</option>
+                <option value="H">Hembra</option>
+            </select>
+            <label>Edad: </label>
+            <input type="number" id="mascota-edad">
+        </div>
+        <div class="botones">
+            <input type="button" value="Agregar" class="btn-agregar" onclick="AgregarMascota()">
+            <input type="button" value="Modificar" class="btn-modificar" onclick="ModificarMascota()">
+            <input type="button" value="Eliminar" class="btn-eliminar" onclick="EliminarMascota()">
+            <input type="button" value="Limpiar" class="btn-limpiar" onclick="LimpiarCajasMascota()">
+        </div>
+        <div class="listado">
+            <select id="mascota-lista" size="8" onchange="SeleccionarMascota()"></select>
+        </div>
+    </div>
+</body>
+</html>

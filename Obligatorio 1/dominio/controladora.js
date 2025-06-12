@@ -1,17 +1,27 @@
 import { Memoria } from "./memoria.js";
 import { Pelicula } from "./pelicula.js";
+import { Alquiler } from "./alquiler.js";
 
 let memoria = new Memoria();
 
 let peliculas = memoria.MemGet(0);
+let alquileres = memoria.MemGet(1);
 
 let actualIdPelicula = memoria.MemGet("idPelicula");
+let actualIdAlquiler= memoria.MemGet("idAlquiler");
 
 if(!peliculas) {
     peliculas = [];
 }
+if(!alquileres) {
+    alquileres = [];
+}
+
 if(!actualIdPelicula) {
     actualIdPelicula = 1;
+}
+if(!actualIdAlquiler) {
+    actualIdAlquiler = 1;
 }
 
 //#region Metodos Pelicula
@@ -22,13 +32,14 @@ function Agregar() {
     let director = document.getElementById("director").value.trim();
     let pais = document.getElementById("pais").value.trim();
     let precio = parseInt(document.getElementById('precio').value);
+    let imagen = document.getElementById("imagen").value.trim();
 
-    if(!nombre || !genero || !director || !pais || !precio) {
+    if(!nombre || !genero || !director || !pais || !precio || !imagen) {
         alert("Complete todos los campos");
         return;
     }
     
-    const unaPelicula = new Pelicula(actualIdPelicula, nombre, genero, director, pais, precio, false);
+    const unaPelicula = new Pelicula(actualIdPelicula, nombre, genero, director, pais, precio, imagen, false);
     if(BuscarPosicion(actualIdPelicula) != -1) {
         alert("Esta pelicula ya esta ingresada");
         return;
@@ -48,9 +59,9 @@ function Eliminar() {
     if(posicion != -1) {
         peliculas.splice(posicion, 1);
         for (let i = posicion; i < peliculas.length; i++) {
-            const pelicla = peliculas[i];
+            const pelicula = peliculas[i];
 
-            pelicla.id = pelicla.id - 1;
+            pelicula.id = pelicula.id - 1;
         }
         memoria.MemSet("idPelicula", --actualIdPelicula);
         Listar();
@@ -66,14 +77,15 @@ function Modificar() {
     let director = document.getElementById("director").value.trim();
     let pais = document.getElementById("pais").value.trim();
     let precio = parseInt(document.getElementById('precio').value);
+    let imagen = document.getElementById("imagen").value.trim();
 
-    if(!nombre || !genero || !director || !pais || !precio) {
+    if(!nombre || !genero || !director || !pais || !precio || !imagen) {
         alert("Complete todos los campos");
         return;
     }
 
     LimpiarCajas();
-    peliculas.splice(posicion, 1, new Pelicula(actualIdPelicula, nombre, genero, director, pais, precio, peliculas[posicion].alquilada));
+    peliculas.splice(posicion, 1, new Pelicula(peliculas[posicion].id, nombre, genero, director, pais, precio, peliculas[posicion].alquilada, imagen));
 
     Listar();
 }
@@ -95,11 +107,13 @@ function Seleccionar() {
 
     for (let objetoPelicula of peliculas) {
             if(objetoPelicula.id == id) {                
-                document.getElementById('nombre').value   = objetoPelicula.nombre;
-                document.getElementById('genero').value   = objetoPelicula.genero;
-                document.getElementById('director').value = objetoPelicula.director;
-                document.getElementById('pais').value     = objetoPelicula.pais;
-                document.getElementById('precio').value   = objetoPelicula.precio;
+                document.getElementById('nombre').value          = objetoPelicula.nombre;
+                document.getElementById('genero').value          = objetoPelicula.genero;
+                document.getElementById('director').value        = objetoPelicula.director;
+                document.getElementById('pais').value            = objetoPelicula.pais;
+                document.getElementById('precio').value          = objetoPelicula.precio;
+                document.getElementById('imagen').value          = objetoPelicula.imagen;
+                document.getElementById('imagenVistaPrevia').src = objetoPelicula.imagen;
             }
     }
 }
@@ -110,6 +124,8 @@ function LimpiarCajas() {
     document.getElementById('director').value = "";
     document.getElementById('pais').value = "";
     document.getElementById('precio').value = "";
+    document.getElementById('imagen').value = "";
+    document.getElementById('imagenVistaPrevia').src = "";
     document.getElementById('lista').value = 0;
 }
 
@@ -123,121 +139,138 @@ function BuscarPosicion(id) {
     return -1;
 }
 
+function VistaPreviaImagen() {
+    let enlaceImagen = document.getElementById('imagen').value.trim();
+
+    document.getElementById('imagenVistaPrevia').src = enlaceImagen;
+}
+
 //#endregion
 
 //#region Metodos Adopcion
 
-function InicioAdopcion() {
-    let selectPersonas = document.getElementById("persona");
-    let selectMascotas = document.getElementById("mascota");
-
-    for (let persona of personas) {
-        selectPersonas.innerHTML += `<option value="${persona.id}">${persona.nombre} ${persona.apellido}</option>`
-    }    
-    for (let mascota of mascotas) {
-        selectMascotas.innerHTML += `<option value="${mascota.id}">${mascota.especie} ${mascota.nombre}</option>`
-    }
-
-    ListarAdopcion();
+function InicioAlquiler() {
+    ListarSelectPeliculas()
+    ListarAlquiler();
 }
 
-function AgregarAdopcion() {
-    let fecha = document.getElementById('fecha').value.trim();
-    let persona = document.getElementById("persona").value.trim();
-    let  mascota = document.getElementById("mascota").value.trim();
+function ListarSelectPeliculas() {
+    let selectPelicula = document.getElementById("pelicula");
+    if(selectPelicula.innerHTML != null)
+        selectPelicula.innerHTML = "";
 
-    if(!fecha || !persona || !mascota) {
+    for (let pelicula of peliculas) {
+        if(!pelicula.alquilada)
+            selectPelicula.innerHTML += `<option value="${pelicula.id}">${pelicula.nombre}</option>`;
+    }
+}
+
+function AgregarAlquiler() {
+    let fecha = document.getElementById('fecha').value.trim();
+    let nombre = document.getElementById("nombre").value.trim();
+    let telefono = document.getElementById("telefono").value.trim();
+    let pelicula = document.getElementById("pelicula").value;
+
+    if(!fecha || !nombre || !telefono || !pelicula) {
         alert("Complete todos los campos");
         return;
     }
-    persona = BuscarPosicion(persona);
-    mascota = BuscarPosicionMascota(mascota);
-    if (persona == -1 || mascota == -1) {
-        alert("Esa persona/mascota no existe");
+    pelicula = BuscarPosicion(pelicula);
+    if (pelicula == -1) {
+        alert("Esa pelicula no existe");
     }
 
-    const unaAdopcion = new Adopcion(actualIdAdopcion, fecha, personas[persona], mascotas[mascota]);
-    if(BuscarPosicionAdopcion(actualIdAdopcion) != -1) {
-        alert("Esta adopcion ya existe");
+    const unAlquiler = new Alquiler(actualIdAlquiler, fecha, nombre, telefono, pelicula);
+    if(BuscarPosicionAlquiler(actualIdAlquiler) != -1) {
+        alert("Este alquiler ya existe");
         return;
     }
-    adopciones.push(unaAdopcion);
-    actualIdAdopcion++;
-    memoria.MemSet("idAdopcion", actualIdAdopcion);
-    memoria.MemSet(2, adopciones);
-    ListarAdopcion();
-    LimpiarCajasAdopcion();
+    peliculas[pelicula].alquilada = true;
+    alquileres.push(unAlquiler);
+    actualIdAlquiler++;
+    memoria.MemSet("idAlquiler", actualIdAlquiler);
+    memoria.MemSet(1, alquileres);
+    ListarAlquiler();
+    ListarSelectPeliculas();
+    LimpiarCajasAlquiler();
 }
 
-function EliminarAdopcion() {
+function EliminarAlquiler() {
     let id = document.getElementById('lista').value;
-    let posicion = BuscarPosicionAdopcion(id);
+    let posicion = BuscarPosicionAlquiler(id);
 
     if(posicion != -1) {
-        adopciones.splice(posicion, 1);
-        for (let i = posicion; i < adopciones.length; i++) {
-            const adopcion = adopciones[i];
+        alquileres[posicion].pelicula.alquilada = false;
+        alquileres.splice(posicion, 1);
+        for (let i = posicion; i < alquileres.length; i++) {
+            const alquiler = alquileres[i];
 
-            adopcion.id = adopcion.id - 1;
+            alquiler.id = alquiler.id - 1;
         }
-        memoria.MemSet("idAdopcion", --actualIdAdopcion);
-        ListarAdopcion();
+        memoria.MemSet("idAlquiler", --actualIdAlquiler);
+        ListarAlquiler();
     }
 
     document.getElementById('lista').value = 1;
 }
 
-function ModificarAdopcion() {
-    let posicion = BuscarPosicionAdopcion(document.getElementById('lista').value);
-    let id = document.getElementById('lista').value;
+function ModificarAlquiler() {
+    let posicion = BuscarPosicionAlquiler(document.getElementById('lista').value);
     let fecha = document.getElementById('fecha').value.trim();
-    let persona = document.getElementById("persona").value.trim();
-    let mascota = document.getElementById("mascota").value.trim();
+    let nombre = document.getElementById("nombre").value.trim();
+    let telefono = document.getElementById("telefono").value.trim();
+    let pelicula = document.getElementById("pelicula").value;
 
-    if(!fecha || !persona || !mascota) {
+    if(!fecha || !nombre || !telefono || !pelicula) {
         alert("Complete todos los campos");
         return;
     }
 
-    LimpiarCajasAdopcion();
-    adopciones.splice(posicion, 1, new Adopcion(id, fecha, personas[BuscarPosicion(persona)], mascotas[BuscarPosicionMascota(mascota)]));
+    alquileres[posicion].pelicula.alquilada = false;
+    peliculas[BuscarPosicion(pelicula)].alquilada = true;
+    LimpiarCajasAlquiler();
+    alquileres.splice(posicion, 1, new Alquiler(alquileres[posicion].id, fecha, nombre, telefono, pelicula));
 
+    ListarSelectPeliculas();
     ListarAdopcion();
 }
 
-function ListarAdopcion() {
+function ListarAlquiler() {
     let lista = document.getElementById('lista').options;
     lista.length = 0;
     
-    for (let objetoAdopcion of adopciones) {
-        let elemento = new Option(objetoAdopcion.id + " : " + objetoAdopcion.fecha + " : " + objetoAdopcion.persona.nombre + " " + objetoAdopcion.persona.apellido +" : " + objetoAdopcion.mascota.nombre, objetoAdopcion.id);
+    for (let objetoAlquiler of alquileres) {
+        console.log(objetoAlquiler);
+        let elemento = new Option(objetoAlquiler.id + " : " + objetoAlquiler.fecha + " : " + objetoAlquiler.nombre + " : " + objetoAlquiler.telefono +" : " + objetoAlquiler, objetoAlquiler.id);
         lista.add(elemento);
     }
-    memoria.MemSet(2, adopciones);
+    memoria.MemSet(1, alquileres);
 } 
 
-function SeleccionarAdopcion() {
+function SeleccionarAlquiler() {
     let id = document.getElementById('lista').value;
 
-    for (let objetoAdopcion of adopciones) {
-            if(objetoAdopcion.id == id) {                
-                document.getElementById('fecha').value    = objetoAdopcion.fecha;
-                document.getElementById('persona').value  = objetoAdopcion.persona.id;
-                document.getElementById('mascota').value  = objetoAdopcion.mascota.id;
+    for (let objetoAlquiler of alquileres) {
+            if(objetoAlquiler.id == id) {                
+                document.getElementById('fecha').value    = objetoAlquiler.fecha;
+                document.getElementById('nombre').value   = objetoAlquiler.nombre;
+                document.getElementById('telefono').value = objetoAlquiler.telefono;
+                document.getElementById('pelicula').value = objetoAlquiler.pelicula;
             }
     }
 }
 
-function LimpiarCajasAdopcion() {
+function LimpiarCajasAlquiler() {
     document.getElementById('fecha').value = "";
-    document.getElementById('persona').value = "";
-    document.getElementById('mascota').value = "";
+    document.getElementById('nombre').value = "";
+    document.getElementById('telefono').value = "";
+    document.getElementById('pelicula').value = "";
 }
 
-function BuscarPosicionAdopcion(id) {
-    for (let i = 0; i < adopciones.length; i++) {
-        const objetoAdopcion = adopciones[i];
-        if(objetoAdopcion.id == id) {
+function BuscarPosicionAlquiler(id) {
+    for (let i = 0; i < alquileres.length; i++) {
+        const objetoAlquiler = alquileres[i];
+        if(objetoAlquiler.id == id) {
             return i;
         }
     }
@@ -252,10 +285,12 @@ window.Eliminar = Eliminar;
 window.Listar = Listar;
 window.Seleccionar = Seleccionar;
 window.LimpiarCajas = LimpiarCajas;
+window.VistaPreviaImagen = VistaPreviaImagen;
 
-window.AgregarMascota = AgregarMascota;
-window.ModificarMascota = ModificarMascota;
-window.EliminarMascota = EliminarMascota;
-window.ListarMascota = ListarMascota;
-window.SeleccionarMascota = SeleccionarMascota;
-window.LimpiarCajasMascota = LimpiarCajasMascota;
+window.AgregarAlquiler = AgregarAlquiler;
+window.ModificarAlquiler = ModificarAlquiler;
+window.EliminarAlquiler = EliminarAlquiler;
+window.ListarAlquiler = ListarAlquiler;
+window.SeleccionarAlquiler = SeleccionarAlquiler;
+window.LimpiarCajasAlquiler = LimpiarCajasAlquiler;
+window.InicioAlquiler = InicioAlquiler;

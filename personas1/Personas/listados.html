@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listados</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script type="module" src="dominio/controladora.js"></script>
+</head>
+<body onload="InicioListados()">
+    <div class="contenedor">
+        <div class="titulo">
+            <h3>Listados de Adopciones</h3>
+            <a href="./index.html">Inicio</a>
+        </div>
+        <div class="adopciones-por-fecha">
+            <h5>Adopciones por Fecha</h5>
+            <label>Fecha: </label>
+            <input type="date" id="listado-fecha">
+            <input type="button" value="Listar" class="btn-agregar" onclick="AdopcionesXFecha()">
+            <div class="listado">
+                <select id="listado-adopcionesxfecha" size="6"></select>
+            </div>
+        </div>
+        <div class="mascotas-por-especie">
+            <h5>Mascotas por Especie</h5>
+            <label>Especie: </label>
+            <select id="listado-especie">
+                <option value="">Seleccione una especie</option>
+                <option value="Perro">Perro</option>
+                <option value="Gato">Gato</option>
+                <option value="Tortuga">Tortuga</option>
+                <option value="Hamster">Hamster</option>
+                <option value="Conejo">Conejo</option>
+                <option value="Loro">Loro</option>
+            </select>
+            <input type="button" value="Buscar" class="btn-agregar" onclick="MascotasPorEspecie()">
+            <div class="listado">
+                <select id="listado-mascotasxespecie" size="6"></select>
+            </div>
+        </div>
+        <div class="persona-con-mas-adopciones">
+            <h5>Persona con más adopciones</h5>
+            <input type="button" value="Listar" class="btn-agregar" onclick="PersonaConMasAdopciones()">
+            <input class="listado-texto" type="text" id="listado-personaMasAdopto" readonly>
+        </div>
+    </div>
+</body>
+</html>
