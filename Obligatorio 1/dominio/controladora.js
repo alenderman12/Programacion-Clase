@@ -32,14 +32,15 @@ function Agregar() {
     let director = document.getElementById("director").value.trim();
     let pais = document.getElementById("pais").value.trim();
     let precio = parseInt(document.getElementById('precio').value);
+    let copias = parseInt(document.getElementById('copias').value);
     let imagen = document.getElementById("imagen").value.trim();
 
-    if(!nombre || !genero || !director || !pais || !precio || !imagen) {
+    if(!nombre || !genero || !director || !pais || !precio || !copias || !imagen) {
         alert("Complete todos los campos");
         return;
     }
     
-    const unaPelicula = new Pelicula(actualIdPelicula, nombre, genero, director, pais, precio, imagen, false);
+    const unaPelicula = new Pelicula(actualIdPelicula, nombre, genero, director, pais, precio, copias, imagen, 0);
     if(BuscarPosicion(actualIdPelicula) != -1) {
         alert("Esta pelicula ya esta ingresada");
         return;
@@ -56,16 +57,25 @@ function Eliminar() {
     let id = document.getElementById('lista').value;
     let posicion = BuscarPosicion(id);
 
-    if(posicion != -1) {
-        peliculas.splice(posicion, 1);
-        for (let i = posicion; i < peliculas.length; i++) {
-            const pelicula = peliculas[i];
-
-            pelicula.id = pelicula.id - 1;
-        }
-        memoria.MemSet("idPelicula", --actualIdPelicula);
-        Listar();
+    if(posicion == -1) {
+        alert("Seleccione una pelicula");
     }
+
+    for(const alquiler of alquileres) {
+        if(alquiler.pelicula == id) {
+            alert("No se puede eliminar esta pelicula porque hay alquileres de esta");
+            return 0;
+        }
+    }
+
+    peliculas.splice(posicion, 1);
+    for (let i = posicion; i < peliculas.length; i++) {
+        const pelicula = peliculas[i];
+
+        pelicula.id = pelicula.id - 1;
+    }
+    memoria.MemSet("idPelicula", --actualIdPelicula);
+    Listar();
 
     document.getElementById('lista').value = 1;
 }
@@ -79,13 +89,18 @@ function Modificar() {
     let precio = parseInt(document.getElementById('precio').value);
     let imagen = document.getElementById("imagen").value.trim();
 
+    if(posicion == -1) {
+        alert("Seleccione la pelicula a modificar");
+        return;
+    }
+
     if(!nombre || !genero || !director || !pais || !precio || !imagen) {
         alert("Complete todos los campos");
         return;
     }
 
     LimpiarCajas();
-    peliculas.splice(posicion, 1, new Pelicula(peliculas[posicion].id, nombre, genero, director, pais, precio, peliculas[posicion].alquilada, imagen));
+    peliculas.splice(posicion, 1, new Pelicula(peliculas[posicion].id, nombre, genero, director, pais, precio, peliculas[posicion].copias, imagen, peliculas[posicion].ventas));
 
     Listar();
 }
@@ -96,7 +111,7 @@ function Listar() {
 
     for (let objetoPelicula of peliculas) {
         let elemento = new Option(objetoPelicula.id + " : " + objetoPelicula.nombre + " : " + objetoPelicula.genero + " : " + 
-            objetoPelicula.director + " : " + objetoPelicula.pais + " : " + "UYU$" + objetoPelicula.precio + " : " + (objetoPelicula.alquilada ? "Si" : "No"), objetoPelicula.id);
+            objetoPelicula.director + " : " + objetoPelicula.pais + " : " + "UYU$" + objetoPelicula.precio + " : " + (objetoPelicula.copias - objetoPelicula.ventas), objetoPelicula.id);
         lista.add(elemento);
     }
     memoria.MemSet(0, peliculas);
@@ -112,6 +127,7 @@ function Seleccionar() {
                 document.getElementById('director').value        = objetoPelicula.director;
                 document.getElementById('pais').value            = objetoPelicula.pais;
                 document.getElementById('precio').value          = objetoPelicula.precio;
+                document.getElementById('copias').value          = objetoPelicula.copias;
                 document.getElementById('imagen').value          = objetoPelicula.imagen;
                 document.getElementById('imagenVistaPrevia').src = objetoPelicula.imagen;
             }
@@ -124,6 +140,7 @@ function LimpiarCajas() {
     document.getElementById('director').value = "";
     document.getElementById('pais').value = "";
     document.getElementById('precio').value = "";
+    document.getElementById('copias').value = "";
     document.getElementById('imagen').value = "";
     document.getElementById('imagenVistaPrevia').src = "";
     document.getElementById('lista').value = 0;
@@ -147,7 +164,7 @@ function VistaPreviaImagen() {
 
 //#endregion
 
-//#region Metodos Adopcion
+//#region Metodos Alquiler
 
 function InicioAlquiler() {
     ListarSelectPeliculas()
@@ -157,11 +174,12 @@ function InicioAlquiler() {
 function ListarSelectPeliculas() {
     let selectPelicula = document.getElementById("pelicula");
     if(selectPelicula.innerHTML != null)
-        selectPelicula.innerHTML = "";
+        selectPelicula.innerHTML = '<option value="0" disabled selected>Seleccione una pelicula</option>';
 
     for (let pelicula of peliculas) {
-        if(!pelicula.alquilada)
-            selectPelicula.innerHTML += `<option value="${pelicula.id}">${pelicula.nombre}</option>`;
+        if(pelicula.ventas < pelicula.copias){
+            selectPelicula.innerHTML += `<option value="${pelicula.id}">${pelicula.nombre} - UYU$${pelicula.precio}</option>`;
+        }
     }
 }
 
@@ -169,27 +187,29 @@ function AgregarAlquiler() {
     let fecha = document.getElementById('fecha').value.trim();
     let nombre = document.getElementById("nombre").value.trim();
     let telefono = document.getElementById("telefono").value.trim();
-    let pelicula = document.getElementById("pelicula").value;
+    let peliculaId = parseInt(document.getElementById("pelicula").value);
+    let peliculaPosicion = BuscarPosicion(peliculaId);
 
-    if(!fecha || !nombre || !telefono || !pelicula) {
+    if(!fecha || !nombre || !telefono || !peliculaId) {
         alert("Complete todos los campos");
         return;
     }
-    pelicula = BuscarPosicion(pelicula);
-    if (pelicula == -1) {
+
+    if (peliculaPosicion == -1) {
         alert("Esa pelicula no existe");
     }
 
-    const unAlquiler = new Alquiler(actualIdAlquiler, fecha, nombre, telefono, pelicula);
+    const unAlquiler = new Alquiler(actualIdAlquiler, fecha, nombre, telefono, peliculaId);
     if(BuscarPosicionAlquiler(actualIdAlquiler) != -1) {
         alert("Este alquiler ya existe");
         return;
     }
-    peliculas[pelicula].alquilada = true;
+    peliculas[peliculaPosicion].ventas++;
     alquileres.push(unAlquiler);
     actualIdAlquiler++;
     memoria.MemSet("idAlquiler", actualIdAlquiler);
     memoria.MemSet(1, alquileres);
+    memoria.MemSet(0, peliculas);
     ListarAlquiler();
     ListarSelectPeliculas();
     LimpiarCajasAlquiler();
@@ -198,9 +218,10 @@ function AgregarAlquiler() {
 function EliminarAlquiler() {
     let id = document.getElementById('lista').value;
     let posicion = BuscarPosicionAlquiler(id);
+    let posicionPelicula = BuscarPosicion(alquileres[posicion].pelicula);
 
     if(posicion != -1) {
-        alquileres[posicion].pelicula.alquilada = false;
+        peliculas[posicionPelicula].ventas--;
         alquileres.splice(posicion, 1);
         for (let i = posicion; i < alquileres.length; i++) {
             const alquiler = alquileres[i];
@@ -210,7 +231,9 @@ function EliminarAlquiler() {
         memoria.MemSet("idAlquiler", --actualIdAlquiler);
         ListarAlquiler();
     }
-
+    
+    memoria.MemSet(0, peliculas);
+    ListarSelectPeliculas();
     document.getElementById('lista').value = 1;
 }
 
@@ -219,20 +242,22 @@ function ModificarAlquiler() {
     let fecha = document.getElementById('fecha').value.trim();
     let nombre = document.getElementById("nombre").value.trim();
     let telefono = document.getElementById("telefono").value.trim();
-    let pelicula = document.getElementById("pelicula").value;
+    let peliculaNueva = document.getElementById("pelicula").value;
+    let peliculaAnterior = alquileres[posicion].pelicula;
 
-    if(!fecha || !nombre || !telefono || !pelicula) {
+    if(!fecha || !nombre || !telefono || !peliculaNueva) {
         alert("Complete todos los campos");
         return;
     }
 
-    alquileres[posicion].pelicula.alquilada = false;
-    peliculas[BuscarPosicion(pelicula)].alquilada = true;
+    peliculas[BuscarPosicion(peliculaNueva)].ventas++;
+    peliculas[BuscarPosicion(peliculaAnterior)].ventas--;
     LimpiarCajasAlquiler();
-    alquileres.splice(posicion, 1, new Alquiler(alquileres[posicion].id, fecha, nombre, telefono, pelicula));
+    alquileres.splice(posicion, 1, new Alquiler(alquileres[posicion].id, fecha, nombre, telefono, peliculaNueva));
 
+    memoria.MemSet(0, peliculas);
     ListarSelectPeliculas();
-    ListarAdopcion();
+    ListarAlquiler();
 }
 
 function ListarAlquiler() {
@@ -240,8 +265,7 @@ function ListarAlquiler() {
     lista.length = 0;
     
     for (let objetoAlquiler of alquileres) {
-        console.log(objetoAlquiler);
-        let elemento = new Option(objetoAlquiler.id + " : " + objetoAlquiler.fecha + " : " + objetoAlquiler.nombre + " : " + objetoAlquiler.telefono +" : " + objetoAlquiler, objetoAlquiler.id);
+        let elemento = new Option(objetoAlquiler.id + " : " + objetoAlquiler.fecha + " : " + objetoAlquiler.nombre + " : " + objetoAlquiler.telefono +" : " + peliculas[BuscarPosicion(objetoAlquiler.pelicula)].nombre, objetoAlquiler.id);
         lista.add(elemento);
     }
     memoria.MemSet(1, alquileres);
@@ -265,6 +289,7 @@ function LimpiarCajasAlquiler() {
     document.getElementById('nombre').value = "";
     document.getElementById('telefono').value = "";
     document.getElementById('pelicula').value = "";
+    document.getElementById('lista').value = 0;
 }
 
 function BuscarPosicionAlquiler(id) {
@@ -277,6 +302,50 @@ function BuscarPosicionAlquiler(id) {
     return -1;
 }
 
+//#endregion
+
+//#region Metodos Estadisticas
+function ListarEstadisticas() {
+    ListarRecaudacion();
+    ListarMasVendidas();
+}
+
+function ListarRecaudacion() {
+    let recaudacion = 0;
+    for(const alquiler of alquileres) {
+        recaudacion += parseInt(peliculas[BuscarPosicion(alquiler.pelicula)].precio);
+    }
+
+    document.getElementById("plata-recaudada").value = recaudacion;
+}
+function ListarMasVendidas() {
+    let lista = document.getElementById("lista-mas-alquiladas");
+    let ventaMasAlta = 0;
+
+    for(const objetoPelicula of peliculas) { 
+        let elemento = new Option(`${objetoPelicula.nombre} (alquilada ${objetoPelicula.ventas} ${objetoPelicula.ventas == 1 ? 'vez' : 'veces'})`, objetoPelicula.id);
+        if(objetoPelicula.ventas > ventaMasAlta) {
+            lista.innerHTML = "";
+            ventaMasAlta = objetoPelicula.ventas;        
+            lista.options.add(elemento);
+        }
+        else if(objetoPelicula.ventas == ventaMasAlta) {
+            lista.options.add(elemento);
+        }
+    }
+}
+function ListarPorGenero() {    
+    let lista = document.getElementById("lista-genero");
+    let genero = document.getElementById("genero").value;
+    lista.innerHTML = "";
+
+    for (let objetoPelicula of peliculas) {
+        if(objetoPelicula.genero == genero) {
+            let elemento = new Option(objetoPelicula.nombre, objetoPelicula.id);
+            lista.options.add(elemento);
+        }
+    }
+}
 //#endregion
 
 window.Agregar = Agregar;
@@ -294,3 +363,6 @@ window.ListarAlquiler = ListarAlquiler;
 window.SeleccionarAlquiler = SeleccionarAlquiler;
 window.LimpiarCajasAlquiler = LimpiarCajasAlquiler;
 window.InicioAlquiler = InicioAlquiler;
+
+window.ListarEstadisticas = ListarEstadisticas;
+window.ListarPorGenero = ListarPorGenero;
