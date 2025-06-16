@@ -178,7 +178,7 @@ function ListarSelectPeliculas() {
 
     for (let pelicula of peliculas) {
         if(pelicula.ventas < pelicula.copias){
-            selectPelicula.innerHTML += `<option value="${pelicula.id}">${pelicula.nombre} - UYU$${pelicula.precio}</option>`;
+            selectPelicula.innerHTML += `<option value="${pelicula.id}">${pelicula.nombre} - UYU$${pelicula.precio} - Restantes: ${pelicula.copias - pelicula.ventas}</option>`;
         }
     }
 }
@@ -276,10 +276,11 @@ function SeleccionarAlquiler() {
 
     for (let objetoAlquiler of alquileres) {
             if(objetoAlquiler.id == id) {                
-                document.getElementById('fecha').value    = objetoAlquiler.fecha;
-                document.getElementById('nombre').value   = objetoAlquiler.nombre;
-                document.getElementById('telefono').value = objetoAlquiler.telefono;
-                document.getElementById('pelicula').value = objetoAlquiler.pelicula;
+                document.getElementById('fecha').value           = objetoAlquiler.fecha;
+                document.getElementById('nombre').value          = objetoAlquiler.nombre;
+                document.getElementById('telefono').value        = objetoAlquiler.telefono;
+                document.getElementById('pelicula').value        = objetoAlquiler.pelicula;
+                document.getElementById('imagenVistaPrevia').src = peliculas[(BuscarPosicion(objetoAlquiler.pelicula))].imagen;
             }
     }
 }
@@ -335,14 +336,14 @@ function ListarMasVendidas() {
     }
 }
 function ListarPorGenero() {    
-    let lista = document.getElementById("lista-genero");
+    let lista = document.getElementById("lista-genero").options;
     let genero = document.getElementById("genero").value;
-    lista.innerHTML = "";
+    lista.length = 0;
 
     for (let objetoPelicula of peliculas) {
         if(objetoPelicula.genero == genero) {
             let elemento = new Option(objetoPelicula.nombre, objetoPelicula.id);
-            lista.options.add(elemento);
+            lista.add(elemento);
         }
     }
 }
