@@ -290,6 +290,7 @@ function LimpiarCajasAlquiler() {
     document.getElementById('nombre').value = "";
     document.getElementById('telefono').value = "";
     document.getElementById('pelicula').value = "";
+    document.getElementById('imagenVistaPrevia').src = "";
     document.getElementById('lista').value = 0;
 }
 
