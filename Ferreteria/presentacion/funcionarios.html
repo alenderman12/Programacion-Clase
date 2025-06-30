@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferretería</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <script type="module" src="../dominio/controladora.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</head>
+<body onload="InicioFuncionario()">
+    <header>
+        <div class="row text-center">
+            <div class="col-sm-12">
+                <h2>ABM Funcionarios</h2>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-sm-12">
+                <div class="btn-group">
+                    <a href="../index.html" class="btn btn-secondary">Inicio</a>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <div class="mb-3">
+                <label for="funcionario-codigo">Código</label>
+                <input type="text" id="funcionario-codigo" class="form-control text-center" placeholder="Ingrese el código" disabled>
+            </div>
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <div class="mb-3">
+                <label for="funcionario-nombre">Nombre</label>
+                <input type="text" id="funcionario-nombre" class="form-control" placeholder="Ingrese el nombre">
+            </div>
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <div class="mb-3">
+                <label for="funcionario-rol">Rol: </label>
+                <select class="form-select" id="funcionario-rol">
+                    <option value="">Seleccione un Rol</option>
+                    <option value="ADM">Administrador</option>
+                    <option value="GER">Gerente</option>
+                    <option value="VEN">Vendedor</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+    <div class="row text-center">
+        <div class="col-sm-12">
+            <input type="button" value="Agregar" class="btn btn-primary" onclick="AgregarFuncionario()">
+            <input type="button" value="Modificar" class="btn btn-warning" onclick="ModificarFuncionario()">
+            <input type="button" value="Eliminar" class="btn btn-danger" onclick="EliminarFuncionario()">
+            <input type="button" value="Limpiar" class="btn btn-info" onclick="LimpiarCajasFuncionario()">
+        </div>
+    </div>
+    <br>
+    <div class="row text-center">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            <div class="mb-3">
+                <select class="form-select" id="funcionario-lista" size="8" onchange="SeleccionarFuncionario()"></select>
+            </div>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+
+    <!-- <div class="botones">
+        <input type="button" value="Agregar" class="btn-agregar" onclick="AgregarFuncionario()">
+        <input type="button" value="Modificar" class="btn-modificar" onclick="ModificarFuncionario()">
+        <input type="button" value="Eliminar" class="btn-eliminar" onclick="EliminarFuncionario()">
+        <input type="button" value="Limpiar" class="btn-limpiar" onclick="LimpiarCajasFuncionario()">
+    </div>
+    <div class="listado">
+        <select id="funcionario-lista" size="8" onchange="SeleccionarFuncionario()"></select>
+    </div> -->
+</body>
+</html>

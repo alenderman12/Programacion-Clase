@@ -1,7 +1,6 @@
 export class Categoria {
-     
-    constructor(pId, pNombre) {
-        this.id = pId;
+    constructor(pCodigo, pNombre){
+        this.codigo = pCodigo;
         this.nombre = pNombre;
     }
 }

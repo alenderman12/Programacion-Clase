@@ -1,7 +1,6 @@
-export class Funcionario {
-     
-    constructor(pId, pNombre, pRol) {
-        this.id = pId;
+export class Funcionario{
+    constructor(pCodigo, pNombre, pRol){
+        this.codigo = pCodigo;
         this.nombre = pNombre;
         this.rol = pRol;
     }

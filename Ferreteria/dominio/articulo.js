@@ -1,11 +1,12 @@
 export class Articulo {
-     
-    constructor(id, fecha, nombre, telefono, pelicula) {
-        this.id = id;
-        this.fecha = fecha;
-        this.nombre = nombre;
-        this.telefono = telefono;
-        this.pelicula = pelicula;
+    constructor(pCodigo, pNombre, pDescripcion, pMarca, pCategoria, pStock, pPrecio, pImagen){
+        this.codigo = pCodigo;
+        this.nombre = pNombre;
+        this.descripcion = pDescripcion;
+        this.marca = pMarca;
+        this.categoria = pCategoria;
+        this.stock = pStock;
+        this.precio = pPrecio;
+        this.imagen = pImagen;
     }
-
 }

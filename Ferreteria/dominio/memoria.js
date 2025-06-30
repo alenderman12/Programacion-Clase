@@ -1,16 +1,13 @@
 export class Memoria {
     constructor(){}
-
-    MemSet(clave, valor) {
-        localStorage.setItem(clave, JSON.stringify(valor));
-    }
-
-    MemGet(clave) {
+    leer(clave){
         const datos = localStorage.getItem(clave);
-
-        if(datos) {
+        if (datos) {
             return JSON.parse(datos);
         }
         return null;
+    }
+    escribir(clave, dato){
+        localStorage.setItem(clave, JSON.stringify(dato));
     }
 }

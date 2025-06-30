@@ -1,13 +1,11 @@
-export class Venta {
-     
-    constructor(pId, pFecha, pCliente, pFuncionario, pArticulo, pCantidad, pImporte) {
-        this.id = pId;
+export class Venta{
+    constructor(pCodigo, pFecha, pArticulo, pCantidad, pImporte, pCliente, pFuncionario){
+        this.codigo = pCodigo;
         this.fecha = pFecha;
-        this.cliente = pCliente;
-        this.funcionario = pFuncionario;
         this.articulo = pArticulo;
         this.cantidad = pCantidad;
         this.importe = pImporte;
+        this.cliente = pCliente;
+        this.funcionario = pFuncionario;
     }
-
 }

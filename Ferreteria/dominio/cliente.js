@@ -1,10 +1,9 @@
-export class Cliente {
-     
-    constructor(pId, pNombre, pDireccion, pTelefono, pEmail) {
-        this.id = pId;
+export class Cliente{
+    constructor(pCodigo, pNombre, pTelefono, pEmail, pDireccion){
+        this.codigo = pCodigo;
         this.nombre = pNombre;
-        this.direccion = pDireccion;
         this.telefono = pTelefono;
         this.email = pEmail;
+        this.direccion = pDireccion;
     }
 }

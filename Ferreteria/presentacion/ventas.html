@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferretería</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <script type="module" src="../dominio/controladora.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</head>
+<body onload="InicioVenta()">
+    <header>
+        <div class="row text-center">
+            <div class="col-sm-12">
+                <h2>ABM Ventas</h2>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-sm-12">
+                <div class="btn-group">
+                    <a href="../index.html" class="btn btn-secondary">Inicio</a>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <div class="mb-3">
+                <label for="venta-codigo">Código</label>
+                <input type="text" id="venta-codigo" class="form-control text-center" placeholder="Ingrese el código" disabled>
+            </div>
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <div class="mb-3">
+                <label for="venta-fecha">Fecha</label>
+                <input type="date" id="venta-fecha" class="form-control text-center">
+            </div>
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <div class="mb-3">
+                <label for="venta-cliente">Cliente</label>
+                <select class="form-select" id="venta-cliente"></select>
+            </div>
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <div class="mb-3">
+                <label for="venta-funcionario">Funcionario</label>
+                <select class="form-select" id="venta-funcionario"></select>
+            </div>
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <div class="mb-3">
+                <label for="venta-categoria">Categoría</label>
+                <select class="form-select" id="venta-categoria" onchange="CargarArticulosVenta()"></select>
+            </div>
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <div class="mb-3">
+                <label for="venta-articulo">Artículo</label>
+                <select class="form-select" id="venta-articulo" onchange="CargarImagenVenta()"></select>
+            </div>
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <div class="mb-3">
+                <label id="venta-etiqueta-muestra" for="venta-imagen-muestra"></label>
+                <img src="" id="venta-imagen-muestra" class="img-thumbnail img-mini">
+            </div>
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <div class="mb-3">
+                <label for="venta-cantidad">Cantidad</label>
+                <input type="number" id="venta-cantidad" class="form-control text-center" onchange="CargarImporteVenta()" placeholder="Ingrese la cantidad">
+            </div>
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <div class="mb-3">
+                <label for="venta-importe">Importe</label>
+                <input type="number" id="venta-importe" class="form-control text-center" placeholder="Ingrese el importe">
+            </div>
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+
+    <div class="row text-center">
+        <div class="col-sm-12">
+            <input type="button" value="Agregar" class="btn btn-primary" onclick="AgregarVenta()">
+            <input type="button" value="Modificar" class="btn btn-warning" onclick="ModificarVenta()">
+            <input type="button" value="Eliminar" class="btn btn-danger" onclick="EliminarVenta()">
+            <input type="button" value="Limpiar" class="btn btn-info" onclick="LimpiarCajasVenta()">
+        </div>
+    </div>
+    <br>
+    <div class="row text-center">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            <div class="mb-3">
+                <select class="form-select" id="venta-lista" size="8" onchange="SeleccionarVenta()"></select>
+            </div>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+</body>
+</html>
