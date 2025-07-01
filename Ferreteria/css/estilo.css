@@ -75,10 +75,18 @@ th {
 }
 
 .logo img {
+<<<<<<< Updated upstream
     height: 300px;
 }
 .img-mini {
     width: 80px !important;
+=======
+    height: 600px;
+}
+.img-mini {
+    width: 80px !important;
+    margin-top: 10px;
+>>>>>>> Stashed changes
 }
 
 ul {

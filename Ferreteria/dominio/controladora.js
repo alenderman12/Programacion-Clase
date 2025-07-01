@@ -492,7 +492,11 @@ function AgregarArticulo() {
     let codCategoria = document.getElementById('articulo-categoria').value;
     let imagen = document.getElementById('articulo-imagen').value;
 
+<<<<<<< Updated upstream
     if(!codigo || !nombre || !descripcion || !marca || !stock || !precio || !codCategoria || !imagen){
+=======
+    if(!codigo || !nombre || !descripcion || !marca || !stock || !precio || !codCategoria){
+>>>>>>> Stashed changes
         alert("Debe ingresar todos los campos!");
         return;
     }
@@ -519,7 +523,11 @@ function ModificarArticulo(){
     let codCategoria = document.getElementById('articulo-categoria').value;
     let imagen = document.getElementById('articulo-imagen').value;
 
+<<<<<<< Updated upstream
     if(!codigo || !nombre || !descripcion || !marca || !stock || !precio || !codCategoria || !imagen){
+=======
+    if(!codigo || !nombre || !descripcion || !marca || !stock || !precio || !codCategoria){
+>>>>>>> Stashed changes
         alert("Debe ingresar todos los campos!");
         return;
     }
@@ -679,12 +687,43 @@ function InicioVenta(){
     CargarCategoriasVenta();    
     CargarClientesVenta();
     CargarFuncionariosVenta();
+<<<<<<< Updated upstream
 }
 
 function LimpiarCajasVenta(){
     const LaMemoria = new Memoria();
     document.getElementById('venta-codigo').value = LaMemoria.leer('venta-codigo');
     document.getElementById('venta-fecha').value = "";
+=======
+
+    let pCodArticulo = new URLSearchParams(window.location.search).get('articulo');
+    
+    if(pCodArticulo){
+        const pArt = BuscarArticulo(pCodArticulo);
+        document.getElementById('venta-categoria').value = pArt.categoria.codigo;
+        CargarArticulosVenta();
+        document.getElementById('venta-articulo').value = pArt.codigo;
+        CargarImagenVenta();
+    }
+    
+}
+
+function LimpiarCajasVenta(){
+    let hoy = new Date();
+    console.log("HOY", hoy);
+    
+    let anio = hoy.getFullYear();
+    let mes = ""+(hoy.getMonth()+1);
+    mes = (mes.length == 1)?"0"+mes:mes;
+    let dia = hoy.getDate();
+    
+    let fecha = anio + "-" + mes + "-" + dia;
+    console.log("FECHA", fecha);
+
+    const LaMemoria = new Memoria();
+    document.getElementById('venta-codigo').value = LaMemoria.leer('venta-codigo');
+    document.getElementById('venta-fecha').value = fecha;
+>>>>>>> Stashed changes
     document.getElementById('venta-cliente').value = "";
     document.getElementById('venta-funcionario').value = "";
     document.getElementById('venta-articulo').value = "";
@@ -842,7 +881,15 @@ function CargarCategoriasVenta(){
         let elemento = new Option(objCat.nombre, objCat.codigo);
         lista.add(elemento);
     }
+<<<<<<< Updated upstream
     // CargarArticulosVenta();
+=======
+    let listaArt = document.getElementById('venta-articulo').options;
+    listaArt.length = 0;
+
+    let inicialArt = new Option("Seleccione un articulo","");
+    lista.add(inicialArt);
+>>>>>>> Stashed changes
 }
 
 function CargarClientesVenta(){
@@ -886,6 +933,10 @@ function CargarArticulosVenta(){
             lista.add(elemento);
         }
     }
+<<<<<<< Updated upstream
+=======
+    CargarImagenVenta();
+>>>>>>> Stashed changes
 }
 
 function CargarImagenVenta(){
@@ -895,6 +946,7 @@ function CargarImagenVenta(){
         const unArticulo = BuscarArticulo(codArticulo);
         
         let imagen = unArticulo.imagen;
+<<<<<<< Updated upstream
 
         if(imagen != ""){
             document.getElementById('venta-imagen-muestra').src = imagen;
@@ -909,6 +961,29 @@ function CargarImagenVenta(){
         document.getElementById('venta-imagen-muestra').src = "";
         document.getElementById('venta-imagen-muestra').style.display = "none";
         document.getElementById('venta-etiqueta-muestra').style.display = "none";
+=======
+        let precio = unArticulo.marca + "<br>Precio: $ " + unArticulo.precio;
+
+        if(imagen != ""){
+            document.getElementById('venta-imagen-muestra').src = imagen;
+            document.getElementById('venta-muestra-precio').innerHTML = precio;
+            document.getElementById('venta-imagen-muestra').style.display = "block";
+            document.getElementById('venta-muestra-marca').style.display = "block";
+            document.getElementById('venta-muestra-precio').style.display = "block";
+        }else{
+            document.getElementById('venta-imagen-muestra').src = "https://www.losprincipios.org/images/default.jpg";
+            document.getElementById('venta-muestra-precio').innerHTML = precio;
+            document.getElementById('venta-imagen-muestra').style.display = "block";
+            document.getElementById('venta-muestra-marca').style.display = "block";
+            document.getElementById('venta-muestra-precio').style.display = "block";
+        }
+    }else{
+        document.getElementById('venta-imagen-muestra').src = "";
+        document.getElementById('venta-muestra-precio').innerHTML = "";
+        document.getElementById('venta-imagen-muestra').style.display = "none";
+        document.getElementById('venta-muestra-marca').style.display = "none";
+        document.getElementById('venta-muestra-precio').style.display = "none";
+>>>>>>> Stashed changes
     }
 }
 
@@ -942,13 +1017,21 @@ function InicioCatalogo(){
     categorias = LaMemoria.leer('categorias');
     articulos = LaMemoria.leer('articulos');
     CargarCategoriasCatalogo();
+<<<<<<< Updated upstream
+=======
+    CargarArticulosCatalogo();
+>>>>>>> Stashed changes
 }
 
 function CargarCategoriasCatalogo(){
     let lista = document.getElementById('catalogo-categoria').options;
     lista.length = 0;
 
+<<<<<<< Updated upstream
     let inicial = new Option("Seleccione una categoría","");
+=======
+    let inicial = new Option("Todas las categorías","");
+>>>>>>> Stashed changes
         lista.add(inicial);
 
     for (const objCat of categorias) {
@@ -963,7 +1046,11 @@ function CargarArticulosCatalogo(){
     for (const objArt of articulos) {
         if(codCategoria){
             if(codCategoria == objArt.categoria.codigo){
+<<<<<<< Updated upstream
                 lista+= `<li><div class="card" style="width: 10rem;">
+=======
+                lista+= `<li><div class="card" style="width: 15rem; align-items: center;">
+>>>>>>> Stashed changes
                         <img src="${objArt.imagen}" class="img-mini">
                         <div class="card-body">
                             <h6 class="card-title">${objArt.nombre}</h6>
@@ -971,15 +1058,39 @@ function CargarArticulosCatalogo(){
                         </div>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">${objArt.descripcion}</li>
+<<<<<<< Updated upstream
                             <li class="list-group-item">$ ${objArt.precio}</li>
                         </ul>
                         <div class="card-body">
                             <a href="#" class="card-link">Comprar</a>
+=======
+                            <li class="list-group-item"><strong>$ ${objArt.precio}</strong></li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="./ventas.html?articulo=${objArt.codigo}" class="btn btn-warning">Comprar</a>
+>>>>>>> Stashed changes
                         </div>
                         </div></li>`;
             }
         }else{
+<<<<<<< Updated upstream
             lista+= `<li>${objArt.nombre}</li>`;
+=======
+            lista+= `<li><div class="card" style="width: 15rem;  align-items: center;">
+                    <img src="${objArt.imagen}" class="img-mini">
+                    <div class="card-body">
+                        <h6 class="card-title">${objArt.nombre}</h6>
+                        <p class="card-text">${objArt.marca}</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">${objArt.descripcion}</li>
+                        <li class="list-group-item"><strong>$ ${objArt.precio}</strong></li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="./ventas.html?articulo=${objArt.codigo}" class="btn btn-warning">Comprar</a>
+                    </div>
+                    </div></li>`;
+>>>>>>> Stashed changes
         }
     }
     document.getElementById('catalogo-lista').innerHTML = lista;
@@ -988,4 +1099,71 @@ function CargarArticulosCatalogo(){
 window.InicioCatalogo = InicioCatalogo;
 window.CargarArticulosCatalogo = CargarArticulosCatalogo;
 
+<<<<<<< Updated upstream
 //#endregion
+=======
+//#endregion
+
+//region Metodos de Estadisticas
+
+function InicioEstadistica() {
+    const LaMemoria = new Memoria();
+    categorias = LaMemoria.leer('categorias');
+    articulos = LaMemoria.leer('articulos');
+    clientes = LaMemoria.leer('clientes');
+    ventas = LaMemoria.leer('ventas');
+}
+
+function EstadisticaBuscarCliente() {
+    let cliente = document.getElementById('est-cliente-nombre').value.toLowerCase();
+    let codigoCliente;
+    for (const objCliente of clientes) {
+        if (objCliente.nombre.toLowerCase().includes(cliente)) {
+            document.getElementById('est-cliente-encontrado').value = objCliente.codigo + " : " + objCliente.nombre;
+            codigoCliente = objCliente.codigo;
+        }
+    }
+
+    let lista = document.getElementById('est-ventas-cliente').options;
+    lista.length = 0;
+    if(codigoCliente) {
+        for(const objVenta of ventas) {
+            if(objVenta.cliente.codigo == codigoCliente) {
+                let venta = `${objVenta.fecha} : ${objVenta.articulo.nombre} - $ ${objVenta.importe}`;
+                let linea = new Option(venta);
+                lista.add(linea);
+            }
+        }
+        if(lista.length == 0) {
+            let vacio = new Option("El cliente no tiene ventas");
+            lista.add(vacio);
+        }
+    }
+    else {
+        alert("Cliente no encontrado");
+        }
+    }
+
+    function EstadisticaVentasPorFecha() {
+        let desde = document.getElementById('est-venta-fecha-desde').value;
+        let hasta = document.getElementById('est-venta-fecha-hasta').value;
+
+        let lista = document.getElementById('est-ventas-por-fecha').options;
+        lista.length - 0;
+        for(const objVenta of ventas) {
+            if(objVenta.fecha >= desde && objVenta.fecha <= hasta) {
+                let venta = `${objVenta.fecha} : ${objVenta.articulo.nombre} - $ ${objVenta.importe}`;
+                let linea = new Option(venta);
+                lista.add(linea);
+            }
+        }
+    }
+
+    
+
+    window.InicioEstadistica = InicioEstadistica;
+    window.EstadisticaBuscarCliente = EstadisticaBuscarCliente;
+    window.EstadisticaVentasPorFecha = EstadisticaVentasPorFecha;
+
+    //#endregion
+>>>>>>> Stashed changes
