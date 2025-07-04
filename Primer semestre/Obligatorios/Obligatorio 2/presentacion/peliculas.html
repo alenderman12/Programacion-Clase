@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso de Peliculas</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <script type="module" src="../dominio/controladora.js"></script>
+</head>
+<header>
+    <a href="../index.html"><img src="https://play-lh.googleusercontent.com/bTiNiKvbQAbUwOqXHK8wbDGhVzoBO6KoKYqYqA0zMS6H0ofBdI_UqARUIR0T5ZF5xQ" alt="logo" id="logo"></a>
+</header>
+<body onload="Listar()">
+    <center>
+        <div class="contenedor">
+            <div class="campos">
+                <label>Nombre</label>
+                <input type="text" id="nombre">
+                <label>Género</label>
+                <select id="genero">
+                    <option value="Drama">Drama</option>
+                    <option value="Terror">Terror</option>
+                    <option value="Fantasia">Fantasia</option>
+                    <option value="Ciencia Ficcion">Ciencia Ficcion</option>
+                    <option value="Comedia">Comedia</option>
+                    <option value="Accion">Accion</option>
+                    <option value="Suspenso">Suspenso</option>
+                </select>
+                <label>Director</label>
+                <input type="text" id="director">
+                <label>País</label>
+                <input type="text" id="pais">
+                <label>Precio</label>
+                <input type="text" id="precio">
+                <label>Copias totales</label>
+                <span>(No se puede modificar una vez ingresado)</span>
+                <input type="text" id="copias">
+                <label>Imagen</label>
+                <input type="text" id="imagen">
+                <input type="button" class="btn" id="btn-vista-previa" value="Vista previa" onclick="VistaPreviaImagen()">
+                <img id="imagenVistaPrevia" src="" alt="Vista Previa">
+            </div>
+            <div class="botones">
+                <input class="btn" id="btn-agregar" type="button" value="Agregar" onclick="Agregar()">
+                <input class="btn" id="btn-modificar" type="button" value="Modificar" onclick="Modificar()">
+                <input class="btn" id="btn-eliminar" type="button" value="Eliminar" onclick="Eliminar()">
+                <input class="btn" id="btn-limpiar" type="button" value="LimpiarCajas" onclick="LimpiarCajas()">
+            </div>
+            <div class="listado ">
+                <select id="lista" size="8" onchange="Seleccionar()"></select>
+            </div>
+        </div>
+    </center>
+</body>
+</html>

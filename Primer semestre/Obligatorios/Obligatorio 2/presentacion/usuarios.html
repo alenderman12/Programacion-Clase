@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alquiler</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <script type="module" src="../dominio/controladora.js"></script>
+</head>
+<header>
+    <a href="../index.html"><img src="https://play-lh.googleusercontent.com/bTiNiKvbQAbUwOqXHK8wbDGhVzoBO6KoKYqYqA0zMS6H0ofBdI_UqARUIR0T5ZF5xQ" alt="logo" id="logo"></a>
+</header>
+<body onload="ListarUsuarios()">
+    <center>
+        <div class="contenedor">
+            <div class="campos">
+                <label>Nombre de usuario</label>
+                <input type="text" id="nombre-usuario">
+                <label>Contraseña</label>
+                <input type="password" id="contrasena">
+            </div>
+            <div class="botones">
+                <input class="btn" id="btn-agregar" type="button" value="Agregar" onclick="AgregarUsuario()">
+                <input class="btn" id="btn-modificar" type="button" value="Modificar" onclick="ModificarUsuario()">
+                <input class="btn" id="btn-eliminar" type="button" value="Eliminar" onclick="EliminarUsuario()">
+                <input class="btn" id="btn-limpiar" type="button" value="LimpiarCajas" onclick="LimpiarCajasUsuario()">
+            </div>
+            <div class="listado">
+                <select id="lista" size="8" onchange="SeleccionarUsuario()"></select>
+            </div>
+        </div>
+    </center>
+</body>
+</html>
