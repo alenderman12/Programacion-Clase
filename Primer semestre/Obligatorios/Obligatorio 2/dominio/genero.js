@@ -1,4 +1,4 @@
-class Genero {
+export class Genero {
     constructor(pId, pNombre) {
         this.id = pId;
         this.nombre = pNombre;

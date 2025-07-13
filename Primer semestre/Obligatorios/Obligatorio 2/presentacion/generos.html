@@ -1,52 +1,40 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Datos</title>
+    <title>Usuarios</title>
     <link rel="stylesheet" href="../css/estilos.css">
     <script type="module" src="../dominio/controladora.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
 </head>
-<body>
+<body onload="ListarGeneros()">
     <header class="row">
         <a class="col-sm-2" href="../index.html"><img src="https://play-lh.googleusercontent.com/bTiNiKvbQAbUwOqXHK8wbDGhVzoBO6KoKYqYqA0zMS6H0ofBdI_UqARUIR0T5ZF5xQ" alt="logo" id="logo"></a>
-        <a class="col-sm-1 btn btn-lg btn-outline-primary m-3" href="./usuarios.html">Usuarios</a>
+        <a class="col-sm-1 btn btn-lg btn-outline-primary m-3" href="usuarios.html">Usuarios</a>
         <a class="col-sm-1 btn btn-lg btn-outline-primary m-3" href="./generos.html">Generos</a>
         <a class="col-sm-1 btn btn-lg btn-outline-primary m-3" href="./clientes.html">Clientes</a>
         <a class="col-sm-1 btn btn-lg btn-outline-primary m-3" href="./peliculas.html">Ingreso de Peliculas</a>
-        <a class="col-sm-1 btn btn-lg btn-outline-primary m-3" href="estadisticas.html">Estadisticas</a>
+        <a class="col-sm-1 btn btn-lg btn-outline-primary m-3" href="./estadisticas.html">Estadisticas</a>
         <a class="col-sm-1 btn btn-lg btn-outline-primary m-3" href="./alquiler.html">Alquiler</a>
     </header>
     <center>
-        <h1>Estadisticas</h1>
         <div class="contenedor">
-            <h2>Plata recaudada:</h2>
-            <input type="text" value="0" id="plata-recaudada" disabled>
-        </div>
-        <div class="contenedor">
-            <h2>Listado de alquileres por rango de fechas</h2>
-            <div>
-                <label>Desde:</label>
-                <input type="date" id="desde">
-                <label>Hasta:</label>
-                <input type="date" id="hasta">
-            </div>
-            <br>
-            <div>
-                <input type="button" id="buscar" value="Buscar" onclick="ListarRangoFechas()">
-            </div>
-            <br>
-            <select id="lista-alquileres" size="8"></select>
-        </div>
-        <div class="contenedor">
-            <h2>Peliculas alquiladas de un cliente</h2>
-            <div>
+            <div class="campos">
+                <label>Nombre</label>
                 <input type="text" id="nombre">
-                <input type="button" id="buscar" value="Buscar" onclick="ListarPeliculasCliente()">
             </div>
-            <select id="lista-peliculas" size="8"></select>
+            <div class="botones">
+                <input class="btn" id="btn-agregar" type="button" value="Agregar" onclick="AgregarGenero()">
+                <input class="btn" id="btn-modificar" type="button" value="Modificar" onclick="ModificarGenero()">
+                <input class="btn" id="btn-eliminar" type="button" value="Eliminar" onclick="EliminarGenero()">
+                <input class="btn" id="btn-limpiar" type="button" value="LimpiarCajas" onclick="LimpiarCajasGenero()">
+            </div>
+            <div class="listado">
+                <select id="lista" size="8" onchange="SeleccionarGenero()"></select>
+            </div>
         </div>
     </center>
 </body>
