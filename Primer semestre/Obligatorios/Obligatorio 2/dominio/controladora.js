@@ -233,10 +233,6 @@ function AgregarAlquiler() {
     let clienteId = parseInt(document.getElementById('cliente').value);
     let peliculaId = parseInt(document.getElementById("pelicula").value);
 
-    console.log(fecha);
-    console.log(clienteId);
-    console.log(peliculaId);
-
     if(!fecha || clienteId == -1 || peliculaId == -1) {
         alert("Complete todos los campos");
         return;
@@ -252,15 +248,38 @@ function AgregarAlquiler() {
 
 function DevolverAlquiler() {
     let id = document.getElementById('lista').value;
-    let posicionPelicula = BuscarPosicion(alquileres[id].pelicula);
-
-    if(id) {
-        peliculas[posicionPelicula].ventas--;
-        alquileres[id].devuelta = true;
-        ListarAlquiler();
-        ListarSelectPeliculas();
-        document.getElementById('lista').value = 0;
+    if(!id) {
+        alert("Seleccione un alquiler para devolver");
+        return;
     }
+    let posicionPelicula = alquileres[id].pelicula;
+
+    peliculas[posicionPelicula].ventas--;
+    alquileres[id].devuelta = true;
+    ListarAlquiler();
+    ListarSelectPeliculas();
+    document.getElementById('lista').value = 0;
+}
+
+function EliminarAlquiler() {
+    let id = document.getElementById('lista').value;
+    if(!id) {
+        alert("Seleccione un alquiler para eliminar");
+        return;
+    }
+
+    if(alquileres[id].devuelta == false) {
+        DevolverAlquiler();
+    }
+
+    alquileres.splice(id, 1);
+    for (let i = id; i < alquileres.length; i++) {
+        const alquiler = alquileres[i];
+
+        alquiler.id = alquiler.id - 1;
+    }
+    ListarAlquiler();
+    document.getElementById('lista').value = 0;
 }
 
 function ModificarAlquiler() {
@@ -303,7 +322,7 @@ function SeleccionarAlquiler() {
                 document.getElementById('fecha').value           = objetoAlquiler.fecha;
                 document.getElementById('cliente').value         = objetoAlquiler.cliente;
                 document.getElementById('pelicula').value        = objetoAlquiler.pelicula;
-                MostrarImagenSelect(id);
+                MostrarImagenSelect(alquileres[id].pelicula);
             }
     }
 }
@@ -324,6 +343,7 @@ window.InicioAlquiler = InicioAlquiler;
 window.AgregarAlquiler = AgregarAlquiler;
 window.ModificarAlquiler = ModificarAlquiler;
 window.DevolverAlquiler = DevolverAlquiler;
+window.EliminarAlquiler = EliminarAlquiler;
 window.ListarAlquiler = ListarAlquiler;
 window.SeleccionarAlquiler = SeleccionarAlquiler;
 window.LimpiarCajasAlquiler = LimpiarCajasAlquiler;
@@ -365,10 +385,8 @@ function EliminarUsuario() {
             usuario.id = usuario.id - 1;
         }
         ListarUsuarios();
+        document.getElementById('lista').value = 0;
     }
-
-    ListarUsuarios();
-    document.getElementById('lista').value = 0;
 }
 
 function ModificarUsuario() {
@@ -718,19 +736,18 @@ function ListarRangoFechas() {
 
     for (let objetoAlquiler of alquileres) {
         if(objetoAlquiler.fecha >= desde && objetoAlquiler.fecha <= hasta) {
-            let elemento = new Option(clientes[objetoAlquiler.cliente].nombre + " : " +  peliculas[objetoAlquiler.pelicula].nombre, objetoAlquiler.id);
+            let elemento = new Option(objetoAlquiler.fecha + " : " + clientes[objetoAlquiler.cliente].nombre + " : " +  peliculas[objetoAlquiler.pelicula].nombre, objetoAlquiler.id);
             lista.add(elemento);
         }
     }
 }
 
-function ListarPeliculasCliente() {    
+function ListarPeliculasCliente() {
     let lista = document.getElementById("lista-peliculas").options;
     let nombre = document.getElementById("nombre").value.toLowerCase();
     lista.length = 0;
 
     for (let objetoAlquiler of alquileres) {
-        console.log(objetoAlquiler.devuelta);
         if((clientes[objetoAlquiler.cliente].nombre.toLowerCase()).includes(nombre)) {
             let elemento = new Option(`${clientes[objetoAlquiler.cliente].nombre} : ${peliculas[objetoAlquiler.pelicula].nombre} : ${objetoAlquiler.devuelta ? "Devuelta" : "No devuelta" }`, objetoAlquiler.id);
             lista.add(elemento);
@@ -738,7 +755,6 @@ function ListarPeliculasCliente() {
     }
 }
 
-//#endregion
-
 window.ListarPeliculasCliente = ListarPeliculasCliente;
 window.ListarRangoFechas = ListarRangoFechas;
+//#endregion
