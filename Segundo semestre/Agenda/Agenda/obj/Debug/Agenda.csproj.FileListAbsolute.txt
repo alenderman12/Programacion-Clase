@@ -23,3 +23,15 @@ C:\Users\user\source\repos\Agenda\Agenda\obj\Debug\Agenda.csproj.GenerateResourc
 C:\Users\user\source\repos\Agenda\Agenda\obj\Debug\Agenda.csproj.CoreCompileInputs.cache
 C:\Users\user\source\repos\Agenda\Agenda\obj\Debug\Agenda.exe
 C:\Users\user\source\repos\Agenda\Agenda\obj\Debug\Agenda.pdb
+C:\Users\PC\Programacion-Clase\Segundo semestre\Agenda\Agenda\obj\Debug\Agenda.csproj.AssemblyReference.cache
+C:\Users\PC\Programacion-Clase\Segundo semestre\Agenda\Agenda\obj\Debug\Agenda.Presentacion.frmCiudad.resources
+C:\Users\PC\Programacion-Clase\Segundo semestre\Agenda\Agenda\obj\Debug\Agenda.Presentacion.frmContacto.resources
+C:\Users\PC\Programacion-Clase\Segundo semestre\Agenda\Agenda\obj\Debug\Agenda.Presentacion.frmInicio.resources
+C:\Users\PC\Programacion-Clase\Segundo semestre\Agenda\Agenda\obj\Debug\Agenda.Properties.Resources.resources
+C:\Users\PC\Programacion-Clase\Segundo semestre\Agenda\Agenda\obj\Debug\Agenda.csproj.GenerateResource.cache
+C:\Users\PC\Programacion-Clase\Segundo semestre\Agenda\Agenda\obj\Debug\Agenda.csproj.CoreCompileInputs.cache
+C:\Users\PC\Programacion-Clase\Segundo semestre\Agenda\Agenda\obj\Debug\Agenda.exe
+C:\Users\PC\Programacion-Clase\Segundo semestre\Agenda\Agenda\obj\Debug\Agenda.pdb
+C:\Users\PC\Programacion-Clase\Segundo semestre\Agenda\Agenda\bin\Debug\Agenda.exe.config
+C:\Users\PC\Programacion-Clase\Segundo semestre\Agenda\Agenda\bin\Debug\Agenda.exe
+C:\Users\PC\Programacion-Clase\Segundo semestre\Agenda\Agenda\bin\Debug\Agenda.pdb
