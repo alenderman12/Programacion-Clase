@@ -7,24 +7,16 @@
       "RelativeMoniker": "D:0:0:{32EF709A-EDB3-49E1-9A9E-7555C4C97008}|Agenda\\Agenda.csproj|solutionrelative:agenda\\presentacion\\frmcontacto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32EF709A-EDB3-49E1-9A9E-7555C4C97008}|Agenda\\Agenda.csproj|c:\\users\\pc\\programacion-clase\\segundo semestre\\agenda\\agenda\\dominio\\ciudad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32EF709A-EDB3-49E1-9A9E-7555C4C97008}|Agenda\\Agenda.csproj|solutionrelative:agenda\\dominio\\ciudad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32EF709A-EDB3-49E1-9A9E-7555C4C97008}|Agenda\\Agenda.csproj|c:\\users\\pc\\programacion-clase\\segundo semestre\\agenda\\agenda\\presentacion\\frmcontacto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{32EF709A-EDB3-49E1-9A9E-7555C4C97008}|Agenda\\Agenda.csproj|solutionrelative:agenda\\presentacion\\frmcontacto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32EF709A-EDB3-49E1-9A9E-7555C4C97008}|Agenda\\Agenda.csproj|c:\\users\\pc\\programacion-clase\\segundo semestre\\agenda\\agenda\\dominio\\controladora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{32EF709A-EDB3-49E1-9A9E-7555C4C97008}|Agenda\\Agenda.csproj|C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Agenda\\agenda\\dominio\\controladora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{32EF709A-EDB3-49E1-9A9E-7555C4C97008}|Agenda\\Agenda.csproj|solutionrelative:agenda\\dominio\\controladora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32EF709A-EDB3-49E1-9A9E-7555C4C97008}|Agenda\\Agenda.csproj|c:\\users\\pc\\programacion-clase\\segundo semestre\\agenda\\agenda\\presentacion\\frmciudad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32EF709A-EDB3-49E1-9A9E-7555C4C97008}|Agenda\\Agenda.csproj|solutionrelative:agenda\\presentacion\\frmciudad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{32EF709A-EDB3-49E1-9A9E-7555C4C97008}|Agenda\\Agenda.csproj|C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Agenda\\agenda\\dominio\\ciudad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32EF709A-EDB3-49E1-9A9E-7555C4C97008}|Agenda\\Agenda.csproj|solutionrelative:agenda\\dominio\\ciudad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32EF709A-EDB3-49E1-9A9E-7555C4C97008}|Agenda\\Agenda.csproj|c:\\users\\pc\\programacion-clase\\segundo semestre\\agenda\\agenda\\presentacion\\frmciudad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{32EF709A-EDB3-49E1-9A9E-7555C4C97008}|Agenda\\Agenda.csproj|solutionrelative:agenda\\presentacion\\frmciudad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{32EF709A-EDB3-49E1-9A9E-7555C4C97008}|Agenda\\Agenda.csproj|C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Agenda\\agenda\\presentacion\\frmciudad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32EF709A-EDB3-49E1-9A9E-7555C4C97008}|Agenda\\Agenda.csproj|solutionrelative:agenda\\presentacion\\frmciudad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +34,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Ciudad.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Agenda\\Agenda\\Dominio\\Ciudad.cs",
               "RelativeDocumentMoniker": "Agenda\\Dominio\\Ciudad.cs",
@@ -50,8 +42,7 @@
               "RelativeToolTip": "Agenda\\Dominio\\Ciudad.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T20:50:44.55Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-22T20:50:44.55Z"
             },
             {
               "$type": "Document",
@@ -61,27 +52,26 @@
               "RelativeDocumentMoniker": "Agenda\\Presentacion\\frmContacto.cs",
               "ToolTip": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Agenda\\Agenda\\Presentacion\\frmContacto.cs",
               "RelativeToolTip": "Agenda\\Presentacion\\frmContacto.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAcwHIAAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAAwwEEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-22T20:33:59.535Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Controladora.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Agenda\\Agenda\\Dominio\\Controladora.cs",
               "RelativeDocumentMoniker": "Agenda\\Dominio\\Controladora.cs",
               "ToolTip": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Agenda\\Agenda\\Dominio\\Controladora.cs",
               "RelativeToolTip": "Agenda\\Dominio\\Controladora.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF4AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T19:46:12.192Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-22T19:46:12.192Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "frmCiudad.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Agenda\\Agenda\\Presentacion\\frmCiudad.cs",
               "RelativeDocumentMoniker": "Agenda\\Presentacion\\frmCiudad.cs",
@@ -89,53 +79,7 @@
               "RelativeToolTip": "Agenda\\Presentacion\\frmCiudad.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAA5wB0AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T22:35:26.74Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "ab09ae6d-d106-4cfd-a588-04feb14213ab",
-        "Display": 0,
-        "X": 274,
-        "Y": 0,
-        "Width": 797,
-        "Height": 1037,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 1,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "frmCiudad.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Agenda\\Agenda\\Presentacion\\frmCiudad.cs",
-              "RelativeDocumentMoniker": "Agenda\\Presentacion\\frmCiudad.cs",
-              "ToolTip": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Agenda\\Agenda\\Presentacion\\frmCiudad.cs [Design]",
-              "RelativeToolTip": "Agenda\\Presentacion\\frmCiudad.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T20:35:05.621Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmContacto.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Agenda\\Agenda\\Presentacion\\frmContacto.cs",
-              "RelativeDocumentMoniker": "Agenda\\Presentacion\\frmContacto.cs",
-              "ToolTip": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Agenda\\Agenda\\Presentacion\\frmContacto.cs [Design]",
-              "RelativeToolTip": "Agenda\\Presentacion\\frmContacto.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T20:32:31.59Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-09-18T22:35:26.74Z"
             }
           ]
         }

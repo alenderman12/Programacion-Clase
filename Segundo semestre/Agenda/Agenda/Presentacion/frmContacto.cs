@@ -64,7 +64,12 @@ namespace Agenda.Presentacion
             string Telefono = txtTelefono.Text;
             string Email = txtEmail.Text;
 
-            string lineaCiudad = cmbCiudad.SelectedIndex.ToString();
+            string lineaCiudad = cmbCiudad.SelectedItem.ToString();
+            if (lineaCiudad == string.Empty)
+            {
+                DisplayError("Debe seleccionar una ciudad");
+                return;
+            }
             string[] arrayCiudad = lineaCiudad.Split(':');
             int idCiudad = int.Parse(arrayCiudad[0]);
             Ciudad ciudad = controladora.BuscarCiudad(idCiudad);
@@ -112,18 +117,17 @@ namespace Agenda.Presentacion
             string Email = txtEmail.Text;
 
             string lineaCiudad = cmbCiudad.SelectedIndex.ToString();
-            string[] arrayCiudad = lineaCiudad.Split(':');
+            if (lineaCiudad == string.Empty)
+            {
+                DisplayError("Debe seleccionar una ciudad");
+                return;
+            }
+            string[] arrayCiudad = lineaCiudad.Split(':'); 
             int idCiudad = int.Parse(arrayCiudad[0]);
             Ciudad ciudad = controladora.BuscarCiudad(idCiudad);
 
             Dominio.Contacto unContacto = new Dominio.Contacto(Id, Nombre, Telefono, Email, ciudad);
 
-
-            if (ciudad == null)
-            {
-                DisplayError("Debe seleccionar una ciudad");
-                return;
-            }
             if (controladora.ModificarContacto(Id, Nombre, Telefono, Email, ciudad))
             {
                 ListarContactos();

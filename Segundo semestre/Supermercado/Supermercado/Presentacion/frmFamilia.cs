@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Supermercado.Presentacion
 {
-    public partial class frmPrincipal : Form
+    public partial class frmFamilia : Form
     {
-        public frmPrincipal()
+        public frmFamilia()
         {
             InitializeComponent();
-        }
-
-        private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

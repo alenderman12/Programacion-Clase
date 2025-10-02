@@ -28,12 +28,81 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "frmPrincipal";
+            menuStrip1 = new MenuStrip();
+            familiaToolStripMenuItem = new ToolStripMenuItem();
+            clienteToolStripMenuItem = new ToolStripMenuItem();
+            empleadosToolStripMenuItem = new ToolStripMenuItem();
+            productosToolStripMenuItem = new ToolStripMenuItem();
+            salirToolStripMenuItem = new ToolStripMenuItem();
+            menuStrip1.SuspendLayout();
+            SuspendLayout();
+            // 
+            // menuStrip1
+            // 
+            menuStrip1.Dock = DockStyle.Left;
+            menuStrip1.Items.AddRange(new ToolStripItem[] { familiaToolStripMenuItem, clienteToolStripMenuItem, empleadosToolStripMenuItem, productosToolStripMenuItem, salirToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(126, 450);
+            menuStrip1.TabIndex = 1;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // familiaToolStripMenuItem
+            // 
+            familiaToolStripMenuItem.Name = "familiaToolStripMenuItem";
+            familiaToolStripMenuItem.Size = new Size(113, 19);
+            familiaToolStripMenuItem.Text = "Familias";
+            // 
+            // clienteToolStripMenuItem
+            // 
+            clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
+            clienteToolStripMenuItem.Size = new Size(113, 19);
+            clienteToolStripMenuItem.Text = "Clientes";
+            clienteToolStripMenuItem.Click += clienteToolStripMenuItem_Click;
+            // 
+            // empleadosToolStripMenuItem
+            // 
+            empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
+            empleadosToolStripMenuItem.Size = new Size(77, 20);
+            empleadosToolStripMenuItem.Text = "Empleados";
+            // 
+            // productosToolStripMenuItem
+            // 
+            productosToolStripMenuItem.Name = "productosToolStripMenuItem";
+            productosToolStripMenuItem.Size = new Size(113, 19);
+            productosToolStripMenuItem.Text = "Productos";
+            // 
+            // salirToolStripMenuItem
+            // 
+            salirToolStripMenuItem.Alignment = ToolStripItemAlignment.Right;
+            salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            salirToolStripMenuItem.Size = new Size(113, 19);
+            salirToolStripMenuItem.Text = "Salir";
+            // 
+            // frmPrincipal
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(menuStrip1);
+            IsMdiContainer = true;
+            MainMenuStrip = menuStrip1;
+            Name = "frmPrincipal";
+            Text = "Supermercado";
+            WindowState = FormWindowState.Maximized;
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem familiaToolStripMenuItem;
+        private ToolStripMenuItem clienteToolStripMenuItem;
+        private ToolStripMenuItem empleadosToolStripMenuItem;
+        private ToolStripMenuItem productosToolStripMenuItem;
+        private ToolStripMenuItem salirToolStripMenuItem;
     }
 }
