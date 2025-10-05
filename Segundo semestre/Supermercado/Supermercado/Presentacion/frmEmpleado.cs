@@ -16,5 +16,10 @@ namespace Supermercado.Presentacion
         {
             InitializeComponent();
         }
+
+        private void frmEmpleado_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

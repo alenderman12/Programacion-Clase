@@ -1,54 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Supermercado\\Supermercado\\",
+  "WorkspaceRootPath": "C:\\Users\\alexr\\source\\repos\\Programacion-Clase\\Segundo semestre\\Supermercado\\Supermercado\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7555B396-0105-4C47-8669-C1C3A77F3C73}|Supermercado.csproj|C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Supermercado\\Supermercado\\presentacion\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7555B396-0105-4C47-8669-C1C3A77F3C73}|Supermercado.csproj|solutionrelative:presentacion\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{7555B396-0105-4C47-8669-C1C3A77F3C73}|Supermercado.csproj|c:\\users\\alexr\\source\\repos\\programacion-clase\\segundo semestre\\supermercado\\supermercado\\presentacion\\frmproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7555B396-0105-4C47-8669-C1C3A77F3C73}|Supermercado.csproj|solutionrelative:presentacion\\frmproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7555B396-0105-4C47-8669-C1C3A77F3C73}|Supermercado.csproj|c:\\users\\pc\\programacion-clase\\segundo semestre\\supermercado\\supermercado\\presentacion\\frmproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{7555B396-0105-4C47-8669-C1C3A77F3C73}|Supermercado.csproj|c:\\users\\alexr\\source\\repos\\programacion-clase\\segundo semestre\\supermercado\\supermercado\\presentacion\\frmproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7555B396-0105-4C47-8669-C1C3A77F3C73}|Supermercado.csproj|solutionrelative:presentacion\\frmproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7555B396-0105-4C47-8669-C1C3A77F3C73}|Supermercado.csproj|c:\\users\\pc\\programacion-clase\\segundo semestre\\supermercado\\supermercado\\presentacion\\frmfamilia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{7555B396-0105-4C47-8669-C1C3A77F3C73}|Supermercado.csproj|c:\\users\\alexr\\source\\repos\\programacion-clase\\segundo semestre\\supermercado\\supermercado\\presentacion\\frmfamilia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7555B396-0105-4C47-8669-C1C3A77F3C73}|Supermercado.csproj|solutionrelative:presentacion\\frmfamilia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7555B396-0105-4C47-8669-C1C3A77F3C73}|Supermercado.csproj|c:\\users\\alexr\\source\\repos\\programacion-clase\\segundo semestre\\supermercado\\supermercado\\presentacion\\frmfamilia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7555B396-0105-4C47-8669-C1C3A77F3C73}|Supermercado.csproj|solutionrelative:presentacion\\frmfamilia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7555B396-0105-4C47-8669-C1C3A77F3C73}|Supermercado.csproj|c:\\users\\pc\\programacion-clase\\segundo semestre\\supermercado\\supermercado\\presentacion\\frmempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7555B396-0105-4C47-8669-C1C3A77F3C73}|Supermercado.csproj|solutionrelative:presentacion\\frmempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7555B396-0105-4C47-8669-C1C3A77F3C73}|Supermercado.csproj|c:\\users\\pc\\programacion-clase\\segundo semestre\\supermercado\\supermercado\\presentacion\\frmcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7555B396-0105-4C47-8669-C1C3A77F3C73}|Supermercado.csproj|solutionrelative:presentacion\\frmcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7555B396-0105-4C47-8669-C1C3A77F3C73}|Supermercado.csproj|c:\\users\\pc\\programacion-clase\\segundo semestre\\supermercado\\supermercado\\dominio\\controladora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7555B396-0105-4C47-8669-C1C3A77F3C73}|Supermercado.csproj|solutionrelative:dominio\\controladora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7555B396-0105-4C47-8669-C1C3A77F3C73}|Supermercado.csproj|c:\\users\\pc\\programacion-clase\\segundo semestre\\supermercado\\supermercado\\dominio\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7555B396-0105-4C47-8669-C1C3A77F3C73}|Supermercado.csproj|solutionrelative:dominio\\empleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7555B396-0105-4C47-8669-C1C3A77F3C73}|Supermercado.csproj|c:\\users\\pc\\programacion-clase\\segundo semestre\\supermercado\\supermercado\\dominio\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7555B396-0105-4C47-8669-C1C3A77F3C73}|Supermercado.csproj|solutionrelative:dominio\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7555B396-0105-4C47-8669-C1C3A77F3C73}|Supermercado.csproj|c:\\users\\pc\\programacion-clase\\segundo semestre\\supermercado\\supermercado\\dominio\\familia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7555B396-0105-4C47-8669-C1C3A77F3C73}|Supermercado.csproj|solutionrelative:dominio\\familia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7555B396-0105-4C47-8669-C1C3A77F3C73}|Supermercado.csproj|c:\\users\\pc\\programacion-clase\\segundo semestre\\supermercado\\supermercado\\dominio\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7555B396-0105-4C47-8669-C1C3A77F3C73}|Supermercado.csproj|solutionrelative:dominio\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7555B396-0105-4C47-8669-C1C3A77F3C73}|Supermercado.csproj|c:\\users\\pc\\programacion-clase\\segundo semestre\\supermercado\\supermercado\\dominio\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7555B396-0105-4C47-8669-C1C3A77F3C73}|Supermercado.csproj|solutionrelative:dominio\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7555B396-0105-4C47-8669-C1C3A77F3C73}|Supermercado.csproj|c:\\users\\pc\\programacion-clase\\segundo semestre\\supermercado\\supermercado\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7555B396-0105-4C47-8669-C1C3A77F3C73}|Supermercado.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,174 +34,52 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmProducto.cs",
+              "DocumentMoniker": "C:\\Users\\alexr\\source\\repos\\Programacion-Clase\\Segundo semestre\\Supermercado\\Supermercado\\Presentacion\\frmProducto.cs",
+              "RelativeDocumentMoniker": "Presentacion\\frmProducto.cs",
+              "ToolTip": "C:\\Users\\alexr\\source\\repos\\Programacion-Clase\\Segundo semestre\\Supermercado\\Supermercado\\Presentacion\\frmProducto.cs",
+              "RelativeToolTip": "Presentacion\\frmProducto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T23:58:40.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "frmProducto.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Supermercado\\Supermercado\\Presentacion\\frmProducto.cs",
+              "DocumentMoniker": "C:\\Users\\alexr\\source\\repos\\Programacion-Clase\\Segundo semestre\\Supermercado\\Supermercado\\Presentacion\\frmProducto.cs",
               "RelativeDocumentMoniker": "Presentacion\\frmProducto.cs",
-              "ToolTip": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Supermercado\\Supermercado\\Presentacion\\frmProducto.cs [Design]",
+              "ToolTip": "C:\\Users\\alexr\\source\\repos\\Programacion-Clase\\Segundo semestre\\Supermercado\\Supermercado\\Presentacion\\frmProducto.cs [Design]",
               "RelativeToolTip": "Presentacion\\frmProducto.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T21:27:47.491Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmFamilia.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Supermercado\\Supermercado\\Presentacion\\frmFamilia.cs",
-              "RelativeDocumentMoniker": "Presentacion\\frmFamilia.cs",
-              "ToolTip": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Supermercado\\Supermercado\\Presentacion\\frmFamilia.cs [Design]",
-              "RelativeToolTip": "Presentacion\\frmFamilia.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T21:27:39.097Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "frmPrincipal.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Supermercado\\Supermercado\\Presentacion\\frmPrincipal.cs",
-              "RelativeDocumentMoniker": "Presentacion\\frmPrincipal.cs",
-              "ToolTip": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Supermercado\\Supermercado\\Presentacion\\frmPrincipal.cs [Design]",
-              "RelativeToolTip": "Presentacion\\frmPrincipal.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T00:39:56.751Z",
+              "WhenOpened": "2025-10-02T23:50:31.571Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "frmEmpleado.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Supermercado\\Supermercado\\Presentacion\\frmEmpleado.cs",
-              "RelativeDocumentMoniker": "Presentacion\\frmEmpleado.cs",
-              "ToolTip": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Supermercado\\Supermercado\\Presentacion\\frmEmpleado.cs [Design]",
-              "RelativeToolTip": "Presentacion\\frmEmpleado.cs [Design]",
+              "Title": "frmFamilia.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\alexr\\source\\repos\\Programacion-Clase\\Segundo semestre\\Supermercado\\Supermercado\\Presentacion\\frmFamilia.cs",
+              "RelativeDocumentMoniker": "Presentacion\\frmFamilia.cs",
+              "ToolTip": "C:\\Users\\alexr\\source\\repos\\Programacion-Clase\\Segundo semestre\\Supermercado\\Supermercado\\Presentacion\\frmFamilia.cs [Design]",
+              "RelativeToolTip": "Presentacion\\frmFamilia.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T21:27:27.826Z",
+              "WhenOpened": "2025-10-02T23:07:40.823Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "frmCliente.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Supermercado\\Supermercado\\Presentacion\\frmCliente.cs",
-              "RelativeDocumentMoniker": "Presentacion\\frmCliente.cs",
-              "ToolTip": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Supermercado\\Supermercado\\Presentacion\\frmCliente.cs [Design]",
-              "RelativeToolTip": "Presentacion\\frmCliente.cs [Design]",
+              "DocumentIndex": 2,
+              "Title": "frmFamilia.cs",
+              "DocumentMoniker": "C:\\Users\\alexr\\source\\repos\\Programacion-Clase\\Segundo semestre\\Supermercado\\Supermercado\\Presentacion\\frmFamilia.cs",
+              "RelativeDocumentMoniker": "Presentacion\\frmFamilia.cs",
+              "ToolTip": "C:\\Users\\alexr\\source\\repos\\Programacion-Clase\\Segundo semestre\\Supermercado\\Supermercado\\Presentacion\\frmFamilia.cs",
+              "RelativeToolTip": "Presentacion\\frmFamilia.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAAwF0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T21:27:17.325Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Controladora.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Supermercado\\Supermercado\\Dominio\\Controladora.cs",
-              "RelativeDocumentMoniker": "Dominio\\Controladora.cs",
-              "ToolTip": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Supermercado\\Supermercado\\Dominio\\Controladora.cs",
-              "RelativeToolTip": "Dominio\\Controladora.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T21:09:42.277Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Supermercado\\Supermercado\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Supermercado\\Supermercado\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T00:37:00.545Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "2d405b40-cb2f-4752-8ad5-86ef1d1075f2",
-        "Display": 0,
-        "X": 36,
-        "Y": 31,
-        "Width": 1042,
-        "Height": 1785,
-        "WindowState": 2
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 2,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Familia.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Supermercado\\Supermercado\\Dominio\\Familia.cs",
-              "RelativeDocumentMoniker": "Dominio\\Familia.cs",
-              "ToolTip": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Supermercado\\Supermercado\\Dominio\\Familia.cs",
-              "RelativeToolTip": "Dominio\\Familia.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T21:03:42.41Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Producto.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Supermercado\\Supermercado\\Dominio\\Producto.cs",
-              "RelativeDocumentMoniker": "Dominio\\Producto.cs",
-              "ToolTip": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Supermercado\\Supermercado\\Dominio\\Producto.cs",
-              "RelativeToolTip": "Dominio\\Producto.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAowDkAAAB7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T00:09:14.974Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Empleado.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Supermercado\\Supermercado\\Dominio\\Empleado.cs",
-              "RelativeDocumentMoniker": "Dominio\\Empleado.cs",
-              "ToolTip": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Supermercado\\Supermercado\\Dominio\\Empleado.cs",
-              "RelativeToolTip": "Dominio\\Empleado.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAA4wB4AAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T00:59:27.549Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Cliente.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Supermercado\\Supermercado\\Dominio\\Cliente.cs",
-              "RelativeDocumentMoniker": "Dominio\\Cliente.cs",
-              "ToolTip": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Supermercado\\Supermercado\\Dominio\\Cliente.cs",
-              "RelativeToolTip": "Dominio\\Cliente.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T00:50:48.147Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Persona.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Supermercado\\Supermercado\\Dominio\\Persona.cs",
-              "RelativeDocumentMoniker": "Dominio\\Persona.cs",
-              "ToolTip": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Supermercado\\Supermercado\\Dominio\\Persona.cs",
-              "RelativeToolTip": "Dominio\\Persona.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T00:42:51.918Z",
+              "WhenOpened": "2025-10-02T22:54:08.943Z",
               "EditorCaption": ""
             }
           ]
