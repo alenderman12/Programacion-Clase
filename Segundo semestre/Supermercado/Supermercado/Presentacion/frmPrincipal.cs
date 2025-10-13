@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Supermercado.Dominio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace Supermercado.Presentacion
 {
     public partial class frmPrincipal : Form
     {
+        Controladora controladora = new Controladora();
         public frmPrincipal()
         {
             InitializeComponent();
@@ -50,9 +52,14 @@ namespace Supermercado.Presentacion
                         unfrmFamilia.Show();
                         break;
                     case "frmProducto":
-                        Productos unfrmProducto = new Productos();
+                        frmProducto unfrmProducto = new frmProducto();
                         unfrmProducto.MdiParent = this;
                         unfrmProducto.Show();
+                        break;
+                    case "frmVenta":
+                        Ventas unFrmVenta = new Ventas();
+                        unFrmVenta.MdiParent = this;
+                        unFrmVenta.Show();
                         break;
                 }
             }
@@ -78,6 +85,16 @@ namespace Supermercado.Presentacion
         private void mnuProducto_Click(object sender, EventArgs e)
         {
             Singleton("frmProducto");
+        }
+
+        private void mnuVenta_Click(object sender, EventArgs e)
+        {
+            Singleton("frmVenta");
+        }
+
+        private void frmPrincipal_Load(object sender, EventArgs e)
+        {
+            controladora.CargarDatos();
         }
     }
 }

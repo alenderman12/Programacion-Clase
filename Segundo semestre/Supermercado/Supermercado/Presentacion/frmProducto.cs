@@ -2,17 +2,17 @@
 
 namespace Supermercado.Presentacion
 {
-    public partial class Productos : Form
+    public partial class frmProducto : Form
     {
         Controladora controladora = new Controladora();
-        public Productos()
+        public frmProducto()
         {
             InitializeComponent();
         }
 
         private void LimpiarCajas()
         {
-            txtId.Clear();
+            txtId.Text = controladora.IdProducto().ToString();
             txtNombre.Clear();
             txtMarca.Clear();
             txtPrecio.Clear();
@@ -31,12 +31,18 @@ namespace Supermercado.Presentacion
                 ListViewItem item = new ListViewItem(producto.Id.ToString());
                 item.SubItems.Add(producto.Nombre);
                 item.SubItems.Add(producto.Marca);
-                item.SubItems.Add(producto.Precio.ToString());
                 item.SubItems.Add(producto.Familia.Nombre);
-                item.SubItems.Add(producto.Stock.ToString());
                 item.SubItems.Add(producto.Unidad);
+                item.SubItems.Add(producto.Precio.ToString());
+                item.SubItems.Add(producto.Stock.ToString());
                 lvsProductos.Items.Add(item);
             }
+            txtId.Text = controladora.IdProducto().ToString();
+        }
+        private void DisplayError(string msg)
+        {
+            lblMensaje.Text = msg;
+            lblMensaje.Visible = true;
         }
 
         private void CargarFamilias()
@@ -52,6 +58,7 @@ namespace Supermercado.Presentacion
 
         private void frmProducto_Load(object sender, EventArgs e)
         {
+            CargarFamilias();
             ListarProductos();
             LimpiarCajas();
         }
@@ -60,21 +67,24 @@ namespace Supermercado.Presentacion
         {
             if (txtId.Text == "" || txtNombre.Text == "")
             {
-                lblMensaje.Text = "Debe completar todos los campos requeridos";
-                lblMensaje.Visible = true;
+                DisplayError("Debe completar todos los campos requeridos");
                 return;
             }
             else if (!int.TryParse(txtId.Text, out int a))
             {
-                lblMensaje.Text = "El ID debe ser un numero";
-                lblMensaje.Visible = true;
+                DisplayError("El ID debe ser un numero");
                 return;
             }
-            int Id = int.Parse(txtId.Text);
+            int Id = controladora.IdProducto();
             string Nombre = txtNombre.Text;
             string Marca = txtMarca.Text;
             float Precio = float.Parse(txtPrecio.Text);
 
+            if(cmbFamilia.SelectedIndex == 0)
+            {
+                DisplayError("Debe seleccionar una familia");
+                return;
+            }
             string linea = cmbFamilia.SelectedItem.ToString();
             string[] arrayLinea = linea.Split(':');
             int idFamilia = int.Parse(arrayLinea[0]);
@@ -91,8 +101,7 @@ namespace Supermercado.Presentacion
             }
             else
             {
-                lblMensaje.Text = "Ya existe un producto con ese ID";
-                lblMensaje.Visible = true;
+                DisplayError("Ya existe un producto con ese ID");
             }
         }
 
@@ -100,8 +109,7 @@ namespace Supermercado.Presentacion
         {
             if (txtId.Text == "" || txtNombre.Text == "")
             {
-                lblMensaje.Text = "Debe completar todos los campos requeridos";
-                lblMensaje.Visible = true;
+                DisplayError("Debe completar todos los campos requeridos");
                 return;
             }
 
@@ -110,6 +118,11 @@ namespace Supermercado.Presentacion
             string Marca = txtMarca.Text;
             float Precio = float.Parse(txtPrecio.Text);
 
+            if (cmbFamilia.SelectedIndex == 0)
+            {
+                DisplayError("Debe seleccionar una familia");
+                return;
+            }
             string linea = cmbFamilia.SelectedItem.ToString();
             string[] arrayLinea = linea.Split(':');
             int idFamilia = int.Parse(arrayLinea[0]);
@@ -128,16 +141,10 @@ namespace Supermercado.Presentacion
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (txtId.Text == "")
-            {
-                lblMensaje.Text = "Seleccione un producto";
-                lblMensaje.Visible = true;
-                return;
-            }
+            ListViewItem item = lvsProductos.SelectedItems[0];
+            int Id = int.Parse(item.SubItems[0].Text);
 
-            int Id = int.Parse(txtId.Text);
-
-            if (controladora.BajaFamilia(Id))
+            if (controladora.BajaProducto(Id))
             {
                 ListarProductos();
                 LimpiarCajas();
@@ -154,14 +161,22 @@ namespace Supermercado.Presentacion
             if (lvsProductos.SelectedItems.Count > 0)
             {
                 ListViewItem item = lvsProductos.SelectedItems[0];
+
                 txtId.Text = item.SubItems[0].Text;
+                Producto producto = controladora.BuscarProducto(int.Parse(txtId.Text));
+
                 txtNombre.Text = item.SubItems[1].Text;
                 txtMarca.Text = item.SubItems[2].Text;
-                cmbFamilia.Text = item.SubItems[3].Text;
+                cmbFamilia.Text = producto.Familia.ToString();
                 txtUnidad.Text = item.SubItems[4].Text;
                 txtPrecio.Text = item.SubItems[5].Text;
                 txtStock.Text = item.SubItems[6].Text;
             }
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -52,9 +52,11 @@
             groupBox1.Controls.Add(txtId);
             groupBox1.Controls.Add(lblNombre);
             groupBox1.Controls.Add(lblId);
-            groupBox1.Location = new Point(12, 12);
+            groupBox1.Location = new Point(10, 9);
+            groupBox1.Margin = new Padding(3, 2, 3, 2);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(344, 426);
+            groupBox1.Padding = new Padding(3, 2, 3, 2);
+            groupBox1.Size = new Size(301, 320);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "groupBox1";
@@ -65,9 +67,9 @@
             lblMensaje.Enabled = false;
             lblMensaje.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblMensaje.ForeColor = Color.Red;
-            lblMensaje.Location = new Point(18, 383);
+            lblMensaje.Location = new Point(16, 287);
             lblMensaje.Name = "lblMensaje";
-            lblMensaje.Size = new Size(309, 43);
+            lblMensaje.Size = new Size(271, 33);
             lblMensaje.TabIndex = 5;
             lblMensaje.Text = "label1";
             // 
@@ -76,10 +78,11 @@
             lvsFamilias.Columns.AddRange(new ColumnHeader[] { Id, Nombre });
             lvsFamilias.FullRowSelect = true;
             lvsFamilias.GridLines = true;
-            lvsFamilias.Location = new Point(18, 114);
+            lvsFamilias.Location = new Point(16, 86);
+            lvsFamilias.Margin = new Padding(3, 2, 3, 2);
             lvsFamilias.MultiSelect = false;
             lvsFamilias.Name = "lvsFamilias";
-            lvsFamilias.Size = new Size(309, 266);
+            lvsFamilias.Size = new Size(271, 200);
             lvsFamilias.TabIndex = 4;
             lvsFamilias.UseCompatibleStateImageBehavior = false;
             lvsFamilias.View = View.Details;
@@ -96,25 +99,28 @@
             // 
             // txtNombre
             // 
-            txtNombre.Location = new Point(127, 62);
+            txtNombre.Location = new Point(111, 46);
+            txtNombre.Margin = new Padding(3, 2, 3, 2);
             txtNombre.Name = "txtNombre";
-            txtNombre.Size = new Size(191, 27);
+            txtNombre.Size = new Size(168, 23);
             txtNombre.TabIndex = 3;
             // 
             // txtId
             // 
-            txtId.Location = new Point(127, 29);
+            txtId.Enabled = false;
+            txtId.Location = new Point(111, 22);
+            txtId.Margin = new Padding(3, 2, 3, 2);
             txtId.Name = "txtId";
-            txtId.Size = new Size(191, 27);
+            txtId.Size = new Size(168, 23);
             txtId.TabIndex = 2;
             // 
             // lblNombre
             // 
             lblNombre.AutoSize = true;
             lblNombre.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblNombre.Location = new Point(18, 56);
+            lblNombre.Location = new Point(16, 42);
             lblNombre.Name = "lblNombre";
-            lblNombre.Size = new Size(103, 31);
+            lblNombre.Size = new Size(85, 25);
             lblNombre.TabIndex = 1;
             lblNombre.Text = "Nombre:";
             // 
@@ -122,18 +128,19 @@
             // 
             lblId.AutoSize = true;
             lblId.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblId.Location = new Point(80, 23);
+            lblId.Location = new Point(70, 17);
             lblId.Name = "lblId";
-            lblId.Size = new Size(41, 31);
+            lblId.Size = new Size(34, 25);
             lblId.TabIndex = 0;
             lblId.Text = "ID:";
             // 
             // btnAgregar
             // 
             btnAgregar.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnAgregar.Location = new Point(378, 19);
+            btnAgregar.Location = new Point(331, 14);
+            btnAgregar.Margin = new Padding(3, 2, 3, 2);
             btnAgregar.Name = "btnAgregar";
-            btnAgregar.Size = new Size(150, 59);
+            btnAgregar.Size = new Size(131, 44);
             btnAgregar.TabIndex = 1;
             btnAgregar.Text = "Agregar";
             btnAgregar.UseVisualStyleBackColor = true;
@@ -142,9 +149,10 @@
             // btnModificar
             // 
             btnModificar.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnModificar.Location = new Point(378, 93);
+            btnModificar.Location = new Point(331, 70);
+            btnModificar.Margin = new Padding(3, 2, 3, 2);
             btnModificar.Name = "btnModificar";
-            btnModificar.Size = new Size(150, 59);
+            btnModificar.Size = new Size(131, 44);
             btnModificar.TabIndex = 2;
             btnModificar.Text = "Modificar";
             btnModificar.UseVisualStyleBackColor = true;
@@ -153,9 +161,10 @@
             // btnEliminar
             // 
             btnEliminar.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnEliminar.Location = new Point(378, 168);
+            btnEliminar.Location = new Point(331, 126);
+            btnEliminar.Margin = new Padding(3, 2, 3, 2);
             btnEliminar.Name = "btnEliminar";
-            btnEliminar.Size = new Size(150, 59);
+            btnEliminar.Size = new Size(131, 44);
             btnEliminar.TabIndex = 3;
             btnEliminar.Text = "Eliminar";
             btnEliminar.UseVisualStyleBackColor = true;
@@ -164,9 +173,9 @@
             // lblLimpiarCajas
             // 
             lblLimpiarCajas.AutoSize = true;
-            lblLimpiarCajas.Location = new Point(400, 245);
+            lblLimpiarCajas.Location = new Point(350, 184);
             lblLimpiarCajas.Name = "lblLimpiarCajas";
-            lblLimpiarCajas.Size = new Size(98, 20);
+            lblLimpiarCajas.Size = new Size(78, 15);
             lblLimpiarCajas.TabIndex = 4;
             lblLimpiarCajas.TabStop = true;
             lblLimpiarCajas.Text = "Limpiar Cajas";
@@ -174,14 +183,15 @@
             // 
             // frmFamilia
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(552, 450);
+            ClientSize = new Size(483, 338);
             Controls.Add(lblLimpiarCajas);
             Controls.Add(btnEliminar);
             Controls.Add(btnModificar);
             Controls.Add(btnAgregar);
             Controls.Add(groupBox1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "frmFamilia";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Familia";

@@ -21,7 +21,7 @@ namespace Supermercado.Presentacion
 
         private void LimpiarCajas()
         {
-            txtId.Clear();
+            txtId.Text = controladora.IdFamilia().ToString();
             txtNombre.Clear();
             lblMensaje.Visible = false;
             txtId.Focus();
@@ -36,6 +36,7 @@ namespace Supermercado.Presentacion
                 item.SubItems.Add(familia.Nombre);
                 lvsFamilias.Items.Add(item);
             }
+            txtId.Text = controladora.IdFamilia().ToString();
         }
 
         private void frmFamilia_Load(object sender, EventArgs e)
@@ -57,7 +58,7 @@ namespace Supermercado.Presentacion
                 lblMensaje.Visible = true;
                 return;
             }
-            int Id = int.Parse(txtId.Text);
+            int Id = controladora.IdFamilia();
             string Nombre = txtNombre.Text;
 
             Familia familia = new Familia(Id, Nombre);
