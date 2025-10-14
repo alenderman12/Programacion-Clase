@@ -18,7 +18,6 @@ C:\Users\alexr\source\repos\Programacion-Clase\Segundo semestre\Supermercado\Sup
 C:\Users\alexr\source\repos\Programacion-Clase\Segundo semestre\Supermercado\Supermercado\obj\Debug\net8.0-windows\Supermercado.pdb
 C:\Users\alexr\source\repos\Programacion-Clase\Segundo semestre\Supermercado\Supermercado\obj\Debug\net8.0-windows\Supermercado.genruntimeconfig.cache
 C:\Users\alexr\source\repos\Programacion-Clase\Segundo semestre\Supermercado\Supermercado\obj\Debug\net8.0-windows\ref\Supermercado.dll
-C:\Users\alexr\source\repos\Programacion-Clase\Segundo semestre\Supermercado\Supermercado\obj\Debug\net8.0-windows\Supermercado.Presentacion.Productos.resources
 C:\Users\PC\Programacion-Clase\Segundo semestre\Supermercado\Supermercado\bin\Debug\net8.0-windows\Supermercado.exe
 C:\Users\PC\Programacion-Clase\Segundo semestre\Supermercado\Supermercado\bin\Debug\net8.0-windows\Supermercado.deps.json
 C:\Users\PC\Programacion-Clase\Segundo semestre\Supermercado\Supermercado\bin\Debug\net8.0-windows\Supermercado.runtimeconfig.json
@@ -41,3 +40,6 @@ C:\Users\PC\Programacion-Clase\Segundo semestre\Supermercado\Supermercado\obj\De
 C:\Users\PC\Programacion-Clase\Segundo semestre\Supermercado\Supermercado\obj\Debug\net8.0-windows\ref\Supermercado.dll
 C:\Users\PC\Programacion-Clase\Segundo semestre\Supermercado\Supermercado\obj\Debug\net8.0-windows\Supermercado.Presentacion.frmProducto.resources
 C:\Users\PC\Programacion-Clase\Segundo semestre\Supermercado\Supermercado\obj\Debug\net8.0-windows\Supermercado.Presentacion.Ventas.resources
+C:\Users\alexr\source\repos\Programacion-Clase\Segundo semestre\Supermercado\Supermercado\obj\Debug\net8.0-windows\Supermercado.Presentacion.frmProducto.resources
+C:\Users\alexr\source\repos\Programacion-Clase\Segundo semestre\Supermercado\Supermercado\obj\Debug\net8.0-windows\Supermercado.Presentacion.Ventas.resources
+C:\Users\alexr\source\repos\Programacion-Clase\Segundo semestre\Supermercado\Supermercado\obj\Debug\net8.0-windows\Supermercado.Dominio.frmLstVentas.resources

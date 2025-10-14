@@ -48,11 +48,12 @@ namespace Supermercado.Dominio
         {
             return $"{this.Id} : {this.Fecha.ToShortDateString()} - {this.Cliente.Nombre} - {this.Total}";
         }
-        public Venta(int pId, DateTime pFecha, Cliente pCliente, List<DetalleVenta> pDetalles, double pTotal)
+        public Venta(int pId, DateTime pFecha, Cliente pCliente,Empleado pEmpleado, List<DetalleVenta> pDetalles, double pTotal)
         {
             Id = pId;
             Fecha = pFecha;
             Cliente = pCliente;
+            Empleado = pEmpleado;
             Detalles = pDetalles;
             Total = pTotal;
         }

@@ -61,6 +61,11 @@ namespace Supermercado.Presentacion
                         unFrmVenta.MdiParent = this;
                         unFrmVenta.Show();
                         break;
+                    case "frmLstVenta":
+                        frmLstVentas unFrmLstVentas = new frmLstVentas();
+                        unFrmLstVentas.MdiParent = this;
+                        unFrmLstVentas.Show();
+                        break;
                 }
             }
         }
@@ -90,6 +95,11 @@ namespace Supermercado.Presentacion
         private void mnuVenta_Click(object sender, EventArgs e)
         {
             Singleton("frmVenta");
+        }
+
+        private void lstVentas_Click(object sender, EventArgs e)
+        {
+            Singleton("frmLstVenta");
         }
 
         private void frmPrincipal_Load(object sender, EventArgs e)

@@ -387,6 +387,24 @@ namespace Supermercado.Dominio
             this.AltaCliente(c2);
             Cliente c3 = new Cliente(aIdCliente, "Sofia Fernandez", "Boulevard Estrella 987", "654987321", 15, 200);
             this.AltaCliente(c3);
+
+            DetalleVenta dv1 = new DetalleVenta(aIdDetalleVenta, p1, p1.Precio, 2);
+            this.AltaDetalleVenta(dv1);
+            DetalleVenta dv2 = new DetalleVenta(aIdDetalleVenta, p2, p2.Precio, 1);
+            this.AltaDetalleVenta(dv2);
+            DetalleVenta dv3 = new DetalleVenta(aIdDetalleVenta, p3, p3.Precio, 3);
+            this.AltaDetalleVenta(dv3);
+            List<DetalleVenta> lista1 = new List<DetalleVenta> { dv1, dv2 };
+            List<DetalleVenta> lista2 = new List<DetalleVenta> { dv3 };
+            List<DetalleVenta> lista3 = new List<DetalleVenta> { dv1, dv2, dv3 };
+
+            Venta v1 = new Venta(aIdVenta, DateTime.Now, c1, e1, lista1, dv1.Precio * dv1.Cantidad + dv2.Precio * dv2.Cantidad);
+            this.AltaVenta(v1);
+            Venta v2 = new Venta(aIdVenta, DateTime.Now, c2, e2, lista2, dv3.Precio * dv3.Cantidad);
+            this.AltaVenta(v2);
+            Venta v3 = new Venta(aIdVenta, DateTime.Now, c3, e3, lista3, dv1.Precio * dv1.Cantidad + dv2.Precio * dv2.Cantidad + dv3.Precio * dv3.Cantidad);
+            this.AltaVenta(v3);
+
         }
     }
 }

@@ -35,6 +35,7 @@
             mnuProducto = new ToolStripMenuItem();
             salirToolStripMenuItem = new ToolStripMenuItem();
             mnuVenta = new ToolStripMenuItem();
+            lstVentas = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -42,38 +43,39 @@
             // 
             menuStrip1.Dock = DockStyle.Left;
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { mnuFamilia, mnuCliente, mnuEmpleado, mnuProducto, salirToolStripMenuItem, mnuVenta });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { mnuFamilia, mnuCliente, mnuEmpleado, mnuProducto, salirToolStripMenuItem, mnuVenta, lstVentas });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(126, 450);
+            menuStrip1.Padding = new Padding(7, 3, 0, 3);
+            menuStrip1.Size = new Size(157, 600);
             menuStrip1.TabIndex = 1;
             menuStrip1.Text = "menuStrip1";
             // 
             // mnuFamilia
             // 
             mnuFamilia.Name = "mnuFamilia";
-            mnuFamilia.Size = new Size(113, 19);
+            mnuFamilia.Size = new Size(142, 24);
             mnuFamilia.Text = "Familias";
             mnuFamilia.Click += mnuFamilia_Click;
             // 
             // mnuCliente
             // 
             mnuCliente.Name = "mnuCliente";
-            mnuCliente.Size = new Size(113, 19);
+            mnuCliente.Size = new Size(142, 24);
             mnuCliente.Text = "Clientes";
             mnuCliente.Click += mnuCliente_Click;
             // 
             // mnuEmpleado
             // 
             mnuEmpleado.Name = "mnuEmpleado";
-            mnuEmpleado.Size = new Size(113, 19);
+            mnuEmpleado.Size = new Size(142, 24);
             mnuEmpleado.Text = "Empleados";
             mnuEmpleado.Click += mnuEmpleado_Click;
             // 
             // mnuProducto
             // 
             mnuProducto.Name = "mnuProducto";
-            mnuProducto.Size = new Size(113, 19);
+            mnuProducto.Size = new Size(142, 24);
             mnuProducto.Text = "Productos";
             mnuProducto.Click += mnuProducto_Click;
             // 
@@ -81,24 +83,32 @@
             // 
             salirToolStripMenuItem.Alignment = ToolStripItemAlignment.Right;
             salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            salirToolStripMenuItem.Size = new Size(113, 19);
+            salirToolStripMenuItem.Size = new Size(142, 24);
             salirToolStripMenuItem.Text = "Salir";
             // 
             // mnuVenta
             // 
             mnuVenta.Name = "mnuVenta";
-            mnuVenta.Size = new Size(113, 19);
+            mnuVenta.Size = new Size(142, 24);
             mnuVenta.Text = "Ventas";
             mnuVenta.Click += mnuVenta_Click;
             // 
+            // lstVentas
+            // 
+            lstVentas.Name = "lstVentas";
+            lstVentas.Size = new Size(142, 24);
+            lstVentas.Text = "Lista Ventas";
+            lstVentas.Click += lstVentas_Click;
+            // 
             // frmPrincipal
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
             Controls.Add(menuStrip1);
             IsMdiContainer = true;
             MainMenuStrip = menuStrip1;
+            Margin = new Padding(3, 4, 3, 4);
             Name = "frmPrincipal";
             Text = "Supermercado";
             WindowState = FormWindowState.Maximized;
@@ -118,5 +128,6 @@
         private ToolStripMenuItem mnuProducto;
         private ToolStripMenuItem salirToolStripMenuItem;
         private ToolStripMenuItem mnuVenta;
+        private ToolStripMenuItem lstVentas;
     }
 }
