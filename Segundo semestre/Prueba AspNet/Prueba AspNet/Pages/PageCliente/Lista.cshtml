@@ -1,0 +1,48 @@
+﻿@page
+@model Prueba_AspNet.Pages.PagesCliente.ListaModel
+@{
+    ViewData["Title"] = "Lista de Clientes";
+}
+<div class="text-left">
+    <h1 class="display-4 text-center">Lista de Clientes</h1>
+    <div class="row">
+        <div class="col-sm-12 text-right">
+            <a class="btn btn-primary" asp-page="./Alta">Agregar</a>
+        </div>
+        <table class="table text-center">
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>Nombre</td>
+                    <td>Direccion</td>
+                    <td>Telefono</td>
+                    <td>Acciones</td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var unCli in Model.clientes) 
+                {
+                    <tr>
+                        <td>@unCli.Id</td>
+                        <td>@unCli.Nombre</td>
+                        <td>@unCli.Direccion</td>
+                        <td>@unCli.Telefono</td>
+                        <td>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <a class="btn btn-primary" asp-page="./Modificar" asp-route-id="@unCli.Id">Modificar</a>
+                                </div>
+                                <div class="col-sm-6">
+                                    <form method="post" asp-page-handler="Eliminar">
+                                        <input type="hidden" name="id" value="@unCli.Id"/>
+                                        <button type="submit" class="btn btn-danger">Eliminar</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
