@@ -28,23 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            listView1 = new ListView();
-            Linea = new ColumnHeader();
-            Producto = new ColumnHeader();
-            Cantidad = new ColumnHeader();
-            Precio = new ColumnHeader();
-            Subtotal = new ColumnHeader();
-            textBox4 = new TextBox();
+            btnAgregar = new Button();
+            txrPrecio = new TextBox();
             label5 = new Label();
-            textBox3 = new TextBox();
+            txtCantidad = new TextBox();
             label4 = new Label();
-            comboBox1 = new ComboBox();
+            cmbProducto = new ComboBox();
             label2 = new Label();
             groupBox2 = new GroupBox();
-            textBox1 = new TextBox();
+            txtTotal = new TextBox();
             label1 = new Label();
-            textBox2 = new TextBox();
+            txtLinea = new TextBox();
             groupBox1 = new GroupBox();
             cmbEmpleado = new ComboBox();
             cmbCliente = new ComboBox();
@@ -55,62 +49,31 @@
             lblFecha = new Label();
             lblId = new Label();
             label3 = new Label();
+            lsvDetalle = new ListView();
+            btnGuardar = new Button();
+            btnModificar = new Button();
+            btnEliminar = new Button();
             groupBox2.SuspendLayout();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
-            // button1
+            // btnAgregar
             // 
-            button1.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(501, 159);
-            button1.Name = "button1";
-            button1.Size = new Size(117, 51);
-            button1.TabIndex = 29;
-            button1.Text = "Agregar";
-            button1.UseVisualStyleBackColor = true;
+            btnAgregar.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnAgregar.Location = new Point(501, 159);
+            btnAgregar.Name = "btnAgregar";
+            btnAgregar.Size = new Size(117, 51);
+            btnAgregar.TabIndex = 29;
+            btnAgregar.Text = "Agregar";
+            btnAgregar.UseVisualStyleBackColor = true;
+            btnAgregar.Click += btnAgregar_Click;
             // 
-            // listView1
+            // txrPrecio
             // 
-            listView1.Columns.AddRange(new ColumnHeader[] { Linea, Producto, Cantidad, Precio, Subtotal });
-            listView1.FullRowSelect = true;
-            listView1.GridLines = true;
-            listView1.Location = new Point(12, 216);
-            listView1.MultiSelect = false;
-            listView1.Name = "listView1";
-            listView1.Size = new Size(606, 234);
-            listView1.TabIndex = 28;
-            listView1.UseCompatibleStateImageBehavior = false;
-            // 
-            // Linea
-            // 
-            Linea.Text = "Linea";
-            // 
-            // Producto
-            // 
-            Producto.Text = "Producto";
-            Producto.TextAlign = HorizontalAlignment.Center;
-            // 
-            // Cantidad
-            // 
-            Cantidad.Text = "Cantidad";
-            Cantidad.TextAlign = HorizontalAlignment.Center;
-            // 
-            // Precio
-            // 
-            Precio.Text = "Precio";
-            Precio.TextAlign = HorizontalAlignment.Center;
-            // 
-            // Subtotal
-            // 
-            Subtotal.Text = "Subtotal";
-            Subtotal.TextAlign = HorizontalAlignment.Center;
-            // 
-            // textBox4
-            // 
-            textBox4.Location = new Point(412, 187);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(83, 23);
-            textBox4.TabIndex = 27;
+            txrPrecio.Location = new Point(412, 187);
+            txrPrecio.Name = "txrPrecio";
+            txrPrecio.Size = new Size(83, 23);
+            txrPrecio.TabIndex = 27;
             // 
             // label5
             // 
@@ -123,12 +86,12 @@
             label5.Text = "Precio";
             label5.TextAlign = ContentAlignment.MiddleRight;
             // 
-            // textBox3
+            // txtCantidad
             // 
-            textBox3.Location = new Point(321, 187);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(83, 23);
-            textBox3.TabIndex = 25;
+            txtCantidad.Location = new Point(321, 187);
+            txtCantidad.Name = "txtCantidad";
+            txtCantidad.Size = new Size(83, 23);
+            txtCantidad.TabIndex = 25;
             // 
             // label4
             // 
@@ -141,14 +104,14 @@
             label4.Text = "Cantidad";
             label4.TextAlign = ContentAlignment.MiddleRight;
             // 
-            // comboBox1
+            // cmbProducto
             // 
-            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(106, 187);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(207, 23);
-            comboBox1.TabIndex = 23;
+            cmbProducto.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbProducto.FormattingEnabled = true;
+            cmbProducto.Location = new Point(106, 187);
+            cmbProducto.Name = "cmbProducto";
+            cmbProducto.Size = new Size(207, 23);
+            cmbProducto.TabIndex = 23;
             // 
             // label2
             // 
@@ -163,7 +126,7 @@
             // 
             // groupBox2
             // 
-            groupBox2.Controls.Add(textBox1);
+            groupBox2.Controls.Add(txtTotal);
             groupBox2.Controls.Add(label1);
             groupBox2.Location = new Point(12, 456);
             groupBox2.Name = "groupBox2";
@@ -171,30 +134,32 @@
             groupBox2.TabIndex = 22;
             groupBox2.TabStop = false;
             // 
-            // textBox1
+            // txtTotal
             // 
-            textBox1.Location = new Point(465, 16);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(135, 23);
-            textBox1.TabIndex = 9;
+            txtTotal.Enabled = false;
+            txtTotal.Location = new Point(465, 16);
+            txtTotal.Name = "txtTotal";
+            txtTotal.Size = new Size(135, 23);
+            txtTotal.TabIndex = 9;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(427, 14);
+            label1.Location = new Point(403, 16);
             label1.Name = "label1";
-            label1.Size = new Size(32, 25);
+            label1.Size = new Size(56, 25);
             label1.TabIndex = 8;
-            label1.Text = "Id:";
+            label1.Text = "Total:";
             label1.TextAlign = ContentAlignment.MiddleRight;
             // 
-            // textBox2
+            // txtLinea
             // 
-            textBox2.Location = new Point(17, 187);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(83, 23);
-            textBox2.TabIndex = 20;
+            txtLinea.Enabled = false;
+            txtLinea.Location = new Point(17, 187);
+            txtLinea.Name = "txtLinea";
+            txtLinea.Size = new Size(83, 23);
+            txtLinea.TabIndex = 20;
             // 
             // groupBox1
             // 
@@ -262,6 +227,7 @@
             // 
             // txtId
             // 
+            txtId.Enabled = false;
             txtId.Location = new Point(112, 21);
             txtId.Name = "txtId";
             txtId.Size = new Size(135, 23);
@@ -300,27 +266,73 @@
             label3.Text = "Linea";
             label3.TextAlign = ContentAlignment.MiddleRight;
             // 
+            // lsvDetalle
+            // 
+            lsvDetalle.Location = new Point(12, 216);
+            lsvDetalle.Name = "lsvDetalle";
+            lsvDetalle.Size = new Size(606, 234);
+            lsvDetalle.TabIndex = 30;
+            lsvDetalle.UseCompatibleStateImageBehavior = false;
+            lsvDetalle.SelectedIndexChanged += lsvDetalle_SelectedIndexChanged;
+            // 
+            // btnGuardar
+            // 
+            btnGuardar.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnGuardar.Location = new Point(634, 18);
+            btnGuardar.Name = "btnGuardar";
+            btnGuardar.Size = new Size(154, 51);
+            btnGuardar.TabIndex = 31;
+            btnGuardar.Text = "Guardar";
+            btnGuardar.UseVisualStyleBackColor = true;
+            btnGuardar.Click += btnGuardar_Click;
+            // 
+            // btnModificar
+            // 
+            btnModificar.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnModificar.Location = new Point(634, 75);
+            btnModificar.Name = "btnModificar";
+            btnModificar.Size = new Size(154, 51);
+            btnModificar.TabIndex = 32;
+            btnModificar.Text = "Modificar";
+            btnModificar.UseVisualStyleBackColor = true;
+            btnModificar.Click += btnModificar_Click;
+            // 
+            // btnEliminar
+            // 
+            btnEliminar.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnEliminar.Location = new Point(634, 132);
+            btnEliminar.Name = "btnEliminar";
+            btnEliminar.Size = new Size(154, 51);
+            btnEliminar.TabIndex = 33;
+            btnEliminar.Text = "Eliminar";
+            btnEliminar.UseVisualStyleBackColor = true;
+            btnEliminar.Click += btnEliminar_Click;
+            // 
             // Ventas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 513);
-            Controls.Add(button1);
-            Controls.Add(listView1);
-            Controls.Add(textBox4);
+            Controls.Add(btnEliminar);
+            Controls.Add(btnModificar);
+            Controls.Add(btnGuardar);
+            Controls.Add(lsvDetalle);
+            Controls.Add(btnAgregar);
+            Controls.Add(txrPrecio);
             Controls.Add(label5);
-            Controls.Add(textBox3);
+            Controls.Add(txtCantidad);
             Controls.Add(label4);
-            Controls.Add(comboBox1);
+            Controls.Add(cmbProducto);
             Controls.Add(label2);
             Controls.Add(groupBox2);
-            Controls.Add(textBox2);
+            Controls.Add(txtLinea);
             Controls.Add(groupBox1);
             Controls.Add(label3);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "Ventas";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "frmVenta";
+            Load += Ventas_Load;
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
             groupBox1.ResumeLayout(false);
@@ -331,23 +343,17 @@
 
         #endregion
 
-        private Button button1;
-        private ListView listView1;
-        private ColumnHeader Linea;
-        private ColumnHeader Producto;
-        private ColumnHeader Cantidad;
-        private ColumnHeader Precio;
-        private ColumnHeader Subtotal;
-        private TextBox textBox4;
+        private Button btnAgregar;
+        private TextBox txrPrecio;
         private Label label5;
-        private TextBox textBox3;
+        private TextBox txtCantidad;
         private Label label4;
-        private ComboBox comboBox1;
+        private ComboBox cmbProducto;
         private Label label2;
         private GroupBox groupBox2;
-        private TextBox textBox1;
+        private TextBox txtTotal;
         private Label label1;
-        private TextBox textBox2;
+        private TextBox txtLinea;
         private GroupBox groupBox1;
         private ComboBox cmbEmpleado;
         private ComboBox cmbCliente;
@@ -358,6 +364,10 @@
         private Label lblFecha;
         private Label lblId;
         private Label label3;
+        private ListView lsvDetalle;
+        private Button btnGuardar;
+        private Button btnModificar;
+        private Button btnEliminar;
         private DateTimePicker dateTimePicker2;
         private DateTimePicker dateTimePicker1;
     }

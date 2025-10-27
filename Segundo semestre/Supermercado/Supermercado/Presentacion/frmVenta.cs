@@ -16,5 +16,36 @@ namespace Supermercado.Presentacion
         {
             InitializeComponent();
         }
+        
+
+        private void Ventas_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lsvDetalle_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
