@@ -1,23 +1,22 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using System.Security.Cryptography.X509Certificates;
 using Prueba_AspNet.Dominio;
 
-namespace Prueba_AspNet.Pages.PagesCliente
+namespace Prueba_AspNet.Pages.PageVenta
 {
     public class ListaModel : PageModel
     {
-        public List<Cliente> clientes = new List<Cliente>();
+        public List<Venta> ventas = new List<Venta>();
         Controladora controladora = new Controladora();
         public void OnGet()
         {
-            clientes = controladora.ListarClientes();
+            ventas = controladora.ListarVentas();
         }
 
         public IActionResult OnPostEliminar()
         {
             int Id = int.Parse(Request.Form["id"]);
-            controladora.BajaCliente(Id);
+            controladora.BajaVenta(Id);
             return Redirect("./Lista");
         }
     }

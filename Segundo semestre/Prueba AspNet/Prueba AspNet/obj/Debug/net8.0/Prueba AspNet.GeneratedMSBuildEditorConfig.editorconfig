@@ -9,57 +9,65 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Prueba_AspNet
 build_property.RootNamespace = Prueba_AspNet
-build_property.ProjectDir = C:\Users\PC\Programacion-Clase\Segundo semestre\Prueba AspNet\Prueba AspNet\
+build_property.ProjectDir = C:\Users\alexr\source\repos\Programacion-Clase\Segundo semestre\Prueba AspNet\Prueba AspNet\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\PC\Programacion-Clase\Segundo semestre\Prueba AspNet\Prueba AspNet
+build_property.MSBuildProjectDirectory = C:\Users\alexr\source\repos\Programacion-Clase\Segundo semestre\Prueba AspNet\Prueba AspNet
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/PC/Programacion-Clase/Segundo semestre/Prueba AspNet/Prueba AspNet/Pages/Error.cshtml]
+[C:/Users/alexr/source/repos/Programacion-Clase/Segundo semestre/Prueba AspNet/Prueba AspNet/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Programacion-Clase/Segundo semestre/Prueba AspNet/Prueba AspNet/Pages/Index.cshtml]
+[C:/Users/alexr/source/repos/Programacion-Clase/Segundo semestre/Prueba AspNet/Prueba AspNet/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Programacion-Clase/Segundo semestre/Prueba AspNet/Prueba AspNet/Pages/PageCliente/Alta.cshtml]
+[C:/Users/alexr/source/repos/Programacion-Clase/Segundo semestre/Prueba AspNet/Prueba AspNet/Pages/PageArticulo/Lista.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZUFydGljdWxvXExpc3RhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexr/source/repos/Programacion-Clase/Segundo semestre/Prueba AspNet/Prueba AspNet/Pages/PageCliente/Alta.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZUNsaWVudGVcQWx0YS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Programacion-Clase/Segundo semestre/Prueba AspNet/Prueba AspNet/Pages/PageCliente/Detalle.cshtml]
+[C:/Users/alexr/source/repos/Programacion-Clase/Segundo semestre/Prueba AspNet/Prueba AspNet/Pages/PageCliente/Detalle.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZUNsaWVudGVcRGV0YWxsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Programacion-Clase/Segundo semestre/Prueba AspNet/Prueba AspNet/Pages/PageCliente/Lista.cshtml]
+[C:/Users/alexr/source/repos/Programacion-Clase/Segundo semestre/Prueba AspNet/Prueba AspNet/Pages/PageCliente/Lista.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZUNsaWVudGVcTGlzdGEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Programacion-Clase/Segundo semestre/Prueba AspNet/Prueba AspNet/Pages/PageCliente/Modificar.cshtml]
+[C:/Users/alexr/source/repos/Programacion-Clase/Segundo semestre/Prueba AspNet/Prueba AspNet/Pages/PageCliente/Modificar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZUNsaWVudGVcTW9kaWZpY2FyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Programacion-Clase/Segundo semestre/Prueba AspNet/Prueba AspNet/Pages/Privacy.cshtml]
+[C:/Users/alexr/source/repos/Programacion-Clase/Segundo semestre/Prueba AspNet/Prueba AspNet/Pages/PageVenta/Lista.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZVZlbnRhXExpc3RhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/alexr/source/repos/Programacion-Clase/Segundo semestre/Prueba AspNet/Prueba AspNet/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Programacion-Clase/Segundo semestre/Prueba AspNet/Prueba AspNet/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/alexr/source/repos/Programacion-Clase/Segundo semestre/Prueba AspNet/Prueba AspNet/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Programacion-Clase/Segundo semestre/Prueba AspNet/Prueba AspNet/Pages/_ViewImports.cshtml]
+[C:/Users/alexr/source/repos/Programacion-Clase/Segundo semestre/Prueba AspNet/Prueba AspNet/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Programacion-Clase/Segundo semestre/Prueba AspNet/Prueba AspNet/Pages/_ViewStart.cshtml]
+[C:/Users/alexr/source/repos/Programacion-Clase/Segundo semestre/Prueba AspNet/Prueba AspNet/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Programacion-Clase/Segundo semestre/Prueba AspNet/Prueba AspNet/Pages/Shared/_Layout.cshtml]
+[C:/Users/alexr/source/repos/Programacion-Clase/Segundo semestre/Prueba AspNet/Prueba AspNet/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ophj5snq6c

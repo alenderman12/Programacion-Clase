@@ -33,3 +33,38 @@ C:\Users\PC\Programacion-Clase\Segundo semestre\Prueba AspNet\Prueba AspNet\obj\
 C:\Users\PC\Programacion-Clase\Segundo semestre\Prueba AspNet\Prueba AspNet\obj\Debug\net8.0\Prueba AspNet.pdb
 C:\Users\PC\Programacion-Clase\Segundo semestre\Prueba AspNet\Prueba AspNet\obj\Debug\net8.0\Prueba AspNet.genruntimeconfig.cache
 C:\Users\PC\Programacion-Clase\Segundo semestre\Prueba AspNet\Prueba AspNet\obj\Debug\net8.0\ref\Prueba AspNet.dll
+C:\Users\alexr\source\repos\Programacion-Clase\Segundo semestre\Prueba AspNet\Prueba AspNet\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\alexr\source\repos\Programacion-Clase\Segundo semestre\Prueba AspNet\Prueba AspNet\bin\Debug\net8.0\appsettings.json
+C:\Users\alexr\source\repos\Programacion-Clase\Segundo semestre\Prueba AspNet\Prueba AspNet\bin\Debug\net8.0\Prueba AspNet.staticwebassets.runtime.json
+C:\Users\alexr\source\repos\Programacion-Clase\Segundo semestre\Prueba AspNet\Prueba AspNet\bin\Debug\net8.0\Prueba AspNet.staticwebassets.endpoints.json
+C:\Users\alexr\source\repos\Programacion-Clase\Segundo semestre\Prueba AspNet\Prueba AspNet\bin\Debug\net8.0\Prueba AspNet.exe
+C:\Users\alexr\source\repos\Programacion-Clase\Segundo semestre\Prueba AspNet\Prueba AspNet\bin\Debug\net8.0\Prueba AspNet.deps.json
+C:\Users\alexr\source\repos\Programacion-Clase\Segundo semestre\Prueba AspNet\Prueba AspNet\bin\Debug\net8.0\Prueba AspNet.runtimeconfig.json
+C:\Users\alexr\source\repos\Programacion-Clase\Segundo semestre\Prueba AspNet\Prueba AspNet\bin\Debug\net8.0\Prueba AspNet.dll
+C:\Users\alexr\source\repos\Programacion-Clase\Segundo semestre\Prueba AspNet\Prueba AspNet\bin\Debug\net8.0\Prueba AspNet.pdb
+C:\Users\alexr\source\repos\Programacion-Clase\Segundo semestre\Prueba AspNet\Prueba AspNet\obj\Debug\net8.0\Prueba AspNet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexr\source\repos\Programacion-Clase\Segundo semestre\Prueba AspNet\Prueba AspNet\obj\Debug\net8.0\Prueba AspNet.AssemblyInfoInputs.cache
+C:\Users\alexr\source\repos\Programacion-Clase\Segundo semestre\Prueba AspNet\Prueba AspNet\obj\Debug\net8.0\Prueba AspNet.AssemblyInfo.cs
+C:\Users\alexr\source\repos\Programacion-Clase\Segundo semestre\Prueba AspNet\Prueba AspNet\obj\Debug\net8.0\Prueba AspNet.csproj.CoreCompileInputs.cache
+C:\Users\alexr\source\repos\Programacion-Clase\Segundo semestre\Prueba AspNet\Prueba AspNet\obj\Debug\net8.0\Prueba AspNet.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\alexr\source\repos\Programacion-Clase\Segundo semestre\Prueba AspNet\Prueba AspNet\obj\Debug\net8.0\Prueba AspNet.RazorAssemblyInfo.cache
+C:\Users\alexr\source\repos\Programacion-Clase\Segundo semestre\Prueba AspNet\Prueba AspNet\obj\Debug\net8.0\Prueba AspNet.RazorAssemblyInfo.cs
+C:\Users\alexr\source\repos\Programacion-Clase\Segundo semestre\Prueba AspNet\Prueba AspNet\obj\Debug\net8.0\Prueba AspNet.sourcelink.json
+C:\Users\alexr\source\repos\Programacion-Clase\Segundo semestre\Prueba AspNet\Prueba AspNet\obj\Debug\net8.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\alexr\source\repos\Programacion-Clase\Segundo semestre\Prueba AspNet\Prueba AspNet\obj\Debug\net8.0\scopedcss\bundle\Prueba AspNet.styles.css
+C:\Users\alexr\source\repos\Programacion-Clase\Segundo semestre\Prueba AspNet\Prueba AspNet\obj\Debug\net8.0\scopedcss\projectbundle\Prueba AspNet.bundle.scp.css
+C:\Users\alexr\source\repos\Programacion-Clase\Segundo semestre\Prueba AspNet\Prueba AspNet\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\alexr\source\repos\Programacion-Clase\Segundo semestre\Prueba AspNet\Prueba AspNet\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\alexr\source\repos\Programacion-Clase\Segundo semestre\Prueba AspNet\Prueba AspNet\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\alexr\source\repos\Programacion-Clase\Segundo semestre\Prueba AspNet\Prueba AspNet\obj\Debug\net8.0\staticwebassets\msbuild.Prueba AspNet.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\alexr\source\repos\Programacion-Clase\Segundo semestre\Prueba AspNet\Prueba AspNet\obj\Debug\net8.0\staticwebassets\msbuild.Prueba AspNet.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\alexr\source\repos\Programacion-Clase\Segundo semestre\Prueba AspNet\Prueba AspNet\obj\Debug\net8.0\staticwebassets\msbuild.build.Prueba AspNet.props
+C:\Users\alexr\source\repos\Programacion-Clase\Segundo semestre\Prueba AspNet\Prueba AspNet\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Prueba AspNet.props
+C:\Users\alexr\source\repos\Programacion-Clase\Segundo semestre\Prueba AspNet\Prueba AspNet\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Prueba AspNet.props
+C:\Users\alexr\source\repos\Programacion-Clase\Segundo semestre\Prueba AspNet\Prueba AspNet\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\alexr\source\repos\Programacion-Clase\Segundo semestre\Prueba AspNet\Prueba AspNet\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\alexr\source\repos\Programacion-Clase\Segundo semestre\Prueba AspNet\Prueba AspNet\obj\Debug\net8.0\Prueba AspNet.dll
+C:\Users\alexr\source\repos\Programacion-Clase\Segundo semestre\Prueba AspNet\Prueba AspNet\obj\Debug\net8.0\refint\Prueba AspNet.dll
+C:\Users\alexr\source\repos\Programacion-Clase\Segundo semestre\Prueba AspNet\Prueba AspNet\obj\Debug\net8.0\Prueba AspNet.pdb
+C:\Users\alexr\source\repos\Programacion-Clase\Segundo semestre\Prueba AspNet\Prueba AspNet\obj\Debug\net8.0\Prueba AspNet.genruntimeconfig.cache
+C:\Users\alexr\source\repos\Programacion-Clase\Segundo semestre\Prueba AspNet\Prueba AspNet\obj\Debug\net8.0\ref\Prueba AspNet.dll

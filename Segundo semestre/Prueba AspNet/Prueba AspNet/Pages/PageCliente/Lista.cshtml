@@ -22,6 +22,7 @@
             <tbody>
                 @foreach (var unCli in Model.clientes) 
                 {
+                    Console.WriteLine(unCli.Nombre);
                     <tr>
                         <td>@unCli.Id</td>
                         <td>@unCli.Nombre</td>
@@ -29,14 +30,17 @@
                         <td>@unCli.Telefono</td>
                         <td>
                             <div class="row">
-                                <div class="col-sm-6">
+                                <div class="col-sm-4">
                                     <a class="btn btn-primary" asp-page="./Modificar" asp-route-id="@unCli.Id">Modificar</a>
                                 </div>
-                                <div class="col-sm-6">
+                                <div class="col-sm-4">
                                     <form method="post" asp-page-handler="Eliminar">
                                         <input type="hidden" name="id" value="@unCli.Id"/>
                                         <button type="submit" class="btn btn-danger">Eliminar</button>
                                     </form>
+                                </div>
+                                <div class="col-sm-4">
+                                        <a class="btn btn-info" asp-page="./Detalle" asp-route-id="@unCli.Id">Detalles</a>
                                 </div>
                             </div>
                         </td>

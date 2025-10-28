@@ -1,0 +1,53 @@
+﻿@page
+@model Prueba_AspNet.Pages.PageVenta.ListaModel
+@{
+    ViewData["Title"] = "Lista de Ventas";
+}
+<div class="text-left">
+    <h1 class="display-4 text-center">Lista de Ventas</h1>
+    <div class="row">
+        <div class="col-sm-12 text-right">
+            <a class="btn btn-primary" asp-page="./Alta">Agregar</a>
+        </div>
+        <table class="table text-center">
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>Fecha</td>
+                    <td>Articulo</td>
+                    <td>Cliente</td>
+                    <td>Importe</td>
+                    <td>Acciones</td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var unVen in Model.ventas)
+                {
+                            <tr>
+                                <td>@unVen.Id</td>
+                                <td>@unVen.Fecha</td>
+                                <td>@unVen.Articulo</td>
+                                <td>@unVen.Cliente</td>
+                                <td>@unVen.Importe</td>
+                                <td>
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <a class="btn btn-primary" asp-page="./Modificar" asp-route-id="@unVen.Id">Modificar</a>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <form method="post" asp-page-handler="Eliminar">
+                                                <input type="hidden" name="id" value="@unVen.Id"/>
+                                                <button type="submit" class="btn btn-danger">Eliminar</button>
+                                            </form>
+                                        </div>
+                                        <div class="col-sm-4">
+                                                <a class="btn btn-info" asp-page="./Detalle" asp-route-id="@unVen.Id">Detalles</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

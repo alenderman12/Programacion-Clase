@@ -11,6 +11,7 @@ namespace Prueba_AspNet.Pages.PageCliente
         public string Mensaje { get; set; }
         public void OnGet()
         {
+
         }
         public IActionResult OnPostAgregar()
         {
@@ -20,7 +21,7 @@ namespace Prueba_AspNet.Pages.PageCliente
                 {
                     throw new Exception("Debe ingresar un ID");
                 }
-                if (int.TryParse(Request.Form["id"], out _))
+                if (!int.TryParse(Request.Form["id"], out _))
                 {
                     throw new Exception("El ID debe ser numerico");
                 }
