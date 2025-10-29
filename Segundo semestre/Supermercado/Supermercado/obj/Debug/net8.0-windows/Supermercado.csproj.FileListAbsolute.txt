@@ -43,3 +43,4 @@ C:\Users\PC\Programacion-Clase\Segundo semestre\Supermercado\Supermercado\obj\De
 C:\Users\alexr\source\repos\Programacion-Clase\Segundo semestre\Supermercado\Supermercado\obj\Debug\net8.0-windows\Supermercado.Presentacion.frmProducto.resources
 C:\Users\alexr\source\repos\Programacion-Clase\Segundo semestre\Supermercado\Supermercado\obj\Debug\net8.0-windows\Supermercado.Presentacion.Ventas.resources
 C:\Users\alexr\source\repos\Programacion-Clase\Segundo semestre\Supermercado\Supermercado\obj\Debug\net8.0-windows\Supermercado.Dominio.frmLstVentas.resources
+C:\Users\PC\Programacion-Clase\Segundo semestre\Supermercado\Supermercado\obj\Debug\net8.0-windows\Supermercado.Dominio.frmLstVentas.resources

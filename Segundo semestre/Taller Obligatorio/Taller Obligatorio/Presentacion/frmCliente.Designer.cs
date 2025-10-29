@@ -1,4 +1,4 @@
-﻿namespace Supermercado.Presentacion
+﻿namespace Taller_Obligatorio.Presentacion
 {
     partial class frmCliente
     {
@@ -51,10 +51,10 @@
             // lblLimpiarCajas
             // 
             lblLimpiarCajas.AutoSize = true;
-            lblLimpiarCajas.Location = new Point(674, 184);
+            lblLimpiarCajas.Location = new Point(678, 192);
             lblLimpiarCajas.Name = "lblLimpiarCajas";
             lblLimpiarCajas.Size = new Size(78, 15);
-            lblLimpiarCajas.TabIndex = 19;
+            lblLimpiarCajas.TabIndex = 24;
             lblLimpiarCajas.TabStop = true;
             lblLimpiarCajas.Text = "Limpiar Cajas";
             lblLimpiarCajas.LinkClicked += lblLimpiarCajas_LinkClicked;
@@ -62,11 +62,11 @@
             // btnEliminar
             // 
             btnEliminar.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnEliminar.Location = new Point(655, 126);
+            btnEliminar.Location = new Point(659, 134);
             btnEliminar.Margin = new Padding(3, 2, 3, 2);
             btnEliminar.Name = "btnEliminar";
             btnEliminar.Size = new Size(131, 44);
-            btnEliminar.TabIndex = 18;
+            btnEliminar.TabIndex = 23;
             btnEliminar.Text = "Eliminar";
             btnEliminar.UseVisualStyleBackColor = true;
             btnEliminar.Click += btnEliminar_Click;
@@ -74,11 +74,11 @@
             // btnModificar
             // 
             btnModificar.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnModificar.Location = new Point(655, 70);
+            btnModificar.Location = new Point(659, 78);
             btnModificar.Margin = new Padding(3, 2, 3, 2);
             btnModificar.Name = "btnModificar";
             btnModificar.Size = new Size(131, 44);
-            btnModificar.TabIndex = 17;
+            btnModificar.TabIndex = 22;
             btnModificar.Text = "Modificar";
             btnModificar.UseVisualStyleBackColor = true;
             btnModificar.Click += btnModificar_Click;
@@ -86,11 +86,11 @@
             // btnAgregar
             // 
             btnAgregar.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnAgregar.Location = new Point(655, 14);
+            btnAgregar.Location = new Point(659, 22);
             btnAgregar.Margin = new Padding(3, 2, 3, 2);
             btnAgregar.Name = "btnAgregar";
             btnAgregar.Size = new Size(131, 44);
-            btnAgregar.TabIndex = 16;
+            btnAgregar.TabIndex = 21;
             btnAgregar.Text = "Agregar";
             btnAgregar.UseVisualStyleBackColor = true;
             btnAgregar.Click += btnAgregar_Click;
@@ -105,12 +105,12 @@
             groupBox1.Controls.Add(txtId);
             groupBox1.Controls.Add(lblNombre);
             groupBox1.Controls.Add(lblId);
-            groupBox1.Location = new Point(7, 9);
+            groupBox1.Location = new Point(11, 17);
             groupBox1.Margin = new Padding(3, 2, 3, 2);
             groupBox1.Name = "groupBox1";
             groupBox1.Padding = new Padding(3, 2, 3, 2);
             groupBox1.Size = new Size(642, 416);
-            groupBox1.TabIndex = 15;
+            groupBox1.TabIndex = 20;
             groupBox1.TabStop = false;
             groupBox1.Text = "groupBox1";
             // 
@@ -126,7 +126,7 @@
             // 
             lblTelefono.AutoSize = true;
             lblTelefono.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblTelefono.Location = new Point(169, 65);
+            lblTelefono.Location = new Point(169, 64);
             lblTelefono.Name = "lblTelefono";
             lblTelefono.Size = new Size(88, 25);
             lblTelefono.TabIndex = 7;
@@ -199,7 +199,7 @@
             // 
             lblNombre.AutoSize = true;
             lblNombre.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblNombre.Location = new Point(172, 37);
+            lblNombre.Location = new Point(172, 36);
             lblNombre.Name = "lblNombre";
             lblNombre.Size = new Size(85, 25);
             lblNombre.TabIndex = 1;
@@ -209,7 +209,7 @@
             // 
             lblId.AutoSize = true;
             lblId.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblId.Location = new Point(223, 12);
+            lblId.Location = new Point(223, 11);
             lblId.Name = "lblId";
             lblId.Size = new Size(34, 25);
             lblId.TabIndex = 0;
@@ -219,15 +219,14 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(801, 434);
+            ClientSize = new Size(800, 450);
             Controls.Add(lblLimpiarCajas);
             Controls.Add(btnEliminar);
             Controls.Add(btnModificar);
             Controls.Add(btnAgregar);
             Controls.Add(groupBox1);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "frmCliente";
-            Text = "Cliente";
+            Text = "frmCliente";
             Load += frmCliente_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();

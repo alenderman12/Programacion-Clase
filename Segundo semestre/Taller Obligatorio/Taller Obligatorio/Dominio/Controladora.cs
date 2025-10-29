@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Taller_Obligatorio.Dominio
 {
-    class Controladora
+    public class Controladora
     {
         private static List<Cliente> aListaClientes = new List<Cliente>();
         private static List<Reparacion> aListaReparaciones = new List<Reparacion>();

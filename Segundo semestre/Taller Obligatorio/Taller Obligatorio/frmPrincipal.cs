@@ -1,6 +1,5 @@
 using Taller_Obligatorio.Presentacion;
 using Taller_Obligatorio.Dominio;
-using Supermercado.Presentacion;
 
 namespace Taller_Obligatorio
 {
@@ -43,6 +42,11 @@ namespace Taller_Obligatorio
                         unfrmReparacion.MdiParent = this;
                         unfrmReparacion.Show();
                         break;
+                    case "frmEstadisticas":
+                        frmEstadisticas unfrmEstadisticas = new frmEstadisticas();
+                        unfrmEstadisticas.MdiParent = this;
+                        unfrmEstadisticas.Show();
+                        break;
                 }
             }
         }
@@ -68,6 +72,11 @@ namespace Taller_Obligatorio
         private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Singleton("frmCliente");
+        }
+
+        private void estadisticasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Singleton("frmEstadisticas");
         }
     }
 }

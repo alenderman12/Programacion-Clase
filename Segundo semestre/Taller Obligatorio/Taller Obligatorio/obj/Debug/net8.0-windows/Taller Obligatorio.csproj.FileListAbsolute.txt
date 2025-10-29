@@ -4,7 +4,6 @@ C:\Users\PC\Programacion-Clase\Segundo semestre\Taller Obligatorio\Taller Obliga
 C:\Users\PC\Programacion-Clase\Segundo semestre\Taller Obligatorio\Taller Obligatorio\bin\Debug\net8.0-windows\Taller Obligatorio.dll
 C:\Users\PC\Programacion-Clase\Segundo semestre\Taller Obligatorio\Taller Obligatorio\bin\Debug\net8.0-windows\Taller Obligatorio.pdb
 C:\Users\PC\Programacion-Clase\Segundo semestre\Taller Obligatorio\Taller Obligatorio\obj\Debug\net8.0-windows\Taller_Obligatorio.frmPrincipal.resources
-C:\Users\PC\Programacion-Clase\Segundo semestre\Taller Obligatorio\Taller Obligatorio\obj\Debug\net8.0-windows\Supermercado.Presentacion.frmCliente.resources
 C:\Users\PC\Programacion-Clase\Segundo semestre\Taller Obligatorio\Taller Obligatorio\obj\Debug\net8.0-windows\Taller_Obligatorio.Presentacion.frmReparacion.resources
 C:\Users\PC\Programacion-Clase\Segundo semestre\Taller Obligatorio\Taller Obligatorio\obj\Debug\net8.0-windows\Taller_Obligatorio.Presentacion.frmVehiculo.resources
 C:\Users\PC\Programacion-Clase\Segundo semestre\Taller Obligatorio\Taller Obligatorio\obj\Debug\net8.0-windows\Taller Obligatorio.csproj.GenerateResource.cache
@@ -18,3 +17,5 @@ C:\Users\PC\Programacion-Clase\Segundo semestre\Taller Obligatorio\Taller Obliga
 C:\Users\PC\Programacion-Clase\Segundo semestre\Taller Obligatorio\Taller Obligatorio\obj\Debug\net8.0-windows\Taller Obligatorio.pdb
 C:\Users\PC\Programacion-Clase\Segundo semestre\Taller Obligatorio\Taller Obligatorio\obj\Debug\net8.0-windows\Taller Obligatorio.genruntimeconfig.cache
 C:\Users\PC\Programacion-Clase\Segundo semestre\Taller Obligatorio\Taller Obligatorio\obj\Debug\net8.0-windows\ref\Taller Obligatorio.dll
+C:\Users\PC\Programacion-Clase\Segundo semestre\Taller Obligatorio\Taller Obligatorio\obj\Debug\net8.0-windows\Taller_Obligatorio.Presentacion.frmCliente.resources
+C:\Users\PC\Programacion-Clase\Segundo semestre\Taller Obligatorio\Taller Obligatorio\obj\Debug\net8.0-windows\Taller_Obligatorio.Presentacion.frmEstadisticas.resources

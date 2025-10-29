@@ -1,6 +1,6 @@
 ﻿namespace Supermercado.Dominio
 {
-    partial class frmLstVentas
+    partial class frmLstVentas1
     {
         /// <summary>
         /// Required designer variable.

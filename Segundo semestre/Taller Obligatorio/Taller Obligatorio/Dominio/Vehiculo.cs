@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Taller_Obligatorio.Dominio
 {
-    class Vehiculo
+    public class Vehiculo
     {
         private int aId;
         private string aMatricula;

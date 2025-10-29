@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Taller_Obligatorio.Dominio
 {
-    class Cliente
+    public class Cliente
     {
         private int aId;
         private string aNombre;

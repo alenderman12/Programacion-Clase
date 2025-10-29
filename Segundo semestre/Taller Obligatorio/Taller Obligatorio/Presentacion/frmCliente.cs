@@ -1,5 +1,4 @@
-﻿using Taller_Obligatorio.Dominio;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,8 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Taller_Obligatorio.Dominio;
 
-namespace Supermercado.Presentacion
+namespace Taller_Obligatorio.Presentacion
 {
     public partial class frmCliente : Form
     {

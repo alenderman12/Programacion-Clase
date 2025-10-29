@@ -62,7 +62,7 @@ namespace Supermercado.Presentacion
                         unFrmVenta.Show();
                         break;
                     case "frmLstVenta":
-                        frmLstVentas unFrmLstVentas = new frmLstVentas();
+                        frmLstVentas1 unFrmLstVentas = new frmLstVentas1();
                         unFrmLstVentas.MdiParent = this;
                         unFrmLstVentas.Show();
                         break;

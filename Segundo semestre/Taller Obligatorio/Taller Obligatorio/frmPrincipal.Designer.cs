@@ -32,13 +32,14 @@
             clienteToolStripMenuItem = new ToolStripMenuItem();
             vehiculoToolStripMenuItem = new ToolStripMenuItem();
             reparacionesToolStripMenuItem = new ToolStripMenuItem();
+            estadisticasToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
             menuStrip1.Dock = DockStyle.Left;
-            menuStrip1.Items.AddRange(new ToolStripItem[] { clienteToolStripMenuItem, vehiculoToolStripMenuItem, reparacionesToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { clienteToolStripMenuItem, vehiculoToolStripMenuItem, reparacionesToolStripMenuItem, estadisticasToolStripMenuItem });
             menuStrip1.LayoutStyle = ToolStripLayoutStyle.VerticalStackWithOverflow;
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
@@ -49,23 +50,30 @@
             // clienteToolStripMenuItem
             // 
             clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            clienteToolStripMenuItem.Size = new Size(113, 19);
+            clienteToolStripMenuItem.Size = new Size(82, 19);
             clienteToolStripMenuItem.Text = "Clientes";
             clienteToolStripMenuItem.Click += clienteToolStripMenuItem_Click;
             // 
             // vehiculoToolStripMenuItem
             // 
             vehiculoToolStripMenuItem.Name = "vehiculoToolStripMenuItem";
-            vehiculoToolStripMenuItem.Size = new Size(113, 19);
+            vehiculoToolStripMenuItem.Size = new Size(82, 19);
             vehiculoToolStripMenuItem.Text = "Vehiculos";
             vehiculoToolStripMenuItem.Click += vehiculoToolStripMenuItem_Click;
             // 
             // reparacionesToolStripMenuItem
             // 
             reparacionesToolStripMenuItem.Name = "reparacionesToolStripMenuItem";
-            reparacionesToolStripMenuItem.Size = new Size(113, 19);
+            reparacionesToolStripMenuItem.Size = new Size(82, 19);
             reparacionesToolStripMenuItem.Text = "Reparaciones";
             reparacionesToolStripMenuItem.Click += reparacionesToolStripMenuItem_Click;
+            // 
+            // estadisticasToolStripMenuItem
+            // 
+            estadisticasToolStripMenuItem.Name = "estadisticasToolStripMenuItem";
+            estadisticasToolStripMenuItem.Size = new Size(113, 19);
+            estadisticasToolStripMenuItem.Text = "Estadisticas";
+            estadisticasToolStripMenuItem.Click += estadisticasToolStripMenuItem_Click;
             // 
             // frmPrincipal
             // 
@@ -91,5 +99,6 @@
         private ToolStripMenuItem clienteToolStripMenuItem;
         private ToolStripMenuItem vehiculoToolStripMenuItem;
         private ToolStripMenuItem reparacionesToolStripMenuItem;
+        private ToolStripMenuItem estadisticasToolStripMenuItem;
     }
 }

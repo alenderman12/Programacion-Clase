@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Taller_Obligatorio.Dominio
 {
-    class Reparacion
+    public class Reparacion
     {
         private int aId;
         private DateTime aFecha;

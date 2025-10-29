@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace Supermercado.Dominio
 {
-    public partial class frmLstVentas : Form
+    public partial class frmLstVentas1 : Form
     {
         Controladora controladora = new Controladora();
-        public frmLstVentas()
+        public frmLstVentas1()
         {
             InitializeComponent();
         }

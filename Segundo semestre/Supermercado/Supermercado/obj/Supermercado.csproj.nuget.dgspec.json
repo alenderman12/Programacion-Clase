@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alexr\\source\\repos\\Programacion-Clase\\Segundo semestre\\Supermercado\\Supermercado\\Supermercado.csproj": {}
+    "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Supermercado\\Supermercado\\Supermercado.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alexr\\source\\repos\\Programacion-Clase\\Segundo semestre\\Supermercado\\Supermercado\\Supermercado.csproj": {
+    "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Supermercado\\Supermercado\\Supermercado.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alexr\\source\\repos\\Programacion-Clase\\Segundo semestre\\Supermercado\\Supermercado\\Supermercado.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Supermercado\\Supermercado\\Supermercado.csproj",
         "projectName": "Supermercado",
-        "projectPath": "C:\\Users\\alexr\\source\\repos\\Programacion-Clase\\Segundo semestre\\Supermercado\\Supermercado\\Supermercado.csproj",
-        "packagesPath": "C:\\Users\\alexr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alexr\\source\\repos\\Programacion-Clase\\Segundo semestre\\Supermercado\\Supermercado\\obj\\",
+        "projectPath": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Supermercado\\Supermercado\\Supermercado.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Supermercado\\Supermercado\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\alexr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
