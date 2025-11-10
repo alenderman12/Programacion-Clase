@@ -1,0 +1,46 @@
+﻿@page
+@model Prueba_AspNet.Pages.PageVenta.DetalleModel
+@{
+}
+<div class="text-left">
+    <h1 class="display-4">Detalle de la venta</h1>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.venta.Id)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.venta.Id)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.venta.Fecha)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.venta.Fecha)
+        </dd>
+        <dt class="col-sm-2">
+            Articulo
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.venta.Articulo.Nombre)
+        </dd>
+        <dt class="col-sm-2">
+            Cliente
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.venta.Cliente.Nombre)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.venta.Importe)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.venta.Importe)
+        </dd>
+    </dl>
+    <hr />
+    <div class="row">
+        <div class="col-sm-4">
+            <a class="btn btn-primary" asp-page="./Lista">Volver</a>
+        </div>
+    </div>
+</div>

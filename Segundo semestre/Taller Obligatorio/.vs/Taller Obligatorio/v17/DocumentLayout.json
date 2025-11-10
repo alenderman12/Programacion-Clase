@@ -3,28 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Taller Obligatorio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4E114674-0129-44DD-86F5-A2043690C8E0}|Taller Obligatorio\\Taller Obligatorio.csproj|c:\\users\\pc\\programacion-clase\\segundo semestre\\taller obligatorio\\taller obligatorio\\presentacion\\frmcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E114674-0129-44DD-86F5-A2043690C8E0}|Taller Obligatorio\\Taller Obligatorio.csproj|solutionrelative:taller obligatorio\\presentacion\\frmcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4E114674-0129-44DD-86F5-A2043690C8E0}|Taller Obligatorio\\Taller Obligatorio.csproj|c:\\users\\pc\\programacion-clase\\segundo semestre\\taller obligatorio\\taller obligatorio\\presentacion\\frmreparacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E114674-0129-44DD-86F5-A2043690C8E0}|Taller Obligatorio\\Taller Obligatorio.csproj|solutionrelative:taller obligatorio\\presentacion\\frmreparacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4E114674-0129-44DD-86F5-A2043690C8E0}|Taller Obligatorio\\Taller Obligatorio.csproj|c:\\users\\pc\\programacion-clase\\segundo semestre\\taller obligatorio\\taller obligatorio\\presentacion\\frmestadisticas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E114674-0129-44DD-86F5-A2043690C8E0}|Taller Obligatorio\\Taller Obligatorio.csproj|solutionrelative:taller obligatorio\\presentacion\\frmestadisticas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E114674-0129-44DD-86F5-A2043690C8E0}|Taller Obligatorio\\Taller Obligatorio.csproj|c:\\users\\pc\\programacion-clase\\segundo semestre\\taller obligatorio\\taller obligatorio\\presentacion\\frmvehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E114674-0129-44DD-86F5-A2043690C8E0}|Taller Obligatorio\\Taller Obligatorio.csproj|solutionrelative:taller obligatorio\\presentacion\\frmvehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4E114674-0129-44DD-86F5-A2043690C8E0}|Taller Obligatorio\\Taller Obligatorio.csproj|c:\\users\\pc\\programacion-clase\\segundo semestre\\taller obligatorio\\taller obligatorio\\dominio\\controladora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E114674-0129-44DD-86F5-A2043690C8E0}|Taller Obligatorio\\Taller Obligatorio.csproj|solutionrelative:taller obligatorio\\dominio\\controladora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E114674-0129-44DD-86F5-A2043690C8E0}|Taller Obligatorio\\Taller Obligatorio.csproj|c:\\users\\pc\\programacion-clase\\segundo semestre\\taller obligatorio\\taller obligatorio\\dominio\\reparacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E114674-0129-44DD-86F5-A2043690C8E0}|Taller Obligatorio\\Taller Obligatorio.csproj|solutionrelative:taller obligatorio\\dominio\\reparacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E114674-0129-44DD-86F5-A2043690C8E0}|Taller Obligatorio\\Taller Obligatorio.csproj|C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Taller Obligatorio\\taller obligatorio\\presentacion\\frmreparacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4E114674-0129-44DD-86F5-A2043690C8E0}|Taller Obligatorio\\Taller Obligatorio.csproj|solutionrelative:taller obligatorio\\presentacion\\frmreparacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4E114674-0129-44DD-86F5-A2043690C8E0}|Taller Obligatorio\\Taller Obligatorio.csproj|c:\\users\\pc\\programacion-clase\\segundo semestre\\taller obligatorio\\taller obligatorio\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E114674-0129-44DD-86F5-A2043690C8E0}|Taller Obligatorio\\Taller Obligatorio.csproj|solutionrelative:taller obligatorio\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E114674-0129-44DD-86F5-A2043690C8E0}|Taller Obligatorio\\Taller Obligatorio.csproj|c:\\users\\pc\\programacion-clase\\segundo semestre\\taller obligatorio\\taller obligatorio\\presentacion\\frmreparacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E114674-0129-44DD-86F5-A2043690C8E0}|Taller Obligatorio\\Taller Obligatorio.csproj|solutionrelative:taller obligatorio\\presentacion\\frmreparacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4E114674-0129-44DD-86F5-A2043690C8E0}|Taller Obligatorio\\Taller Obligatorio.csproj|c:\\users\\pc\\programacion-clase\\segundo semestre\\taller obligatorio\\taller obligatorio\\presentacion\\frmcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E114674-0129-44DD-86F5-A2043690C8E0}|Taller Obligatorio\\Taller Obligatorio.csproj|solutionrelative:taller obligatorio\\presentacion\\frmcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E114674-0129-44DD-86F5-A2043690C8E0}|Taller Obligatorio\\Taller Obligatorio.csproj|c:\\users\\pc\\programacion-clase\\segundo semestre\\taller obligatorio\\taller obligatorio\\presentacion\\frmvehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E114674-0129-44DD-86F5-A2043690C8E0}|Taller Obligatorio\\Taller Obligatorio.csproj|solutionrelative:taller obligatorio\\presentacion\\frmvehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,25 +42,84 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "frmVehiculo.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Taller Obligatorio\\Taller Obligatorio\\Presentacion\\frmVehiculo.cs",
               "RelativeDocumentMoniker": "Taller Obligatorio\\Presentacion\\frmVehiculo.cs",
               "ToolTip": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Taller Obligatorio\\Taller Obligatorio\\Presentacion\\frmVehiculo.cs",
               "RelativeToolTip": "Taller Obligatorio\\Presentacion\\frmVehiculo.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAA8wHYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAIwEkAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-27T19:58:19.263Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmReparacion.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Taller Obligatorio\\Taller Obligatorio\\Presentacion\\frmReparacion.cs",
+              "RelativeDocumentMoniker": "Taller Obligatorio\\Presentacion\\frmReparacion.cs",
+              "ToolTip": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Taller Obligatorio\\Taller Obligatorio\\Presentacion\\frmReparacion.cs",
+              "RelativeToolTip": "Taller Obligatorio\\Presentacion\\frmReparacion.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAmwIcAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T20:50:18.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Reparacion.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Taller Obligatorio\\Taller Obligatorio\\Dominio\\Reparacion.cs",
+              "RelativeDocumentMoniker": "Taller Obligatorio\\Dominio\\Reparacion.cs",
+              "ToolTip": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Taller Obligatorio\\Taller Obligatorio\\Dominio\\Reparacion.cs",
+              "RelativeToolTip": "Taller Obligatorio\\Dominio\\Reparacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T01:44:07.06Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frmReparacion.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Taller Obligatorio\\Taller Obligatorio\\Presentacion\\frmReparacion.cs",
+              "RelativeDocumentMoniker": "Taller Obligatorio\\Presentacion\\frmReparacion.cs",
+              "ToolTip": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Taller Obligatorio\\Taller Obligatorio\\Presentacion\\frmReparacion.cs [Design]",
+              "RelativeToolTip": "Taller Obligatorio\\Presentacion\\frmReparacion.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T01:42:56.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Controladora.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Taller Obligatorio\\Taller Obligatorio\\Dominio\\Controladora.cs",
+              "RelativeDocumentMoniker": "Taller Obligatorio\\Dominio\\Controladora.cs",
+              "ToolTip": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Taller Obligatorio\\Taller Obligatorio\\Dominio\\Controladora.cs",
+              "RelativeToolTip": "Taller Obligatorio\\Dominio\\Controladora.cs",
+              "ViewState": "AgIAAK8AAAAAAAAAAADwv78AAABkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T21:21:20.167Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "frmCliente.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Taller Obligatorio\\Taller Obligatorio\\Presentacion\\frmCliente.cs",
+              "RelativeDocumentMoniker": "Taller Obligatorio\\Presentacion\\frmCliente.cs",
+              "ToolTip": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Taller Obligatorio\\Taller Obligatorio\\Presentacion\\frmCliente.cs",
+              "RelativeToolTip": "Taller Obligatorio\\Presentacion\\frmCliente.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAADwv3sAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T20:58:39.728Z"
             },
             {
               "$type": "Document",
@@ -62,62 +129,21 @@
               "RelativeDocumentMoniker": "Taller Obligatorio\\Presentacion\\frmEstadisticas.cs",
               "ToolTip": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Taller Obligatorio\\Taller Obligatorio\\Presentacion\\frmEstadisticas.cs",
               "RelativeToolTip": "Taller Obligatorio\\Presentacion\\frmEstadisticas.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGsAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAADgAAAAAAAAAAAAAwEcAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T21:01:54.892Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-28T21:01:54.892Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Controladora.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Taller Obligatorio\\Taller Obligatorio\\Dominio\\Controladora.cs",
-              "RelativeDocumentMoniker": "Taller Obligatorio\\Dominio\\Controladora.cs",
-              "ToolTip": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Taller Obligatorio\\Taller Obligatorio\\Dominio\\Controladora.cs",
-              "RelativeToolTip": "Taller Obligatorio\\Dominio\\Controladora.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAQwBEAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T21:21:20.167Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "frmCliente.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Taller Obligatorio\\Taller Obligatorio\\Presentacion\\frmCliente.cs",
-              "RelativeDocumentMoniker": "Taller Obligatorio\\Presentacion\\frmCliente.cs",
-              "ToolTip": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Taller Obligatorio\\Taller Obligatorio\\Presentacion\\frmCliente.cs",
-              "RelativeToolTip": "Taller Obligatorio\\Presentacion\\frmCliente.cs",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAiwHsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T20:58:39.728Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "frmPrincipal.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Taller Obligatorio\\Taller Obligatorio\\frmPrincipal.cs",
               "RelativeDocumentMoniker": "Taller Obligatorio\\frmPrincipal.cs",
               "ToolTip": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Taller Obligatorio\\Taller Obligatorio\\frmPrincipal.cs",
               "RelativeToolTip": "Taller Obligatorio\\frmPrincipal.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowAEAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T19:27:40.641Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "frmReparacion.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Taller Obligatorio\\Taller Obligatorio\\Presentacion\\frmReparacion.cs",
-              "RelativeDocumentMoniker": "Taller Obligatorio\\Presentacion\\frmReparacion.cs",
-              "ToolTip": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Taller Obligatorio\\Taller Obligatorio\\Presentacion\\frmReparacion.cs",
-              "RelativeToolTip": "Taller Obligatorio\\Presentacion\\frmReparacion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T20:50:18.438Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-27T19:27:40.641Z"
             }
           ]
         }

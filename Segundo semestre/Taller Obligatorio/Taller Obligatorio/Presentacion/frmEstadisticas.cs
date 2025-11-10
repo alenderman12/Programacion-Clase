@@ -47,7 +47,6 @@ namespace Taller_Obligatorio.Presentacion
             lvsReparaciones.Visible = false;
             lvsVehiculos.Visible = true;
             lvsVehiculos.Items.Clear();
-            int vehiculosCuenta = 0;
             foreach (Vehiculo vehiculo in controladora.ListaVehiculos())
             {
                 if (vehiculo.Dueno.Id == pIdCliente)
@@ -75,7 +74,6 @@ namespace Taller_Obligatorio.Presentacion
                     ListViewItem item = new ListViewItem(reparacion.Id.ToString());
                     item.SubItems.Add(reparacion.Fecha.ToString());
                     item.SubItems.Add(reparacion.Vehiculo.Matricula);
-                    item.SubItems.Add(reparacion.Dueno.Nombre);
                     item.SubItems.Add(reparacion.Descripcion);
                     item.SubItems.Add(reparacion.Costo.ToString());
                     lvsReparaciones.Items.Add(item);

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Prueba AspNet")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+302d76507e195c381acd4624b0e6ae7ed6a555d5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+493cd30e10d8108142603ba0f5065b9afa79ecbd")]
 [assembly: System.Reflection.AssemblyProductAttribute("Prueba AspNet")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Prueba AspNet")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

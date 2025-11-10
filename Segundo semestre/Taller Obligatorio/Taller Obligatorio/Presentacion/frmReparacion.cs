@@ -24,7 +24,6 @@ namespace Taller_Obligatorio.Presentacion
             txtId.Text = controladora.IdReparacion().ToString();
             dteFecha.Value = DateTime.Now;
             cmbVehiculo.SelectedIndex = 0;
-            cmbCliente.SelectedIndex = 0;
             txtDescripcion.Clear();
             txtCosto.Clear();
             lblMensaje.Visible = false;
@@ -39,7 +38,6 @@ namespace Taller_Obligatorio.Presentacion
                 ListViewItem item = new ListViewItem(reparacion.Id.ToString());
                 item.SubItems.Add(reparacion.Fecha.ToString());
                 item.SubItems.Add(reparacion.Vehiculo.Matricula);
-                item.SubItems.Add(reparacion.Dueno.Nombre);
                 item.SubItems.Add(reparacion.Descripcion);
                 item.SubItems.Add(reparacion.Costo.ToString());
                 lvsReparaciones.Items.Add(item);
@@ -50,17 +48,6 @@ namespace Taller_Obligatorio.Presentacion
         {
             lblMensaje.Text = msg;
             lblMensaje.Visible = true;
-        }
-
-        private void CargarClientes()
-        {
-            cmbCliente.Items.Clear();
-            cmbCliente.Items.Add("Seleccione un cliente");
-            foreach (Cliente cliente in controladora.ListaClientes())
-            {
-                cmbCliente.Items.Add(cliente.Id + " : " + cliente.Nombre);
-            }
-            cmbCliente.SelectedIndex = 0;
         }
 
         private void CargarVehiculos()
@@ -76,7 +63,6 @@ namespace Taller_Obligatorio.Presentacion
 
         private void frmReparacion_Load(object sender, EventArgs e)
         {
-            CargarClientes();
             CargarVehiculos();
             ListarReparaciones();
             LimpiarCajas();
@@ -84,9 +70,14 @@ namespace Taller_Obligatorio.Presentacion
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            if (txtId.Text == "")
+            if (txtId.Text == "" || txtCosto.Text == "")
             {
                 DisplayError("Debe completar todos los campos requeridos");
+                return;
+            }
+            if (!int.TryParse(txtCosto.Text, out _))
+            {
+                DisplayError("El costo debe ser numerico.");
                 return;
             }
 
@@ -103,20 +94,10 @@ namespace Taller_Obligatorio.Presentacion
             int idVehiculo = int.Parse(arrayLineaV[0]);
             Vehiculo vehiculo = controladora.BuscarVehiculo(idVehiculo);
 
-            if (cmbCliente.SelectedIndex == 0)
-            {
-                DisplayError("Debe seleccionar un Cliente");
-                return;
-            }
-            string lineaC = cmbCliente.SelectedItem.ToString();
-            string[] arrayLineaC = lineaC.Split(':');
-            int idCliente = int.Parse(arrayLineaC[0]);
-            Cliente Dueno = controladora.BuscarCliente(idCliente);
-
             string Descripcion = txtDescripcion.Text;
             int Costo = int.Parse(txtCosto.Text);
 
-            Reparacion reparacion = new Reparacion(Id, Fecha, vehiculo, Dueno, Descripcion, Costo);
+            Reparacion reparacion = new Reparacion(Id, Fecha, vehiculo, Descripcion, Costo);
             if (controladora.AltaReparacion(reparacion))
             {
                 ListarReparaciones();
@@ -135,6 +116,11 @@ namespace Taller_Obligatorio.Presentacion
                 DisplayError("Debe completar todos los campos requeridos");
                 return;
             }
+            if (!int.TryParse(txtCosto.Text, out _))
+            {
+                DisplayError("El costo debe ser numerico.");
+                return;
+            }
 
             int Id = int.Parse(txtId.Text);
             DateTime Fecha = dteFecha.Value;
@@ -149,21 +135,11 @@ namespace Taller_Obligatorio.Presentacion
             int idVehiculo = int.Parse(arrayLineaV[0]);
             Vehiculo vehiculo = controladora.BuscarVehiculo(idVehiculo);
 
-            if (cmbCliente.SelectedIndex == 0)
-            {
-                DisplayError("Debe seleccionar un Dueno");
-                return;
-            }
-            string lineaC = cmbCliente.SelectedItem.ToString();
-            string[] arrayLineaC = lineaC.Split(':');
-            int idCliente = int.Parse(arrayLineaC[0]);
-            Cliente Dueno = controladora.BuscarCliente(idCliente);
-
             string Descripcion = txtDescripcion.Text;
             int Costo = int.Parse(txtCosto.Text);
 
 
-            if (controladora.ModificarReparacion(Id, Fecha, vehiculo, Dueno, Descripcion, Costo))
+            if (controladora.ModificarReparacion(Id, Fecha, vehiculo, Descripcion, Costo))
             {
                 ListarReparaciones();
                 LimpiarCajas();
@@ -201,10 +177,9 @@ namespace Taller_Obligatorio.Presentacion
                 Reparacion reparacion = controladora.BuscarReparacion(int.Parse(txtId.Text));
 
                 dteFecha.Text = item.SubItems[1].Text;
-                cmbCliente.Text = reparacion.Dueno.ToString();
                 cmbVehiculo.Text = reparacion.Vehiculo.Id + " : " + reparacion.Vehiculo.Matricula;
-                txtDescripcion.Text = item.SubItems[4].Text;
-                txtCosto.Text = item.SubItems[5].Text;
+                txtDescripcion.Text = item.SubItems[3].Text;
+                txtCosto.Text = item.SubItems[4].Text;
             }
         }
     }

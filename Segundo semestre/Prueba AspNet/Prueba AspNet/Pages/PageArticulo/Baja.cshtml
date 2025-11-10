@@ -1,0 +1,53 @@
+﻿@page
+@model Prueba_AspNet.Pages.PageArticulo.BajaModel
+@{
+}
+<div class="text-left">
+    <h1 class="display-4">Detalle del Cliente</h1>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.articulo.Id)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.articulo.Id)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.articulo.Nombre)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.articulo.Nombre)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.articulo.Rubro)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.articulo.Rubro)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.articulo.Precio)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.articulo.Precio)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.articulo.Stock)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.articulo.Stock)
+        </dd>
+    </dl>
+    <hr />
+</div>
+<form method="post">
+    <input type="hidden" name="id" value="@Model.articulo.Id" />
+    <div class="row">
+        <div class="col-sm-4">
+            <button type="submit" class="btn btn-danger"
+                    asp-page-handler="Eliminar">
+                Eliminar
+            </button>
+            <a class="btn btn-warning" asp-page="./Lista">Volver</a>
+        </div>
+    </div>
+</form>

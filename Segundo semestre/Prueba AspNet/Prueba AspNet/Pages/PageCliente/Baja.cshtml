@@ -1,0 +1,47 @@
+﻿@page
+@model Prueba_AspNet.Pages.PageCliente.BajaModel
+@{
+}
+<div class="text-left">
+    <h1 class="display-4">Detalle del Cliente</h1>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.cliente.Id)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.cliente.Id)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.cliente.Nombre)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.cliente.Nombre)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.cliente.Direccion)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.cliente.Direccion)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.cliente.Telefono)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.cliente.Telefono)
+        </dd>
+    </dl>
+    <hr />
+</div>
+<form method="post">
+    <input type="hidden" name="id" value="@Model.cliente.Id" />
+    <div class="row">
+        <div class="col-sm-4">
+            <button type="submit" class="btn btn-danger"
+                    asp-page-handler="Eliminar">
+                Eliminar
+            </button>
+            <a class="btn btn-warning" asp-page="./Lista">Volver</a>
+        </div>
+    </div>
+</form>

@@ -167,14 +167,13 @@ namespace Taller_Obligatorio.Dominio
             return false;
         }
         public bool ModificarReparacion(int pId, DateTime pFecha, Vehiculo pVehiculo,
-            Cliente pDueno, string pDescripcion, int pCosto)
+            string pDescripcion, int pCosto)
         {
             Reparacion unReparacion = this.BuscarReparacion(pId);
             if (unReparacion != null)
             {
                 unReparacion.Fecha = pFecha;
                 unReparacion.Vehiculo = pVehiculo;
-                unReparacion.Dueno = pDueno;
                 unReparacion.Descripcion = pDescripcion;
                 unReparacion.Costo = pCosto;
                 return true;
@@ -192,9 +191,9 @@ namespace Taller_Obligatorio.Dominio
             this.AltaVehiculo(vehiculo1);
             Vehiculo vehiculo2 = new Vehiculo(aIdVehiculo, "DEF456", "ModeloA", "MarcaB", cliente2);
             this.AltaVehiculo(vehiculo2);
-            Reparacion reparacion1 = new Reparacion(aIdReparacion, DateTime.Now, vehiculo1, cliente1, "Cambio de aceite", 500);
+            Reparacion reparacion1 = new Reparacion(aIdReparacion, DateTime.Now, vehiculo1, "Cambio de aceite", 500);
             this.AltaReparacion(reparacion1);
-            Reparacion reparacion2 = new Reparacion(aIdReparacion, DateTime.Now, vehiculo2, cliente2, "Reparacion de frenos", 800);
+            Reparacion reparacion2 = new Reparacion(aIdReparacion, DateTime.Now, vehiculo2, "Reparacion de frenos", 800);
             this.AltaReparacion(reparacion2);
         }
     }

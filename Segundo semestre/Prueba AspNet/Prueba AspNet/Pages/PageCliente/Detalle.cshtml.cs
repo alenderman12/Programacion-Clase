@@ -7,10 +7,12 @@ namespace Prueba_AspNet.Pages.PageCliente
 {
     public class DetalleModel : PageModel
     {
-        public Cliente cliente { get; set; }
-        public void OnGet()
-        {
+        public Dominio.Cliente cliente { get; set; }
 
+        public void OnGet(int id)
+        {
+            Controladora unaControladora = new Controladora();
+            cliente = unaControladora.BuscarCliente(id);
         }
     }
 }

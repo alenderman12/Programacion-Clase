@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{7555B396-0105-4C47-8669-C1C3A77F3C73}|Supermercado.csproj|solutionrelative:presentacion\\frmlstventas1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7555B396-0105-4C47-8669-C1C3A77F3C73}|Supermercado.csproj|c:\\users\\pc\\programacion-clase\\segundo semestre\\supermercado\\supermercado\\presentacion\\frmlstventas1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{7555B396-0105-4C47-8669-C1C3A77F3C73}|Supermercado.csproj|C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Supermercado\\Supermercado\\presentacion\\frmlstventas1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7555B396-0105-4C47-8669-C1C3A77F3C73}|Supermercado.csproj|solutionrelative:presentacion\\frmlstventas1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -98,8 +98,7 @@
               "ToolTip": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Supermercado\\Supermercado\\Presentacion\\frmLstVentas1.cs [Design]",
               "RelativeToolTip": "Presentacion\\frmLstVentas1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T20:38:56.877Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-10-28T20:38:56.877Z"
             },
             {
               "$type": "Document",
@@ -149,8 +148,7 @@
               "RelativeToolTip": "Dominio\\Controladora.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAQwGgBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T23:19:07.141Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-09T23:19:07.141Z"
             },
             {
               "$type": "Document",
@@ -184,8 +182,7 @@
               "RelativeToolTip": "Presentacion\\frmVenta.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T01:37:11.012Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-17T01:37:11.012Z"
             },
             {
               "$type": "Document",

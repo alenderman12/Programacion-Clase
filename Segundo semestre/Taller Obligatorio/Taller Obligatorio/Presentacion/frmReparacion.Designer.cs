@@ -35,25 +35,22 @@
             btnAgregar = new Button();
             groupBox1 = new GroupBox();
             cmbVehiculo = new ComboBox();
-            cmbCliente = new ComboBox();
             dteFecha = new DateTimePicker();
             txtCosto = new TextBox();
             label1 = new Label();
             txtDescripcion = new TextBox();
             label2 = new Label();
-            label3 = new Label();
             lblTelefono = new Label();
             lblMensaje = new Label();
             lvsReparaciones = new ListView();
             Id = new ColumnHeader();
             Fecha = new ColumnHeader();
             Vehiculo = new ColumnHeader();
+            Descripcion = new ColumnHeader();
+            Costo = new ColumnHeader();
             txtId = new TextBox();
             lblNombre = new Label();
             lblId = new Label();
-            Dueno = new ColumnHeader();
-            Descripcion = new ColumnHeader();
-            Costo = new ColumnHeader();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -107,13 +104,11 @@
             // groupBox1
             // 
             groupBox1.Controls.Add(cmbVehiculo);
-            groupBox1.Controls.Add(cmbCliente);
             groupBox1.Controls.Add(dteFecha);
             groupBox1.Controls.Add(txtCosto);
             groupBox1.Controls.Add(label1);
             groupBox1.Controls.Add(txtDescripcion);
             groupBox1.Controls.Add(label2);
-            groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(lblTelefono);
             groupBox1.Controls.Add(lblMensaje);
             groupBox1.Controls.Add(lvsReparaciones);
@@ -137,14 +132,6 @@
             cmbVehiculo.Size = new Size(168, 23);
             cmbVehiculo.TabIndex = 24;
             // 
-            // cmbCliente
-            // 
-            cmbCliente.FormattingEnabled = true;
-            cmbCliente.Location = new Point(268, 97);
-            cmbCliente.Name = "cmbCliente";
-            cmbCliente.Size = new Size(168, 23);
-            cmbCliente.TabIndex = 23;
-            // 
             // dteFecha
             // 
             dteFecha.Format = DateTimePickerFormat.Short;
@@ -155,7 +142,7 @@
             // 
             // txtCosto
             // 
-            txtCosto.Location = new Point(268, 150);
+            txtCosto.Location = new Point(268, 126);
             txtCosto.Margin = new Padding(3, 2, 3, 2);
             txtCosto.Name = "txtCosto";
             txtCosto.Size = new Size(168, 23);
@@ -165,7 +152,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(193, 145);
+            label1.Location = new Point(193, 121);
             label1.Name = "label1";
             label1.Size = new Size(64, 25);
             label1.TabIndex = 20;
@@ -174,7 +161,7 @@
             // 
             // txtDescripcion
             // 
-            txtDescripcion.Location = new Point(268, 123);
+            txtDescripcion.Location = new Point(268, 99);
             txtDescripcion.Margin = new Padding(3, 2, 3, 2);
             txtDescripcion.Name = "txtDescripcion";
             txtDescripcion.Size = new Size(168, 23);
@@ -184,21 +171,11 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(142, 117);
+            label2.Location = new Point(142, 93);
             label2.Name = "label2";
             label2.Size = new Size(115, 25);
             label2.TabIndex = 17;
             label2.Text = "Descripcion:";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(185, 90);
-            label3.Name = "label3";
-            label3.Size = new Size(72, 25);
-            label3.TabIndex = 16;
-            label3.Text = "Dueno:";
             // 
             // lblTelefono
             // 
@@ -225,15 +202,15 @@
             // 
             // lvsReparaciones
             // 
-            lvsReparaciones.Columns.AddRange(new ColumnHeader[] { Id, Fecha, Vehiculo, Dueno, Descripcion, Costo });
+            lvsReparaciones.Columns.AddRange(new ColumnHeader[] { Id, Fecha, Vehiculo, Descripcion, Costo });
             lvsReparaciones.FullRowSelect = true;
             lvsReparaciones.GridLines = true;
             lvsReparaciones.Items.AddRange(new ListViewItem[] { listViewItem1 });
-            lvsReparaciones.Location = new Point(16, 177);
+            lvsReparaciones.Location = new Point(16, 153);
             lvsReparaciones.Margin = new Padding(3, 2, 3, 2);
             lvsReparaciones.MultiSelect = false;
             lvsReparaciones.Name = "lvsReparaciones";
-            lvsReparaciones.Size = new Size(605, 198);
+            lvsReparaciones.Size = new Size(605, 222);
             lvsReparaciones.TabIndex = 4;
             lvsReparaciones.UseCompatibleStateImageBehavior = false;
             lvsReparaciones.View = View.Details;
@@ -255,6 +232,16 @@
             Vehiculo.Text = "Vehiculo";
             Vehiculo.TextAlign = HorizontalAlignment.Center;
             Vehiculo.Width = 140;
+            // 
+            // Descripcion
+            // 
+            Descripcion.Text = "Descripcion";
+            Descripcion.TextAlign = HorizontalAlignment.Center;
+            // 
+            // Costo
+            // 
+            Costo.Text = "Costo";
+            Costo.TextAlign = HorizontalAlignment.Center;
             // 
             // txtId
             // 
@@ -284,21 +271,6 @@
             lblId.Size = new Size(34, 25);
             lblId.TabIndex = 0;
             lblId.Text = "ID:";
-            // 
-            // Dueno
-            // 
-            Dueno.Text = "Dueño";
-            Dueno.TextAlign = HorizontalAlignment.Center;
-            // 
-            // Descripcion
-            // 
-            Descripcion.Text = "Descripcion";
-            Descripcion.TextAlign = HorizontalAlignment.Center;
-            // 
-            // Costo
-            // 
-            Costo.Text = "Costo";
-            Costo.TextAlign = HorizontalAlignment.Center;
             // 
             // frmReparacion
             // 
@@ -339,11 +311,8 @@
         private Label label1;
         private TextBox txtDescripcion;
         private Label label2;
-        private Label label3;
         private DateTimePicker dteFecha;
         private ComboBox cmbVehiculo;
-        private ComboBox cmbCliente;
-        private ColumnHeader Dueno;
         private ColumnHeader Descripcion;
         private ColumnHeader Costo;
     }
