@@ -1,16 +1,26 @@
-﻿using System.Security.Cryptography;
+﻿using Prueba_AspNet.Persistencia;
+using System.Runtime.InteropServices;
+using System.Security.Cryptography;
 
 namespace Prueba_AspNet.Dominio
 {
     public class Controladora
     {
+        private PControladora Persistencia;
+
         public static List<Cliente> aListaClientes = new List<Cliente>();
         public static List<Articulo> aListaArticulos = new List<Articulo>();
         public static List<Venta> aListaVentas = new List<Venta>();
 
+        public Controladora()
+        {
+            Persistencia = new PControladora();
+        }   
+
         #region ABM Clientes
         public List<Cliente> ListarClientes()
         {
+            aListaClientes = Persistencia.ListaClientes();
             return aListaClientes;
         }
 
@@ -31,8 +41,11 @@ namespace Prueba_AspNet.Dominio
             Cliente cliente = BuscarCliente(pCliente.Id);
             if (cliente == null)
             {
-                aListaClientes.Add(pCliente);
-                return true;
+                if (Persistencia.AltaCliente(pCliente))
+                {
+                    aListaClientes.Add(pCliente);
+                    return true;
+                }
             }
             return false;
         }
@@ -41,8 +54,11 @@ namespace Prueba_AspNet.Dominio
             Cliente cliente = BuscarCliente(pId);
             if (cliente != null)
             {
-                aListaClientes.Remove(cliente);
-                return true;
+                if (Persistencia.BajaCliente(pId))
+                {
+                    aListaClientes.Remove(cliente);
+                    return true;
+                }
             }
             return false;
         }
@@ -51,10 +67,14 @@ namespace Prueba_AspNet.Dominio
             Cliente cliente = BuscarCliente(pId);
             if (cliente != null)
             {
-                cliente.Nombre = pNombre;
-                cliente.Direccion = pDireccion;
-                cliente.Telefono = pTelefono;
-                return true;
+                Cliente nuevoCliente = new Cliente(pId, pNombre, pDireccion, pTelefono);
+                if (Persistencia.ModificarCliente(nuevoCliente))
+                {
+                    cliente.Nombre = pNombre;
+                    cliente.Direccion = pDireccion;
+                    cliente.Telefono = pTelefono;
+                    return true;
+                }
             }
             return false;
         }
@@ -64,6 +84,7 @@ namespace Prueba_AspNet.Dominio
         #region ABM Articulos
         public List<Articulo> ListarArticulos()
         {
+            aListaArticulos = Persistencia.ListaArticulos();
             return aListaArticulos;
         }
 
@@ -84,8 +105,11 @@ namespace Prueba_AspNet.Dominio
             Articulo articulo = BuscarArticulo(pArticulo.Id);
             if (articulo == null)
             {
-                aListaArticulos.Add(pArticulo);
-                return true;
+                if (Persistencia.AltaArticulo(pArticulo))
+                {
+                    aListaArticulos.Add(pArticulo);
+                    return true;
+                }
             }
             return false;
         }
@@ -94,8 +118,11 @@ namespace Prueba_AspNet.Dominio
             Articulo articulo = BuscarArticulo(pId);
             if (articulo != null)
             {
-                aListaArticulos.Remove(articulo);
-                return true;
+                if (Persistencia.BajaArticulo(pId))
+                {
+                    aListaArticulos.Remove(articulo);
+                    return true;
+                }
             }
             return false;
         }
@@ -104,11 +131,15 @@ namespace Prueba_AspNet.Dominio
             Articulo articulo = BuscarArticulo(pId);
             if (articulo != null)
             {
-                articulo.Nombre = pNombre;
-                articulo.Rubro = pRubro;
-                articulo.Precio = pPrecio;
-                articulo.Stock = pStock;
-                return true;
+                Articulo nuevoArticulo = new Articulo(pId, pNombre, pRubro, pPrecio, pStock);
+                if (Persistencia.ModificarArticulo(nuevoArticulo))
+                {
+                    articulo.Nombre = pNombre;
+                    articulo.Rubro = pRubro;
+                    articulo.Precio = pPrecio;
+                    articulo.Stock = pStock;
+                    return true;
+                }
             }
             return false;
         }

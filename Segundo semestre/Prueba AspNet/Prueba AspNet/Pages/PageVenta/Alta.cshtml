@@ -17,9 +17,12 @@
             <label for="idArticulo">Articulo:</label>
             <select id="idArticulo" name="idArticulo" class="form-control">
                 <option value="0">Seleccione un articulo</option>
-                @foreach (var articulo in Model.articulos)
+                @if(Model.articulos != null) 
                 {
-                    <option value="@articulo.Id">@articulo.Nombre</option>
+                    @foreach (var articulo in Model.articulos)
+                    {
+                        <option value="@articulo.Id">@articulo.Nombre</option>
+                    }
                 }
             </select>
         </div>
@@ -27,9 +30,12 @@
             <label for="idCliente">Cliente:</label>
             <select id="idCliente" name="idCliente" class="form-control">
                 <option value="0">Seleccione un cliente</option>
-                @foreach (var cliente in Model.clientes)
+                @if(Model.clientes != null) 
                 {
-                    <option value="@cliente.Id">@cliente.Nombre</option>
+                    @foreach (var cliente in Model.clientes)
+                    {
+                        <option value="@cliente.Id">@cliente.Nombre</option>
+                    }
                 }
             </select>
         </div>

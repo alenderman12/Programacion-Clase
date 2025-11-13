@@ -1,0 +1,58 @@
+﻿@page
+@model Prueba_AspNet.Pages.PageArticulo.ModificarModel
+@{
+}
+<div class="text-left">
+    <h1 class="display-4">Modificar</h1>
+    <form method="post">
+        <div class="form-group">
+            <label for="id">ID:</label>
+            <input type="text" id="id" name="Id" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label for="idArticulo">Articulo:</label>
+            <select id="idArticulo" name="idArticulo" class="form-control">
+                <option value="0">Seleccione un articulo</option>
+                @if (Model.articulos != null)
+                {
+                    @foreach (var articulo in Model.articulos)
+                    {
+                                <option value="@articulo.Id">@articulo.Nombre</option>
+                    }
+                }
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="idCliente">Cliente:</label>
+            <select id="idCliente" name="idCliente" class="form-control">
+                <option value="0">Seleccione un cliente</option>
+                @if (Model.clientes != null)
+                {
+                    @foreach (var cliente in Model.clientes)
+                    {
+                                <option value="@cliente.Id">@cliente.Nombre</option>
+                    }
+                }
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="importe">Importe:</label>
+            <input type="number" id="importe" name="importe" class="form-control" />
+        </div>
+        <br />
+        <button type="submit" class="btn btn-primary"
+                asp-page-handler="Modificar">
+            Modificar
+        </button>
+    </form>
+    @if (!string.IsNullOrEmpty(Model.Mensaje))
+    {
+            <div class="alert alert-warning" role="alert">
+            @Model.Mensaje
+            </div>
+    }
+</div>

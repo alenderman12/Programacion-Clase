@@ -13,7 +13,6 @@ namespace Prueba_AspNet.Pages.PageVenta
 
         public void OnGet()
         {
-
             clientes = controladora.ListarClientes() ?? new List<Cliente>();
             articulos = controladora.ListarArticulos() ?? new List<Articulo>();
         }
@@ -29,7 +28,7 @@ namespace Prueba_AspNet.Pages.PageVenta
                 {
                     throw new Exception("El ID debe ser numerico");
                 }
-                if (DateTime.TryParse(Request.Form["fecha"], out _))
+                if (!DateTime.TryParse(Request.Form["fecha"], out _))
                 {
                     throw new Exception("Debe ingresar una fecha valida");
                 }
@@ -55,7 +54,7 @@ namespace Prueba_AspNet.Pages.PageVenta
 
                 controladora.AltaVenta(venta);
 
-                return RedirectToPage("/PageCliente/Lista");
+                return RedirectToPage("/PageVenta/Lista");
             }
             catch (Exception Error)
             {

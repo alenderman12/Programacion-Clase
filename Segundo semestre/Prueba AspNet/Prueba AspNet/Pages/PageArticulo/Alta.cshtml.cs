@@ -34,7 +34,7 @@ namespace Prueba_AspNet.Pages.PageArticulo
                 {
                     throw new Exception("Debe ingresar el Precio");
                 }
-                if (!int.TryParse(Request.Form["precio"], out _))
+                if (!double.TryParse(Request.Form["precio"], out _))
                 {
                     throw new Exception("El Precio debe ser numerico");
                 }
@@ -49,7 +49,7 @@ namespace Prueba_AspNet.Pages.PageArticulo
                 int Id = int.Parse(Request.Form["id"]);
                 string Nombre = Request.Form["nombre"];
                 string Rubro = Request.Form["rubro"];
-                int Precio = int.Parse(Request.Form["precio"]);
+                double Precio = double.Parse(Request.Form["precio"]);
                 int Stock = int.Parse(Request.Form["stock"]);
 
                 Articulo articulo = new Articulo(Id, Nombre, Rubro, Precio, Stock);
