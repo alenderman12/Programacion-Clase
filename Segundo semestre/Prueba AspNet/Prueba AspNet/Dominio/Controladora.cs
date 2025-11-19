@@ -18,6 +18,10 @@ namespace Prueba_AspNet.Dominio
         }   
 
         #region ABM Clientes
+        public int ProximoClienteId()
+        {
+            return Persistencia.ProximoClienteId();
+        }
         public List<Cliente> ListarClientes()
         {
             aListaClientes = Persistencia.ListaClientes();
@@ -82,6 +86,10 @@ namespace Prueba_AspNet.Dominio
         #endregion
 
         #region ABM Articulos
+        public int ProximoArticuloId()
+        {
+            return Persistencia.ProximoArticuloId();
+        }
         public List<Articulo> ListarArticulos()
         {
             aListaArticulos = Persistencia.ListaArticulos();
@@ -147,8 +155,13 @@ namespace Prueba_AspNet.Dominio
         #endregion
 
         #region ABM Ventas
+        public int ProximoVentaId()
+        {
+            return Persistencia.ProximoVentaId();
+        }
         public List<Venta> ListarVentas()
         {
+            aListaVentas = Persistencia.ListaVentas();
             return aListaVentas;
         }
 
@@ -169,8 +182,11 @@ namespace Prueba_AspNet.Dominio
             Venta venta = BuscarVenta(pVenta.Id);
             if (venta == null)
             {
-                aListaVentas.Add(pVenta);
-                return true;
+                if (Persistencia.AltaVenta(pVenta))
+                {
+                    aListaVentas.Add(pVenta);
+                    return true;
+                }
             }
             return false;
         }
@@ -179,32 +195,70 @@ namespace Prueba_AspNet.Dominio
             Venta venta = BuscarVenta(pId);
             if (venta != null)
             {
-                aListaVentas.Remove(venta);
-                return true;
+                if (Persistencia.BajaVenta(pId))
+                {
+                    aListaVentas.Remove(venta);
+                    return true;
+                }
             }
             return false;
         }
-        public bool ModificarVenta(int pId, DateTime pFecha, Articulo pArticulo, Cliente pCliente, double pImporte)
+        public bool ModificarVenta(int pId, DateTime pFecha, Cliente pCliente, Articulo pArticulo, double pImporte)
         {
             Venta venta = BuscarVenta(pId);
             if (venta != null)
             {
-                venta.Fecha = pFecha;
-                venta.Articulo = pArticulo;
-                venta.Cliente = pCliente;
-                venta.Importe = pImporte;
-                return true;
+                Venta nuevoVenta = new Venta(pId, pFecha, pCliente, pArticulo, pImporte);
+                if (Persistencia.ModificarVenta(nuevoVenta))
+                {
+                    venta.Fecha = pFecha;
+                    venta.Articulo = pArticulo;
+                    venta.Cliente = pCliente;
+                    venta.Importe = pImporte;
+                    return true;
+                }
             }
             return false;
         }
 
         #endregion
 
-        public void CargarDatos()
+        public void CargarListas()
         {
-            aListaClientes.Add(new Cliente(1, "Juan Perez", "Calle Falsa 123", "123456789"));
-            aListaClientes.Add(new Cliente(2, "Maria Gomez", "Avenida Siempre Viva 456", "987654321"));
-            aListaClientes.Add(new Cliente(3, "Carlos Lopez", "Boulevard Central 789", "456123789"));
+            ListarClientes();
+            ListarArticulos();
+            ListarVentas();
         }
+
+        #region " Reportes
+        public List<Venta> VentasXCliente(int pIdCliente)
+        {
+
+            List<Venta> lista = new List<Venta>();
+
+            foreach (Venta unaVenta in aListaVentas)
+            {
+                if (unaVenta.Cliente.Id == pIdCliente)
+                    lista.Add(unaVenta);
+            }
+
+            return lista;
+        }
+
+        public List<Venta> VentasXArticulo(int pIdArticulo)
+        {
+
+            List<Venta> lista = new List<Venta>();
+
+            foreach (Venta unaVenta in aListaVentas)
+            {
+                if (unaVenta.Articulo.Id == pIdArticulo)
+                    lista.Add(unaVenta);
+            }
+
+            return lista;
+        }
+
+        #endregion
     }
 }

@@ -48,7 +48,7 @@ namespace Prueba_AspNet.Persistencia
             return new PArticulo().ProximoId();
         }
         #endregion 
-/*        #region " Ventas "
+        #region " Ventas "
         public List<Venta> ListaVentas()
         {
             return new PVenta().ListaVentas();
@@ -69,6 +69,6 @@ namespace Prueba_AspNet.Persistencia
         {
             return new PVenta().ProximoId();
         }
-        #endregion */
+        #endregion
     }
 }

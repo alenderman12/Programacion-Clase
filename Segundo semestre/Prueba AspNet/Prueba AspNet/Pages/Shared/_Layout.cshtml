@@ -31,6 +31,25 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/PageVenta/Lista">ABM Ventas</a>
                         </li>
+                        <li class="nav-item dropdown">
+                            <button class="btn nav-btn dropdown-toggle"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                                Reportes
+                            </button>
+                            <ul class="dropdown-menu nav-btn">
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area=""
+                                    asp-page="/PageReportes/VentasXCliente">Ventas por Cliente</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area=""
+                                    asp-page="/PageReportes/VentasXArticulo">Artículos Vendidos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-page="/PageReportes/VentasXFecha">Ventas por Fechas</a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>

@@ -1,0 +1,109 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Alquiler Vehiculos\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{386FBB3A-5EDC-4C63-8CDE-B2856475601B}|Alquiler Vehiculos\\Alquiler Vehiculos.csproj|c:\\users\\pc\\programacion-clase\\segundo semestre\\alquiler vehiculos\\alquiler vehiculos\\dominio\\controladora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{386FBB3A-5EDC-4C63-8CDE-B2856475601B}|Alquiler Vehiculos\\Alquiler Vehiculos.csproj|solutionrelative:alquiler vehiculos\\dominio\\controladora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{386FBB3A-5EDC-4C63-8CDE-B2856475601B}|Alquiler Vehiculos\\Alquiler Vehiculos.csproj|c:\\users\\pc\\programacion-clase\\segundo semestre\\alquiler vehiculos\\alquiler vehiculos\\dominio\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{386FBB3A-5EDC-4C63-8CDE-B2856475601B}|Alquiler Vehiculos\\Alquiler Vehiculos.csproj|solutionrelative:alquiler vehiculos\\dominio\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{386FBB3A-5EDC-4C63-8CDE-B2856475601B}|Alquiler Vehiculos\\Alquiler Vehiculos.csproj|c:\\users\\pc\\programacion-clase\\segundo semestre\\alquiler vehiculos\\alquiler vehiculos\\dominio\\alquiler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{386FBB3A-5EDC-4C63-8CDE-B2856475601B}|Alquiler Vehiculos\\Alquiler Vehiculos.csproj|solutionrelative:alquiler vehiculos\\dominio\\alquiler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{386FBB3A-5EDC-4C63-8CDE-B2856475601B}|Alquiler Vehiculos\\Alquiler Vehiculos.csproj|c:\\users\\pc\\programacion-clase\\segundo semestre\\alquiler vehiculos\\alquiler vehiculos\\dominio\\vehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{386FBB3A-5EDC-4C63-8CDE-B2856475601B}|Alquiler Vehiculos\\Alquiler Vehiculos.csproj|solutionrelative:alquiler vehiculos\\dominio\\vehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{386FBB3A-5EDC-4C63-8CDE-B2856475601B}|Alquiler Vehiculos\\Alquiler Vehiculos.csproj|c:\\users\\pc\\programacion-clase\\segundo semestre\\alquiler vehiculos\\alquiler vehiculos\\dominio\\accesorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{386FBB3A-5EDC-4C63-8CDE-B2856475601B}|Alquiler Vehiculos\\Alquiler Vehiculos.csproj|solutionrelative:alquiler vehiculos\\dominio\\accesorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Accesorio.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Alquiler Vehiculos\\Alquiler Vehiculos\\Dominio\\Accesorio.cs",
+              "RelativeDocumentMoniker": "Alquiler Vehiculos\\Dominio\\Accesorio.cs",
+              "ToolTip": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Alquiler Vehiculos\\Alquiler Vehiculos\\Dominio\\Accesorio.cs",
+              "RelativeToolTip": "Alquiler Vehiculos\\Dominio\\Accesorio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T17:19:32.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Alquiler.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Alquiler Vehiculos\\Alquiler Vehiculos\\Dominio\\Alquiler.cs",
+              "RelativeDocumentMoniker": "Alquiler Vehiculos\\Dominio\\Alquiler.cs",
+              "ToolTip": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Alquiler Vehiculos\\Alquiler Vehiculos\\Dominio\\Alquiler.cs",
+              "RelativeToolTip": "Alquiler Vehiculos\\Dominio\\Alquiler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T17:12:40.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Alquiler Vehiculos\\Alquiler Vehiculos\\Dominio\\Cliente.cs",
+              "RelativeDocumentMoniker": "Alquiler Vehiculos\\Dominio\\Cliente.cs",
+              "ToolTip": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Alquiler Vehiculos\\Alquiler Vehiculos\\Dominio\\Cliente.cs",
+              "RelativeToolTip": "Alquiler Vehiculos\\Dominio\\Cliente.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBoAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T16:44:58.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Vehiculo.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Alquiler Vehiculos\\Alquiler Vehiculos\\Dominio\\Vehiculo.cs",
+              "RelativeDocumentMoniker": "Alquiler Vehiculos\\Dominio\\Vehiculo.cs",
+              "ToolTip": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Alquiler Vehiculos\\Alquiler Vehiculos\\Dominio\\Vehiculo.cs",
+              "RelativeToolTip": "Alquiler Vehiculos\\Dominio\\Vehiculo.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAA1wCMAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T21:20:36.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Controladora.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Alquiler Vehiculos\\Alquiler Vehiculos\\Dominio\\Controladora.cs",
+              "RelativeDocumentMoniker": "Alquiler Vehiculos\\Dominio\\Controladora.cs",
+              "ToolTip": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Alquiler Vehiculos\\Alquiler Vehiculos\\Dominio\\Controladora.cs",
+              "RelativeToolTip": "Alquiler Vehiculos\\Dominio\\Controladora.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAIwDgAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T21:15:39.9Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

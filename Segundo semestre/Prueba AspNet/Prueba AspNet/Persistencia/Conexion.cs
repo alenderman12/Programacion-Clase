@@ -5,7 +5,7 @@ namespace Prueba_AspNet.Persistencia
 {
     public class Conexion
     {
-        private static string source = "AlexLaptop\\SQLEXPRESS";
+        private static string source = "Alex\\SQLEXPRESS";
         private static string baseDeDatos = "LosClientes";
         private string CadenaConexion = "data source="+source+"; " +
            "initial Catalog="+baseDeDatos+"; Integrated Security=SSPI; Encrypt=false";
@@ -16,7 +16,8 @@ namespace Prueba_AspNet.Persistencia
             try
             {
                 SqlConnection conexion = new SqlConnection(this.CadenaConexion);
-                SqlCommand comando = new SqlCommand(sql, conexion);
+                string FormatoFecha = "set dateformat dmy;";
+                SqlCommand comando = new SqlCommand(FormatoFecha + sql, conexion);
                 conexion.Open();
                 comando.ExecuteNonQuery();
                 comando.Dispose();
@@ -25,7 +26,7 @@ namespace Prueba_AspNet.Persistencia
             }
             catch (Exception e)
             {
-                throw new Exception("Error en conexión sql = " + sql + "\n" + e, e);
+                throw new Exception("Error en conexión sql = " + sql + "\n", e);
             }
         }
 

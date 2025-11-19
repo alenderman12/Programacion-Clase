@@ -10,9 +10,13 @@ namespace Prueba_AspNet.Pages.PageVenta
         Controladora controladora = new Controladora();
         public List<Articulo> articulos { get; set; }
         public List<Cliente> clientes { get; set; }
+        public int id { get; set; } = 1;
 
         public void OnGet()
         {
+            Controladora controladora = new Controladora();
+            id = controladora.ProximoVentaId();
+
             clientes = controladora.ListarClientes() ?? new List<Cliente>();
             articulos = controladora.ListarArticulos() ?? new List<Articulo>();
         }

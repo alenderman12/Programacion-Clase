@@ -9,9 +9,11 @@ namespace Prueba_AspNet.Pages.PageCliente
     public class AltaModel : PageModel
     {
         public string Mensaje { get; set; }
+        public int id { get; set; } = 1;
         public void OnGet()
         {
-
+            Controladora controladora = new Controladora();
+            id = controladora.ProximoClienteId();
         }
         public IActionResult OnPostAgregar()
         {

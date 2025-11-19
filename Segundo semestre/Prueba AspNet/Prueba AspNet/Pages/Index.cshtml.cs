@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Prueba_AspNet.Dominio;
 
 namespace Prueba_AspNet.Pages
 {
@@ -14,7 +15,8 @@ namespace Prueba_AspNet.Pages
 
         public void OnGet()
         {
-
+            Controladora controladora = new Controladora();
+            controladora.CargarListas();
         }
     }
 }

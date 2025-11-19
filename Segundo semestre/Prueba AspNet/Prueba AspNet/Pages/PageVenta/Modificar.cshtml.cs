@@ -10,6 +10,7 @@ namespace Prueba_AspNet.Pages.PageVenta
     {
         Controladora controladora = new Controladora();
         public Venta venta { get; set; }
+        public string Mensaje { get; set; }
         public List<Articulo> articulos { get; set; }
         public List<Cliente> clientes { get; set; }
         public void OnGet(int id)

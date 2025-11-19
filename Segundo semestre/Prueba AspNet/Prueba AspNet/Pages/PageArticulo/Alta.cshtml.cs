@@ -7,8 +7,11 @@ namespace Prueba_AspNet.Pages.PageArticulo
     public class AgregarModel : PageModel
     {
         public string Mensaje { get; set; }
+        public int id { get; set; } = 1;
         public void OnGet()
         {
+            Controladora controladora = new Controladora();
+            id = controladora.ProximoArticuloId();
         }
         public IActionResult OnPostAgregar()
         {
