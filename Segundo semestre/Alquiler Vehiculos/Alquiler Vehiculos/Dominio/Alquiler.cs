@@ -26,11 +26,11 @@
         public double PrecioTotal { get { return aPrecioTotal; } set { aPrecioTotal = value; } }
         public char Estado { get { return aEstado; } set { aEstado = value; } }
 
-        public Alquiler(int pIdAlquiler, DateTime pFechaRealizadaReserva, DateTime pFechaInicio, DateTime pFechaFin,
+        public Alquiler(int pId, DateTime pFechaRealizadaReserva, DateTime pFechaInicio, DateTime pFechaFin,
             Vehiculo pVehiculo, Cliente pCliente, List<Accesorio> pListaAccesorios, string pLugarRetiro,
             string pLugarDevolucion, double pPrecioTotal, char pEstado)
         {
-            this.Id = pIdAlquiler;
+            this.Id = pId;
             this.FechaRealizadaReserva = pFechaRealizadaReserva;
             this.FechaInicio = pFechaInicio;
             this.FechaFin = pFechaFin;

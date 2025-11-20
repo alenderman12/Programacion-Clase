@@ -12,9 +12,9 @@
         public string Descripcion { get { return aDescripcion; } set { aDescripcion = value; } }
         public double Precio { get { return aPrecio; } set { aPrecio = value; } }
 
-        public Accesorio(int pIdAccesorio, string pNombre, string pDescripcion, double pPrecio)
+        public Accesorio(int pId, string pNombre, string pDescripcion, double pPrecio)
         {
-            this.Id = pIdAccesorio;
+            this.Id = pId;
             this.Nombre = pNombre;
             this.Descripcion = pDescripcion;
             this.Precio = pPrecio;

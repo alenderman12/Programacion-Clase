@@ -1,0 +1,29 @@
+﻿@page
+@model Alquiler_Vehiculos.Pages.PagesVehiculos.ListaModel
+@{
+    ViewData["Title"] = "Lista de Vehiculos";
+}
+<div class="row">
+    @foreach (var item in Model.vehiculos)
+    {
+        <div class="col-md-4 mb-4">
+            <div class="card card-custom">
+                <div class="card-header @(item.Estado == 'D' ? "bg-success" : "bg-secondary") text-white d-flex justify-content-between">
+                    <span>@item.Marca @item.Modelo</span>
+                    <span>@item.Anio</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="text-primary">$@item.PrecioPorDia <small class="text-muted fs-6">/día</small></h3>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li><i class="fa-solid fa-gas-pump me-2"></i> @item.Combustible</li>
+                        <li><i class="fa-solid fa-users me-2"></i> @item.Capacidad Personas</li>
+                        <li><i class="fa-solid fa-palette me-2"></i> Color @item.Color</li>
+                    </ul>
+                    <div class="d-grid gap-2">
+                        <a asp-page="./Edit" asp-route-id="@item.Id" class="btn btn-sm btn-outline-primary">Modificar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

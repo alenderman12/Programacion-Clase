@@ -3,24 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Prueba AspNet\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8EBB546C-B32D-49EA-972D-9FC92C0E85C1}|Prueba AspNet\\Prueba AspNet.csproj|c:\\users\\pc\\programacion-clase\\segundo semestre\\prueba aspnet\\prueba aspnet\\pages\\pagereportes\\ventasxarticulo.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8EBB546C-B32D-49EA-972D-9FC92C0E85C1}|Prueba AspNet\\Prueba AspNet.csproj|solutionrelative:prueba aspnet\\pages\\pagereportes\\ventasxarticulo.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8EBB546C-B32D-49EA-972D-9FC92C0E85C1}|Prueba AspNet\\Prueba AspNet.csproj|c:\\users\\pc\\programacion-clase\\segundo semestre\\prueba aspnet\\prueba aspnet\\pages\\pagecliente\\alta.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EBB546C-B32D-49EA-972D-9FC92C0E85C1}|Prueba AspNet\\Prueba AspNet.csproj|solutionrelative:prueba aspnet\\pages\\pagecliente\\alta.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8EBB546C-B32D-49EA-972D-9FC92C0E85C1}|Prueba AspNet\\Prueba AspNet.csproj|c:\\users\\pc\\programacion-clase\\segundo semestre\\prueba aspnet\\prueba aspnet\\pages\\pagereportes\\ventasxarticulo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8EBB546C-B32D-49EA-972D-9FC92C0E85C1}|Prueba AspNet\\Prueba AspNet.csproj|solutionrelative:prueba aspnet\\pages\\pagereportes\\ventasxarticulo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8EBB546C-B32D-49EA-972D-9FC92C0E85C1}|Prueba AspNet\\Prueba AspNet.csproj|c:\\users\\pc\\programacion-clase\\segundo semestre\\prueba aspnet\\prueba aspnet\\pages\\pagecliente\\alta.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8EBB546C-B32D-49EA-972D-9FC92C0E85C1}|Prueba AspNet\\Prueba AspNet.csproj|solutionrelative:prueba aspnet\\pages\\pagecliente\\alta.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8EBB546C-B32D-49EA-972D-9FC92C0E85C1}|Prueba AspNet\\Prueba AspNet.csproj|c:\\users\\pc\\programacion-clase\\segundo semestre\\prueba aspnet\\prueba aspnet\\dominio\\controladora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8EBB546C-B32D-49EA-972D-9FC92C0E85C1}|Prueba AspNet\\Prueba AspNet.csproj|solutionrelative:prueba aspnet\\dominio\\controladora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8EBB546C-B32D-49EA-972D-9FC92C0E85C1}|Prueba AspNet\\Prueba AspNet.csproj|c:\\users\\pc\\programacion-clase\\segundo semestre\\prueba aspnet\\prueba aspnet\\pages\\pagecliente\\lista.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EBB546C-B32D-49EA-972D-9FC92C0E85C1}|Prueba AspNet\\Prueba AspNet.csproj|solutionrelative:prueba aspnet\\pages\\pagecliente\\lista.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8EBB546C-B32D-49EA-972D-9FC92C0E85C1}|Prueba AspNet\\Prueba AspNet.csproj|c:\\users\\pc\\programacion-clase\\segundo semestre\\prueba aspnet\\prueba aspnet\\pages\\pagereportes\\ventasxcliente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8EBB546C-B32D-49EA-972D-9FC92C0E85C1}|Prueba AspNet\\Prueba AspNet.csproj|solutionrelative:prueba aspnet\\pages\\pagereportes\\ventasxcliente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8EBB546C-B32D-49EA-972D-9FC92C0E85C1}|Prueba AspNet\\Prueba AspNet.csproj|c:\\users\\pc\\programacion-clase\\segundo semestre\\prueba aspnet\\prueba aspnet\\pages\\pageventa\\lista.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8EBB546C-B32D-49EA-972D-9FC92C0E85C1}|Prueba AspNet\\Prueba AspNet.csproj|solutionrelative:prueba aspnet\\pages\\pageventa\\lista.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8EBB546C-B32D-49EA-972D-9FC92C0E85C1}|Prueba AspNet\\Prueba AspNet.csproj|c:\\users\\pc\\programacion-clase\\segundo semestre\\prueba aspnet\\prueba aspnet\\pages\\pagecliente\\lista.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8EBB546C-B32D-49EA-972D-9FC92C0E85C1}|Prueba AspNet\\Prueba AspNet.csproj|solutionrelative:prueba aspnet\\pages\\pagecliente\\lista.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,67 +34,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "VentasXCliente.cshtml",
-              "DocumentMoniker": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Prueba AspNet\\Prueba AspNet\\Pages\\PageReportes\\VentasXCliente.cshtml",
-              "RelativeDocumentMoniker": "Prueba AspNet\\Pages\\PageReportes\\VentasXCliente.cshtml",
-              "ToolTip": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Prueba AspNet\\Prueba AspNet\\Pages\\PageReportes\\VentasXCliente.cshtml",
-              "RelativeToolTip": "Prueba AspNet\\Pages\\PageReportes\\VentasXCliente.cshtml",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAADMAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-18T00:47:20.707Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Lista.cshtml",
-              "DocumentMoniker": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Prueba AspNet\\Prueba AspNet\\Pages\\PageVenta\\Lista.cshtml",
-              "RelativeDocumentMoniker": "Prueba AspNet\\Pages\\PageVenta\\Lista.cshtml",
-              "ToolTip": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Prueba AspNet\\Prueba AspNet\\Pages\\PageVenta\\Lista.cshtml",
-              "RelativeToolTip": "Prueba AspNet\\Pages\\PageVenta\\Lista.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-18T00:46:59.1Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "VentasXArticulo.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Prueba AspNet\\Prueba AspNet\\Pages\\PageReportes\\VentasXArticulo.cshtml.cs",
-              "RelativeDocumentMoniker": "Prueba AspNet\\Pages\\PageReportes\\VentasXArticulo.cshtml.cs",
-              "ToolTip": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Prueba AspNet\\Prueba AspNet\\Pages\\PageReportes\\VentasXArticulo.cshtml.cs",
-              "RelativeToolTip": "Prueba AspNet\\Pages\\PageReportes\\VentasXArticulo.cshtml.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAcwCkAAAAkAAAAAAAAAA==",
+              "Title": "Alta.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Prueba AspNet\\Prueba AspNet\\Pages\\PageCliente\\Alta.cshtml.cs",
+              "RelativeDocumentMoniker": "Prueba AspNet\\Pages\\PageCliente\\Alta.cshtml.cs",
+              "ToolTip": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Prueba AspNet\\Prueba AspNet\\Pages\\PageCliente\\Alta.cshtml.cs",
+              "RelativeToolTip": "Prueba AspNet\\Pages\\PageCliente\\Alta.cshtml.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAIwCgAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T00:44:59.39Z",
+              "WhenOpened": "2025-11-19T23:10:23.04Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "VentasXArticulo.cshtml",
-              "DocumentMoniker": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Prueba AspNet\\Prueba AspNet\\Pages\\PageReportes\\VentasXArticulo.cshtml",
-              "RelativeDocumentMoniker": "Prueba AspNet\\Pages\\PageReportes\\VentasXArticulo.cshtml",
-              "ToolTip": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Prueba AspNet\\Prueba AspNet\\Pages\\PageReportes\\VentasXArticulo.cshtml",
-              "RelativeToolTip": "Prueba AspNet\\Pages\\PageReportes\\VentasXArticulo.cshtml",
-              "ViewState": "AgIAACcAAAAAAAAAAAAmwEEAAAAhAAAAAAAAAA==",
+              "Title": "Alta.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Prueba AspNet\\Prueba AspNet\\Pages\\PageCliente\\Alta.cshtml",
+              "RelativeDocumentMoniker": "Prueba AspNet\\Pages\\PageCliente\\Alta.cshtml",
+              "ToolTip": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Prueba AspNet\\Prueba AspNet\\Pages\\PageCliente\\Alta.cshtml",
+              "RelativeToolTip": "Prueba AspNet\\Pages\\PageCliente\\Alta.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-18T00:38:26.658Z",
+              "WhenOpened": "2025-11-19T23:00:59.846Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Controladora.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Prueba AspNet\\Prueba AspNet\\Dominio\\Controladora.cs",
-              "RelativeDocumentMoniker": "Prueba AspNet\\Dominio\\Controladora.cs",
-              "ToolTip": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Prueba AspNet\\Prueba AspNet\\Dominio\\Controladora.cs",
-              "RelativeToolTip": "Prueba AspNet\\Dominio\\Controladora.cs",
-              "ViewState": "AgIAAO0AAAAAAAAAAAAwwAMBAAAJAAAAAAAAAA==",
+              "Title": "Lista.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Prueba AspNet\\Prueba AspNet\\Pages\\PageCliente\\Lista.cshtml.cs",
+              "RelativeDocumentMoniker": "Prueba AspNet\\Pages\\PageCliente\\Lista.cshtml.cs",
+              "ToolTip": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Prueba AspNet\\Prueba AspNet\\Pages\\PageCliente\\Lista.cshtml.cs",
+              "RelativeToolTip": "Prueba AspNet\\Pages\\PageCliente\\Lista.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T00:44:07.705Z",
+              "WhenOpened": "2025-11-19T22:46:49.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Lista.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Prueba AspNet\\Prueba AspNet\\Pages\\PageCliente\\Lista.cshtml",
+              "RelativeDocumentMoniker": "Prueba AspNet\\Pages\\PageCliente\\Lista.cshtml",
+              "ToolTip": "C:\\Users\\PC\\Programacion-Clase\\Segundo semestre\\Prueba AspNet\\Prueba AspNet\\Pages\\PageCliente\\Lista.cshtml",
+              "RelativeToolTip": "Prueba AspNet\\Pages\\PageCliente\\Lista.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAIAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-19T22:44:23.906Z",
               "EditorCaption": ""
             }
           ]

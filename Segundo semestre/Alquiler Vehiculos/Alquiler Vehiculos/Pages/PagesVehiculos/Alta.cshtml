@@ -1,0 +1,168 @@
+﻿@page
+@model Alquiler_Vehiculos.Pages.PagesVehiculos.AltaModel
+@{
+    ViewData["Title"] = "Alta Vehículo";
+}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <a asp-page="/Lista" class="btn btn-outline-secondary btn-sm">
+        <i class="fa-solid fa-arrow-left"></i> Volver
+    </a>
+</div>
+
+<div class="row justify-content-center">
+    <div class="col-lg-10">
+        <form method="post">
+            <div class="card card-custom border-0 shadow-lg">
+                @if (!string.IsNullOrEmpty(Model.Mensaje))
+                {
+                    <div class="alert alert-warning shadow-sm" role="alert">
+                        <i class="fa-solid fa-circle-exclamation me-2"></i> @Model.Mensaje
+                    </div>
+                }
+                <div class="card-header bg-primary text-white py-3">
+                    <h5 class="mb-0"><i class="fa-solid fa-car"></i> Ficha Técnica</h5>
+                </div>
+
+                <div class="card-body p-4">
+
+                    <div class="row mb-4">
+                        <div class="col-md-4 form-group">
+                            <label for="id" class="form-label fw-bold small text-uppercase text-muted">ID Interno</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-light"><i class="fa-solid fa-barcode"></i></span>
+                                <input type="text" id="id" name="id" readonly class="form-control bg-light fw-bold" value="@Model.Id" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <h6 class="text-secondary text-uppercase fw-bold mb-3 border-bottom pb-2">
+                        <i class="fa-solid fa-fingerprint"></i> Datos del Vehículo
+                    </h6>
+
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-3 form-group">
+                            <label for="matricula" class="form-label fw-bold">Matrícula</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-light"><i class="fa-solid fa-hashtag"></i></span>
+                                <input type="text" id="matricula" name="matricula" class="form-control" placeholder="Ej: AA 1234" />
+                            </div>
+                        </div>
+                        <div class="col-md-3 form-group">
+                            <label for="marca" class="form-label fw-bold">Marca</label>
+                            <input type="text" id="marca" name="marca" class="form-control" placeholder="Ej: Toyota" />
+                        </div>
+                        <div class="col-md-3 form-group">
+                            <label for="modelo" class="form-label fw-bold">Modelo</label>
+                            <input type="text" id="modelo" name="modelo" class="form-control" placeholder="Ej: Corolla" />
+                        </div>
+                        <div class="col-md-3 form-group">
+                            <label for="anio" class="form-label fw-bold">Año</label>
+                            <input type="number" id="anio" name="anio" class="form-control" placeholder="2024" min="1990" />
+                        </div>
+                    </div>
+
+                    <h6 class="text-secondary text-uppercase fw-bold mb-3 border-bottom pb-2 mt-4">
+                        <i class="fa-solid fa-gears"></i> Características
+                    </h6>
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-3 form-group">
+                            <label for="tipo" class="form-label fw-bold">Tipo</label>
+                            <select id="tipo" name="tipo" class="form-select">
+                                <option value="">Seleccione...</option>
+                                <option value="Sedan">Sedán</option>
+                                <option value="SUV">SUV / Camioneta</option>
+                                <option value="Deportivo">Deportivo</option>
+                                <option value="Hatchback">Hatchback</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 form-group">
+                            <label for="combustible" class="form-label fw-bold">Combustible</label>
+                            <select id="combustible" name="combustible" class="form-select">
+                                <option value="Nafta">Nafta</option>
+                                <option value="Diesel">Diesel</option>
+                                <option value="Electrico">Eléctrico</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 form-group">
+                            <label for="color" class="form-label fw-bold">Color</label>
+                            <input type="text" id="color" name="color" class="form-control" placeholder="Ej: Gris" />
+                        </div>
+                        <div class="col-md-3 form-group">
+                            <label for="capacidad" class="form-label fw-bold">Pasajeros</label>
+                            <input type="number" id="capacidad" name="capacidad" class="form-control" placeholder="5" />
+                        </div>
+                    </div>
+
+                    <h6 class="text-secondary text-uppercase fw-bold mb-3 border-bottom pb-2 mt-4">
+                        <i class="fa-solid fa-images"></i> Multimedia
+                    </h6>
+                    <div class="row g-3 mb-4 align-items-start">
+                        <div class="col-md-8 form-group">
+                            <label for="imagenLink" class="form-label fw-bold">URL de la Imagen</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-light"><i class="fa-solid fa-link"></i></span>
+                                <input type="url" id="imagenLink" name="imagenLink
+" class="form-control"
+                                       placeholder="https://ejemplo.com/auto.jpg" oninput="actualizarPreview(this.value)" />
+                            </div>
+                            <small class="text-muted">Pegue el enlace directo a la imagen (jpg, png).</small>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="border rounded p-2 bg-light" style="min-height: 150px; display: flex; align-items: center; justify-content: center;">
+                                <img id="imgPreview" src="#" alt="Vista Previa"
+                                     class="img-fluid rounded shadow-sm"
+                                     style="display: none; max-height: 140px;"
+                                     onerror="errorImagen()" />
+                                <span id="txtPlaceholder" class="text-muted small">
+                                    <i class="fa-regular fa-image fa-2x mb-2"></i><br>Vista Previa
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-light p-4 rounded-3 mt-4 border">
+                        <div class="row g-3 align-items-center">
+                            <div class="col-md-5 form-group">
+                                <label for="precio" class="form-label fw-bold text-success">Precio por Día ($)</label>
+                                <div class="input-group input-group-lg">
+                                    <span class="input-group-text bg-success text-white fw-bold">$</span>
+                                    <input type="number" step="0.01" id="precio" name="precio" class="form-control fw-bold text-success" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-footer bg-white p-4 border-top-0 text-end">
+                    <button type="submit" class="btn btn-primary-custom px-5" asp-page-handler="Agregar">
+                        <i class="fa-solid fa-save me-2"></i> Guardar
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    function actualizarPreview(url) {
+        var img = document.getElementById('imgPreview');
+        var txt = document.getElementById('txtPlaceholder');
+
+        if (url && url.trim() !== "") {
+            img.src = url;
+            img.style.display = 'block';
+            txt.style.display = 'none';
+        } else {
+            img.style.display = 'none';
+            txt.style.display = 'block';
+        }
+    }
+
+    function errorImagen() {
+        var img = document.getElementById('imgPreview');
+        var txt = document.getElementById('txtPlaceholder');
+        img.style.display = 'none';
+        txt.innerHTML = '<i class="fa-solid fa-circle-xmark text-danger fa-2x mb-2"></i><br><span class="text-danger">Link inválido</span>';
+        txt.style.display = 'block';
+    }
+</script>

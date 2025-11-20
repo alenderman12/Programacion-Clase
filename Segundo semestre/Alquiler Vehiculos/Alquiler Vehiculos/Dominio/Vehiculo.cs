@@ -13,6 +13,7 @@
         private string aColor;
         private double aPrecioPorDia;
         private char aEstado;
+        private string aImagenLink;
 
         public int Id {  get { return aIdVehiculo; } set { aIdVehiculo = value; } }
         public string Matricula { get { return aMatricula; } set { aMatricula = value; } }
@@ -25,12 +26,13 @@
         public string Color { get { return aColor; } set { aColor = value; } }
         public double PrecioPorDia { get { return aPrecioPorDia; } set { aPrecioPorDia = value; } }
         public char Estado { get { return aEstado; } set { aEstado = value; } }
-          
+        public string ImagenLink { get { return aImagenLink; } set { aImagenLink = value; } }
 
-        public Vehiculo(int pIdVehiculo, string pMatricula, string pMarca, string pModelo, int pAnio, string pTipo, int pCapacidad, 
-            string pCombustible, string pColor, double pPrecioPorDia, char pEstado)
+
+        public Vehiculo(int pId, string pMatricula, string pMarca, string pModelo, int pAnio, string pTipo, int pCapacidad, 
+            string pCombustible, string pColor, double pPrecioPorDia, char pEstado, string pImagenLink)
         {
-            this.Id = pIdVehiculo;
+            this.Id = pId;
             this.Matricula = pMatricula;
             this.Marca = pMarca;
             this.Modelo = pModelo;
@@ -41,6 +43,7 @@
             this.Color = pColor;
             this.PrecioPorDia = pPrecioPorDia;
             this.Estado = pEstado;
+            this.ImagenLink = pImagenLink;
         }
     }
 }

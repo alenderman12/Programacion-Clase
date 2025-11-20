@@ -1,10 +1,56 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Panel Principal";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="hero-section">
+    <div>
+        <h1 class="hero-title">Gestión de Alquileres</h1>
+        <p class="lead fs-4">Administra flota, clientes y contratos en un solo lugar.</p>
+        <a asp-page="/PagesAlquileres/Alta" class="btn btn-primary btn-lg btn-primary-custom mt-3">
+            <i class="fa-solid fa-plus"></i> Nuevo Alquiler
+        </a>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-md-12 text-center mb-4">
+            <h2 class="fw-bold text-secondary">Operaciones Frecuentes</h2>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card card-custom h-100 text-center p-4">
+                <div class="card-body">
+                    <i class="fa-solid fa-car fa-3x text-primary mb-3"></i>
+                    <h4 class="card-title">Flota de Vehículos</h4>
+                    <p class="card-text text-muted">Consulta disponibilidad, agrega nuevas unidades o modifica precios.</p>
+                    <a asp-page="/PagesVehiculos/Lista" class="btn btn-outline-primary w-100 mt-2">Ver Vehículos</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card card-custom h-100 text-center p-4">
+                <div class="card-body">
+                    <i class="fa-solid fa-users fa-3x text-success mb-3"></i>
+                    <h4 class="card-title">Clientes</h4>
+                    <p class="card-text text-muted">Alta de clientes, historial de alquileres y gestión de documentación.</p>
+                    <a asp-page="/PagesClientes/Lista" class="btn btn-outline-success w-100 mt-2">Ver Clientes</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card card-custom h-100 text-center p-4">
+                <div class="card-body">
+                    <i class="fa-solid fa-cash-register fa-3x text-warning mb-3"></i>
+                    <h4 class="card-title">Devoluciones y Pagos</h4>
+                    <p class="card-text text-muted">Procesar finalización de alquileres y cobros pendientes.</p>
+                    <a asp-page="/PagesAlquileres/Lista" class="btn btn-outline-warning w-100 mt-2">Procesar</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

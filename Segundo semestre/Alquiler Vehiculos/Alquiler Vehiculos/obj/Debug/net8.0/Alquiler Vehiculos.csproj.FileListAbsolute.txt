@@ -1,0 +1,35 @@
+C:\Users\PC\Programacion-Clase\Segundo semestre\Alquiler Vehiculos\Alquiler Vehiculos\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\PC\Programacion-Clase\Segundo semestre\Alquiler Vehiculos\Alquiler Vehiculos\bin\Debug\net8.0\appsettings.json
+C:\Users\PC\Programacion-Clase\Segundo semestre\Alquiler Vehiculos\Alquiler Vehiculos\bin\Debug\net8.0\Alquiler Vehiculos.staticwebassets.runtime.json
+C:\Users\PC\Programacion-Clase\Segundo semestre\Alquiler Vehiculos\Alquiler Vehiculos\bin\Debug\net8.0\Alquiler Vehiculos.staticwebassets.endpoints.json
+C:\Users\PC\Programacion-Clase\Segundo semestre\Alquiler Vehiculos\Alquiler Vehiculos\bin\Debug\net8.0\Alquiler Vehiculos.exe
+C:\Users\PC\Programacion-Clase\Segundo semestre\Alquiler Vehiculos\Alquiler Vehiculos\bin\Debug\net8.0\Alquiler Vehiculos.deps.json
+C:\Users\PC\Programacion-Clase\Segundo semestre\Alquiler Vehiculos\Alquiler Vehiculos\bin\Debug\net8.0\Alquiler Vehiculos.runtimeconfig.json
+C:\Users\PC\Programacion-Clase\Segundo semestre\Alquiler Vehiculos\Alquiler Vehiculos\bin\Debug\net8.0\Alquiler Vehiculos.dll
+C:\Users\PC\Programacion-Clase\Segundo semestre\Alquiler Vehiculos\Alquiler Vehiculos\bin\Debug\net8.0\Alquiler Vehiculos.pdb
+C:\Users\PC\Programacion-Clase\Segundo semestre\Alquiler Vehiculos\Alquiler Vehiculos\obj\Debug\net8.0\Alquiler Vehiculos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Programacion-Clase\Segundo semestre\Alquiler Vehiculos\Alquiler Vehiculos\obj\Debug\net8.0\Alquiler Vehiculos.AssemblyInfoInputs.cache
+C:\Users\PC\Programacion-Clase\Segundo semestre\Alquiler Vehiculos\Alquiler Vehiculos\obj\Debug\net8.0\Alquiler Vehiculos.AssemblyInfo.cs
+C:\Users\PC\Programacion-Clase\Segundo semestre\Alquiler Vehiculos\Alquiler Vehiculos\obj\Debug\net8.0\Alquiler Vehiculos.csproj.CoreCompileInputs.cache
+C:\Users\PC\Programacion-Clase\Segundo semestre\Alquiler Vehiculos\Alquiler Vehiculos\obj\Debug\net8.0\Alquiler Vehiculos.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\PC\Programacion-Clase\Segundo semestre\Alquiler Vehiculos\Alquiler Vehiculos\obj\Debug\net8.0\Alquiler Vehiculos.RazorAssemblyInfo.cache
+C:\Users\PC\Programacion-Clase\Segundo semestre\Alquiler Vehiculos\Alquiler Vehiculos\obj\Debug\net8.0\Alquiler Vehiculos.RazorAssemblyInfo.cs
+C:\Users\PC\Programacion-Clase\Segundo semestre\Alquiler Vehiculos\Alquiler Vehiculos\obj\Debug\net8.0\Alquiler Vehiculos.sourcelink.json
+C:\Users\PC\Programacion-Clase\Segundo semestre\Alquiler Vehiculos\Alquiler Vehiculos\obj\Debug\net8.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\PC\Programacion-Clase\Segundo semestre\Alquiler Vehiculos\Alquiler Vehiculos\obj\Debug\net8.0\scopedcss\bundle\Alquiler Vehiculos.styles.css
+C:\Users\PC\Programacion-Clase\Segundo semestre\Alquiler Vehiculos\Alquiler Vehiculos\obj\Debug\net8.0\scopedcss\projectbundle\Alquiler Vehiculos.bundle.scp.css
+C:\Users\PC\Programacion-Clase\Segundo semestre\Alquiler Vehiculos\Alquiler Vehiculos\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\PC\Programacion-Clase\Segundo semestre\Alquiler Vehiculos\Alquiler Vehiculos\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\PC\Programacion-Clase\Segundo semestre\Alquiler Vehiculos\Alquiler Vehiculos\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\PC\Programacion-Clase\Segundo semestre\Alquiler Vehiculos\Alquiler Vehiculos\obj\Debug\net8.0\staticwebassets\msbuild.Alquiler Vehiculos.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\PC\Programacion-Clase\Segundo semestre\Alquiler Vehiculos\Alquiler Vehiculos\obj\Debug\net8.0\staticwebassets\msbuild.Alquiler Vehiculos.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\PC\Programacion-Clase\Segundo semestre\Alquiler Vehiculos\Alquiler Vehiculos\obj\Debug\net8.0\staticwebassets\msbuild.build.Alquiler Vehiculos.props
+C:\Users\PC\Programacion-Clase\Segundo semestre\Alquiler Vehiculos\Alquiler Vehiculos\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Alquiler Vehiculos.props
+C:\Users\PC\Programacion-Clase\Segundo semestre\Alquiler Vehiculos\Alquiler Vehiculos\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Alquiler Vehiculos.props
+C:\Users\PC\Programacion-Clase\Segundo semestre\Alquiler Vehiculos\Alquiler Vehiculos\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\PC\Programacion-Clase\Segundo semestre\Alquiler Vehiculos\Alquiler Vehiculos\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\PC\Programacion-Clase\Segundo semestre\Alquiler Vehiculos\Alquiler Vehiculos\obj\Debug\net8.0\Alquiler Vehiculos.dll
+C:\Users\PC\Programacion-Clase\Segundo semestre\Alquiler Vehiculos\Alquiler Vehiculos\obj\Debug\net8.0\refint\Alquiler Vehiculos.dll
+C:\Users\PC\Programacion-Clase\Segundo semestre\Alquiler Vehiculos\Alquiler Vehiculos\obj\Debug\net8.0\Alquiler Vehiculos.pdb
+C:\Users\PC\Programacion-Clase\Segundo semestre\Alquiler Vehiculos\Alquiler Vehiculos\obj\Debug\net8.0\Alquiler Vehiculos.genruntimeconfig.cache
+C:\Users\PC\Programacion-Clase\Segundo semestre\Alquiler Vehiculos\Alquiler Vehiculos\obj\Debug\net8.0\ref\Alquiler Vehiculos.dll
